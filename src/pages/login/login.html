@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Alice welcomes you, operator.">
+  <meta name="author" content="RikenAvadur">
+
+  <title>Cephalon Alice</title>
+
+  <link rel="stylesheet" href="../../rsc/css/lux-bootstrap.min.css">
+  <link rel="stylesheet" href="../../rsc/css/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <a href="" class="navbar-brand">Cephalon</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main pane -->
+  <div class="splash-container container">
+    <div class="mb-4 text-center align-content-center align-items-center">
+      <h1>Welcome, operator.</h1>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-sm"></div>
+      <div class="col-sm-3">
+        <form class="form-signin">
+          <div class="form-group row">
+            <label for="inputEmail">Email</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Who are you, operator?" required autofocus>
+            <div class="form-control-feedback" id="emailFeedback"></div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="How can I be sure..." required>
+            <div class="form-control-feedback" id="passwordFeedback"></div>
+            <label class="pl-1 mt-1"><input type="checkbox" id="stayLogged" value="remember-me"> Stay Logged In?</label>
+          </div>
+          <div class="row">
+            <button class="col-sm-6 btn btn-primary btn-block btn-signin" type="submit">Sign in</button>
+            <button class="col-sm-6 btn btn-primary btn-register" type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm"></div>
+    </div>
+  </div>
+
+  <script src="../../rsc/js/jquery-3.2.1.slim.min.js"></script>
+  <script src="../../rsc/js/tether.min.js"></script>
+  <script src="../../rsc/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script src="../../rsc/js/nexus.js"></script>
+
+  <script src="login.js"></script>
+</body>
+</html>
