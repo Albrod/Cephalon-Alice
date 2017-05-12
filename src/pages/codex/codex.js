@@ -5,7 +5,25 @@ function loadCodex() {
   wData = JSON.parse(warframeData);
   renderCodex("warframes", wData);
 
-  updateDB();
+  setTimeout(function(){
+    pullFromDB();
+    $(".main-pane").css("opacity", "");
+  }, 500);
+
+
+  $(".btn-update").click(function( e ) {
+    e.preventDefault();
+    pushToDB();
+  });
+  $("#quick-add").click(function( e ) {
+    e.preventDefault();
+    openQuickModal();
+  });
+  $("#quickInput").keyup(function() {
+    // Remove previous warnings.
+    $("#quickInput").parent().removeClass('has-warning');
+    $("#quickInputFeedback").html("");
+});
 }
 
 function renderCodex(cat, data) {
@@ -40,7 +58,7 @@ function renderCodex(cat, data) {
     // Check if new row is needed.
 
     row = $("#" + cat + "Div .row:last-child");
-    var entryDiv = $('<div>', {class: "col-sm-2 codex-entry", id: cat_id + id}).appendTo(row);
+    var entryDiv = $('<div>', {class: "col-md-2 mb-2 codex-entry", id: cat_id + id}).appendTo(row);
 
     var entryImg = null;
     var image_url = "../../rsc/img/" + cat + "/" + entry + ".png";
@@ -79,13 +97,21 @@ function renderCodex(cat, data) {
 function dirtyEntry(div) {
   div.children(".gilded-img").toggleClass('gilded');
   div.toggleClass("dirty");
+
+  var count = $(".dirty").length;
+  if (count > 0) {
+    $("#update-text").html(count + " Pending Change(s)!");
+    $("#update-footer").addClass("active");
+  } else {
+    $("#update-footer").removeClass("active");
+    $("#update-text").html("");
+  }
 }
 
 // Bidirectional database sync.
-function updateDB() {
+function pullFromDB() {
   var userId = firebase.auth().currentUser.uid;
   var database = firebase.database();
-
   // Sync current data from DB.
   firebase.database().ref('/users/' + userId + '/codex').once('value').then(function(snapshot) {
     var freshData = snapshot.val();
@@ -105,9 +131,25 @@ function updateDB() {
     $("#sentinelWeaponsCounter").html(counters[3] + "/" + totals[3]);
     $("#archwingsCounter").html(counters[4] + "/" + totals[4]);
     $("#archwingWeaponsCounter").html(counters[5] + "/" + totals[5]);
-  });
 
+    function add(a, b) {
+      return a + b;
+    }
+    var userSum = counters.reduce(add, 0);
+    var totalSum = totals.reduce(add, 0);
+    $("#total-counter").html(userSum + "/" + totalSum + " Mastered");
+  });
+  $(".main-pane").css("opacity", "");
+  $("#total-counter").css("opacity", "");
+}
+function pushToDB() {
+  var userId = firebase.auth().currentUser.uid;
+  var database = firebase.database();
   // Push changes to DB.
+  $(".main-pane").css("opacity", "0");
+  setTimeout(function(){
+    pushToDB();
+  }, 500);
   if ($(".dirty").length > 0) {
     var newCodex = {}
     $(".codex-entry .gilded-img.gilded").parent().each(function( index ) {
@@ -115,11 +157,36 @@ function updateDB() {
     });
     console.log("newCodex: " + newCodex);
     firebase.database().ref('users/' + userId + '/codex').set(newCodex);
-    location.reload();
+    setTimeout(function(){
+      location.reload();
+    }, 500);
   }
-
 }
 
+function openQuickModal() {
+  $("#addModal").modal();
+}
+function submitQuickAdd() {
+  var entry = $("#quickInput").val();
+  var search = $("h5:contains('" + entry + "')");
+  if (search.length > 0) {
+    if (!search.parent().hasClass("mastered")) {
+      $("#addModal").modal('hide');
+      dirtyEntry(search.parent());
+      pushToDB();
+    } else {
+      // Already mastered!
+      $("#quickInput").parent().addClass('has-warning');
+      $("#quickInputFeedback").html("Already Mastered! Try again!");
+    }
+  } else {
+    // No entry found!
+    $("#quickInput").parent().addClass('has-warning');
+    $("#quickInputFeedback").html("No entry found! Try again!");
+  }
+}
+
+// Utilities
 function sortData(data) {
   var sort_array = [];
   for (var key in data) {

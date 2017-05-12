@@ -1,5 +1,14 @@
+body .modal-open {
+  overflow: scroll; !important;
+}
+
 .main-pane {
   top: 120px;
+
+  transition: all .5s;
+}
+.navbar-brand {
+  pointer-events: none;
 }
 
 a.anchor {
@@ -8,6 +17,46 @@ a.anchor {
     top: -250px;
     visibility: hidden;
 }
+
+.footer {
+  position: fixed;
+  bottom: -60px;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #1a1a1a;
+
+  transition: all .5s;
+}
+.footer.active {
+  bottom: 0;
+}
+#update-text {
+  color: orange;
+}
+#total-counter {
+  color: rgba(255,255,255,0.7);
+  pointer-events: none;
+
+  transition: all .5s;
+}
+#quick-add {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 35px;
+  margin:auto;
+
+  pointer-events: all;
+}
+
+#addModal {
+  top: 20%;
+}
+#quickInputFeedback {
+  transition: all .5s
+}
+
 
 /*Login*/
 .splash-container {
@@ -26,7 +75,7 @@ a.anchor {
     margin: 0;
   }
   .codex-entry h5 {
-    display: none;
+
   }
 }
 @media (min-width: 768px) {

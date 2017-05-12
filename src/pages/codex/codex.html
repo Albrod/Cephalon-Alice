@@ -18,40 +18,48 @@
     <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">Cephalon</a>
+    <div class="navbar-brand pr-5">
+      Cephalon Alice
+      <img id="quick-add" src="../../rsc/img/icons/quests-icon.png"/>
+    </div>
 
     <div class="navbar-collapse collapse" id="navbarColor01" aria-expanded="false" style="">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="themes" aria-expanded="false">Codex <span class="caret"></span></a>
-                      <div class="dropdown-menu" aria-labelledby="themes">
-                        <a class="dropdown-item" href="#warframes">Warframes</a>
-                        <a class="dropdown-item" href="#weapons">Weapons</a>
-                        <a class="dropdown-item" href="#companions">Companions</a>
-                        <a class="dropdown-item" href="#sentinelWeapons">Sentinel Weapons</a>
-                        <a class="dropdown-item" href="#archwings">Archwings</a>
-                        <a class="dropdown-item" href="#archwingWeapons">Archwing Weapons</a>
-                      </div>
-                    </li>
+        <li><a class="nav-link" href="#warframes">Warframes</a></li>
+        <li><a class="nav-link" href="#weapons">Weapons</a></li>
+        <li><a class="nav-link" href="#companions">Companions</a></li>
       </ul>
+
       <form class="form-inline">
-        <button class="btn btn-secondary my-2 mr-4 my-sm-0 btn-update"  type="submit">Update</button>
-        <button class="btn btn-secondary my-2 my-sm-0 btn-logout"  type="submit">Logout</button>
+<h5 style="opacity: 0;" class="mr-4 mb-0" id="total-counter"></h5>
+        <button class="btn btn-secondary my-2 my-sm-0 btn-logout" type="submit">Logout</button>
       </form>
     </div>
   </nav>
 
   <!-- Main pane -->
-  <div class="mt-1 container main-pane">
+  <div style="opacity: 0;" class="mt-1 container main-pane">
     <h1 class="mb-3">Warframes <small class="text-muted" id="warframesCounter"></small></h1>
     <a class="anchor" id="warframes"></a>
     <div class="text-center codex-div" id="warframesDiv">
       <div class="row">
       </div>
     </div>
+    <h1 class="mb-3">Archwings <small class="text-muted" id="archwingsCounter"></small></h1>
+    <a class="anchor" id="archwings"></a>
+    <div class="text-center codex-div" id="archwingsDiv">
+      <div class="row">
+      </div>
+    </div>
     <h1 class="mb-3">Weapons <small class="text-muted" id="weaponsCounter"></small></h1>
     <a class="anchor" id="weapons"></a>
     <div class="text-center codex-div" id="weaponsDiv">
+      <div class="row">
+      </div>
+    </div>
+    <h1 class="mb-3">Archwing Weapons <small class="text-muted" id="archwingWeaponsCounter"></small></h1>
+    <a class="anchor" id="archwingWeapons"></a>
+    <div class="text-center codex-div" id="archwingWeaponsDiv">
       <div class="row">
       </div>
     </div>
@@ -67,16 +75,34 @@
       <div class="row">
       </div>
     </div>
-    <h1 class="mb-3">Archwings <small class="text-muted" id="archwingsCounter"></small></h1>
-    <a class="anchor" id="archwings"></a>
-    <div class="text-center codex-div" id="archwingsDiv">
-      <div class="row">
-      </div>
+  </div>
+
+  <!-- Update footer -->
+  <footer class="footer" id="update-footer">
+    <div class="container">
+      <button class="btn btn-secondary my-2 mr-4 btn-update float-right" type="submit">Update</button>
+      <p class="mr-3 float-right" id="update-text"></p>
     </div>
-    <h1 class="mb-3">Archwing Weapons <small class="text-muted" id="archwingWeaponsCounter"></small></h1>
-    <a class="anchor" id="archwingWeapons"></a>
-    <div class="text-center codex-div" id="archwingWeaponsDiv">
-      <div class="row">
+  </footer>
+
+  <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="form-group modal-body">
+          Quickly, Operator. What have you mastered? <small>(Case sensitive!)</small>
+          <input type="text" class="form-control" id="quickInput"/>
+          <div class="form-control-feedback" id="quickInputFeedback"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="submitQuickAdd()">Submit</button>
+        </div>
       </div>
     </div>
   </div>

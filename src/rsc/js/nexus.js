@@ -20,10 +20,6 @@ $(function() {
       console.log(errorCode + " | " + errorMessage );
     });
   });
-  $(".btn-update").click(function( e ) {
-    e.preventDefault();
-    updateDB();
-  });
 
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
@@ -47,6 +43,14 @@ $(function() {
     }
     if (window.location.pathname.includes("login.html")) {
       loadLogin();
-    } 
+    }
+  });
+
+  $(document).on('click', 'a', function(event){
+    event.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
   });
 });
