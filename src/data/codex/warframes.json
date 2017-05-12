@@ -11,7 +11,6 @@
   "010": "Excalibur",
   "011": "Frost",
   "012": "Frost Prime",
-  "012": "Hydroid",
   "013": "Inaros",
   "014": "Ivara",
   "015": "Limbo",
@@ -46,5 +45,6 @@
   "044": "Volt Prime",
   "045": "Wukong",
   "046": "Zephyr",
-  "047": "Excalibur Prime"
+  "047": "Excalibur Prime",
+  "048": "Hydroid"
 }

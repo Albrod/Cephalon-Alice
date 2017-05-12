@@ -1,3 +1,14 @@
+.main-pane {
+  top: 120px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
 /*Login*/
 .splash-container {
   margin-top: 15%;
@@ -41,15 +52,23 @@
   box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.5);
   border-radius: 15px;
   border: 1px solid rgba(0,0,0,0.75);
-}
-.dirty .codex-img {
-  opacity: 0.5;
-  background: #666666;
+
+  transition: all .5s;
 }
 .codex-entry.mastered .codex-img{
   background: black;
   opacity: .75;
 }
+.dirty .codex-img {
+  opacity: 0.5;
+  background: #666666;
+  border: 7px solid green;
+}
+ .codex-entry.mastered.dirty .codex-img {
+   opacity: 0.5;
+   background: #666666;
+   border: 7px solid orange;
+ }
 
 .gilded-img {
   height: auto;
@@ -58,8 +77,14 @@
   max-height: 90%;
 
   position: absolute;
-  top: 5%;
+  top: 0;
   left: 5%;
+  opacity: 0;
+
+  transition: all .5s;
+}
+.gilded-img.gilded {
+  opacity: 1;
 }
 
 .codex-entry.mastered h5 {
