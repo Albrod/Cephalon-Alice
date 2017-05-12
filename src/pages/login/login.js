@@ -1,15 +1,4 @@
 function loadLogin() {
-  firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      // User is signed in.
-      window.location.href = "../codex/codex.html";
-    } else {
-      // No user is signed in.
-      console.log("No user signed in!");
-    }
-  });
-
-
   $(".btn-signin").click(function( e ) {
     e.preventDefault();
     var email = $("#inputEmail").val();

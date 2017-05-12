@@ -1,5 +1,9 @@
-[
-  {"1":"Excalibur"},
-  {"2":"Loki"},
-  {"3":"Volt"}
-]
+{
+  "001":"Excalibur",
+  "002":"Loki",
+  "003":"Volt",
+  "004":"Rhino",
+  "005":"Ash",
+  "006":"Trinity",
+  "007":"Frost"
+}

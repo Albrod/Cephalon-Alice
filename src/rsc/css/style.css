@@ -1,4 +1,73 @@
+/*Login*/
 .splash-container {
   margin-top: 15%;
   top: 106px;
+}
+
+/*Codex*/
+.codex-entry {
+  max-width: 285px;
+  margin: auto;
+}
+@media(min-width:576px){
+  .codex-entry {
+    max-width: 25%;
+    margin: 0;
+  }
+  .codex-entry h5 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .codex-entry h5 {
+    display: block;
+    font-size: .75em;
+  }
+ }
+ @media (min-width: 992px) {
+   .codex-entry h5 {
+     font-size: 1em;
+   }
+ }
+
+
+.codex-img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+
+  background: #dddddd;
+  box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.5);
+  border-radius: 15px;
+  border: 1px solid rgba(0,0,0,0.75);
+}
+.dirty .codex-img {
+  opacity: 0.5;
+  background: #666666;
+}
+.codex-entry.mastered .codex-img{
+  background: black;
+  opacity: .75;
+}
+
+.gilded-img {
+  height: auto;
+  width: auto;
+  max-width: 90%;
+  max-height: 90%;
+
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.codex-entry.mastered h5 {
+  text-decoration: line-through;
+}
+.codex-entry.mastered.dirty h5 {
+  text-decoration: none;
+}
+.codex-entry.dirty h5 {
+  text-decoration: line-through;
 }

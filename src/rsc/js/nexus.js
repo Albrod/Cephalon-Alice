@@ -12,11 +12,6 @@ $(function() {
   // Initialize Firebase
   firebase.initializeApp(config);
 
-  // Page load functions
-  if (window.location.pathname.includes("login.html")) {
-    loadLogin();
-  }
-
   $(".btn-logout").click(function( e ) {
     e.preventDefault();
     firebase.auth().signOut().then(function() {
@@ -24,5 +19,34 @@ $(function() {
     }).catch(function(error) {
       console.log(errorCode + " | " + errorMessage );
     });
+  });
+  $(".btn-update").click(function( e ) {
+    e.preventDefault();
+    updateDB();
+  });
+
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      // User logged in callback
+      if (window.location.pathname.includes("login.html")) {
+        // Enter site if logged in.
+        window.location.href = "../codex/codex.html";
+      }
+
+      // Page load functions
+      if (window.location.pathname.includes("codex.html")) {
+        loadCodex();
+      }
+
+    } else {
+      // No user is signed in.
+      if (!window.location.pathname.includes("login.html")) {
+        // Make sure we're not looping on login page.
+        window.location.href = "../login/login.html";
+      }
+    }
+    if (window.location.pathname.includes("login.html")) {
+      loadLogin();
+    } 
   });
 });
