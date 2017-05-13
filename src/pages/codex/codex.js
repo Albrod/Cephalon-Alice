@@ -101,9 +101,9 @@ function dirtyEntry(div) {
   var count = $(".dirty").length;
   if (count > 0) {
     $("#update-text").html(count + " Pending Change(s)!");
-    $("#update-footer").addClass("active");
+    $("#update-panel").addClass("active");
   } else {
-    $("#update-footer").removeClass("active");
+    $("#update-panel").removeClass("active");
     $("#update-text").html("");
   }
 }
