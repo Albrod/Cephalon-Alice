@@ -12,7 +12,7 @@ function loadCodex() {
   setTimeout(function(){
     pullFromDB();
     $(".main-pane").css("opacity", "");
-  }, 1000);
+  }, 500);
 
 
   $(".btn-update").click(function( e ) {
@@ -21,12 +21,20 @@ function loadCodex() {
   });
   $("#quick-add").click(function( e ) {
     e.preventDefault();
-    openQuickModal();
+    toggleQuickModal();
   });
   $("#quickInput").keyup(function() {
     // Remove previous warnings.
     $("#quickInput").parent().removeClass('has-warning');
     $("#quickInputFeedback").html("");
+  });
+  $('#addModal').on('shown.bs.modal', function () {
+    $('#quickInput').focus()
+  })
+
+
+  Mousetrap.bind('space', function(e) {
+    toggleQuickModal();
   });
 }
 
@@ -167,8 +175,8 @@ function pushToDB() {
   }
 }
 
-function openQuickModal() {
-  $("#addModal").modal();
+function toggleQuickModal() {
+  $("#addModal").modal('toggle');
 }
 function submitQuickAdd() {
   var entry = $("#quickInput").val();
@@ -188,6 +196,7 @@ function submitQuickAdd() {
     $("#quickInput").parent().addClass('has-warning');
     $("#quickInputFeedback").html("No entry found! Try again!");
   }
+  return false;
 }
 
 // Utilities
