@@ -1,14 +1,18 @@
 var totals = [0,0,0,0,0,0];
+var categories = ["warframes", "archwings", "weapons", "archwingWeapons", "companions", "sentinelWeapons"];
 var counters;
 function loadCodex() {
-  var warframeData = $.ajax('../../data/codex/warframes.json', { async: false }).responseText;
-  wData = JSON.parse(warframeData);
-  renderCodex("warframes", wData);
+  for (var i in categories) {
+    var cat = categories[i];
+    var data = $.ajax('../../data/codex/' + cat + '.json', { async: false }).responseText;
+    parseData = JSON.parse(data);
+    renderCodex(cat, parseData);
+  }
 
   setTimeout(function(){
     pullFromDB();
     $(".main-pane").css("opacity", "");
-  }, 500);
+  }, 1000);
 
 
   $(".btn-update").click(function( e ) {
@@ -23,7 +27,7 @@ function loadCodex() {
     // Remove previous warnings.
     $("#quickInput").parent().removeClass('has-warning');
     $("#quickInputFeedback").html("");
-});
+  });
 }
 
 function renderCodex(cat, data) {
@@ -33,19 +37,19 @@ function renderCodex(cat, data) {
     case 'warframes':
     cat_id = 1;
     break;
-    case 'weapons':
+    case 'archwings':
     cat_id = 2;
     break;
-    case 'companions':
+    case 'weapons':
     cat_id = 3;
     break;
-    case 'sentinelWeapons':
+    case 'archwingWeapons':
     cat_id = 4;
     break;
-    case 'archwings':
+    case 'companions':
     cat_id = 5;
     break;
-    case 'archwingWeapons':
+    case 'sentinelWeapons':
     cat_id = 6;
     break;
   }
@@ -126,11 +130,11 @@ function pullFromDB() {
 
     // Update counter text  $("#" + cat + "Counter").html("/" + count);
     $("#warframesCounter").html(counters[0] + "/" + totals[0]);
-    $("#weaponsCounter").html(counters[1] + "/" + totals[1]);
-    $("#companionsCounter").html(counters[2] + "/" + totals[2]);
-    $("#sentinelWeaponsCounter").html(counters[3] + "/" + totals[3]);
-    $("#archwingsCounter").html(counters[4] + "/" + totals[4]);
-    $("#archwingWeaponsCounter").html(counters[5] + "/" + totals[5]);
+    $("#archwingsCounter").html(counters[1] + "/" + totals[1]);
+    $("#weaponsCounter").html(counters[2] + "/" + totals[2]);
+    $("#archwingWeaponsCounter").html(counters[3] + "/" + totals[3]);
+    $("#companionsCounter").html(counters[4] + "/" + totals[4]);
+    $("#sentinelWeaponsCounter").html(counters[5] + "/" + totals[5]);
 
     function add(a, b) {
       return a + b;

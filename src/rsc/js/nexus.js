@@ -21,6 +21,10 @@ $(function() {
     });
   });
 
+  $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+  })
+
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User logged in callback
