@@ -31,14 +31,27 @@
       </ul>
 
       <form class="form-inline">
-<h5 style="opacity: 0;" class="mr-4 mb-0" id="total-counter"></h5>
+        <h5 style="opacity: 0;" class="mr-4 mb-0" id="total-counter"></h5>
         <button class="btn btn-secondary my-2 my-sm-0 btn-logout" type="submit">Logout</button>
       </form>
     </div>
   </nav>
 
-  <!-- Main pane -->
-  <div style="opacity: 0;" class="mt-1 container main-pane">
+  <div style="display: none;opacity: 0;" class="container search-pane">
+    <div class="row form-group">
+      <div class="col-md-1"> </div>
+      <div class="col-md-10">
+        <label class="col-form-label col-form-label-lg" for="inputLarge">What have you brought for me today, operator?</label>
+        <input class="form-control form-control-lg" type="text" id="searchInput" autofocus>
+        <button class="btn btn-primary btn-search-submit" type="submit">Submit</button>
+        <span onclick="loadLibrary()">Full Codex</span>
+      </div>
+      <div class="col-md-1"> </div>
+    </div>
+  </div>
+
+  <!-- Library pane -->
+  <div style="display: none;opacity: 0;" class="mt-1 container library-pane">
     <h1 class="mb-3">Warframes <small class="text-muted" id="warframesCounter"></small></h1>
     <a class="anchor" id="warframes"></a>
     <div class="text-center codex-div" id="warframesDiv">

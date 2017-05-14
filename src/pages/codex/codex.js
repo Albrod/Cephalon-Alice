@@ -2,18 +2,7 @@ var totals = [0,0,0,0,0,0];
 var categories = ["warframes", "archwings", "weapons", "archwingWeapons", "companions", "sentinelWeapons"];
 var counters;
 function loadCodex() {
-  for (var i in categories) {
-    var cat = categories[i];
-    var data = $.ajax('../../data/codex/' + cat + '.json', { async: false }).responseText;
-    parseData = JSON.parse(data);
-    renderCodex(cat, parseData);
-  }
-
-  setTimeout(function(){
-    pullFromDB();
-    $(".main-pane").css("opacity", "");
-  }, 500);
-
+  loadLibrary();
 
   $(".btn-update").click(function( e ) {
     e.preventDefault();
@@ -36,9 +25,33 @@ function loadCodex() {
   Mousetrap.bind('space', function(e) {
     toggleQuickModal();
   });
+  Mousetrap.bind('enter', function(e) {
+    if ($("#update-panel").hasClass('active')) {
+      e.preventDefault();
+      pushToDB();
+    }
+  });
 }
 
-function renderCodex(cat, data) {
+
+
+
+function loadLibrary() {
+  // Hide search pane.
+  fadeHide($(".search-pane"));
+
+  for (var i in categories) {
+    var cat = categories[i];
+    var data = $.ajax('../../data/codex/' + cat + '.json', { async: false }).responseText;
+    parseData = JSON.parse(data);
+    renderLibrary(cat, parseData);
+  }
+  fadeShow($(".library-pane"));
+  $(".library-pane").addClass("open");
+  pullFromDB();
+}
+
+function renderLibrary(cat, data) {
   var count = 0;
   var cat_id;
   switch (cat) {
@@ -176,11 +189,15 @@ function pushToDB() {
 }
 
 function toggleQuickModal() {
-  $("#addModal").modal('toggle');
+  if ($(".library-pane").hasClass("open")) {
+    $("#addModal").modal('toggle');
+  }
 }
 function submitQuickAdd() {
   var entry = $("#quickInput").val();
-  var search = $("h5:contains('" + entry + "')");
+  var search = $("h5:contains('" + entry + "')").filter(function() {
+    return $(this).text() === entry;
+  });
   if (search.length > 0) {
     if (!search.parent().hasClass("mastered")) {
       $("#addModal").modal('hide');

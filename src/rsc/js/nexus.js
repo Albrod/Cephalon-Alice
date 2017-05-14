@@ -58,3 +58,16 @@ $(function() {
     }, 500);
   });
 });
+
+function fadeHide(ele) {
+  ele.css("opacity", "0");
+  setTimeout(function(){
+    ele.css("display", "none");
+  }, 500);
+}
+function fadeShow(ele) {
+  ele.css("display", "");
+  setTimeout(function(){
+    ele.css("opacity", "");
+  }, 500);
+}

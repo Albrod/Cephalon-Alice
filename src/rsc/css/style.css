@@ -2,11 +2,27 @@ body .modal-open {
   overflow: scroll; !important;
 }
 
-.main-pane {
-  top: 120px;
+.library-pane {
+  top: 100px;
 
   transition: all .5s;
 }
+.search-pane {
+  margin-top: 15%;
+  top: 106px;
+
+  transition: all .5s;
+}
+
+#searchInput {
+  padding-right: 130px;
+}
+.btn-search-submit {
+  position: relative;
+  top: -50px;
+  left: calc(100% - 125px);
+}
+
 .navbar-brand {
   pointer-events: none;
 }
