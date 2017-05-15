@@ -24,10 +24,15 @@
     </div>
 
     <div class="navbar-collapse collapse" id="navbarColor01" aria-expanded="false" style="">
-      <ul class="navbar-nav mr-auto">
+      <!-- <ul class="navbar-nav mr-auto">
         <li><a class="nav-link" href="#warframes">Warframes</a></li>
         <li><a class="nav-link" href="#weapons">Weapons</a></li>
         <li><a class="nav-link" href="#companions">Companions</a></li>
+      </ul> -->
+
+      <ul class="navbar-nav mr-auto panel-nav">
+        <li><a class="nav-link panel-tabs" id="searchTab">Search</a></li>
+        <li><a class="nav-link panel-tabs" id="libraryTab">Codex</a></li>
       </ul>
 
       <form class="form-inline">
@@ -42,7 +47,7 @@
     <div class="row form-group">
       <div class="col-md-1"> </div>
       <form class="col-md-10">
-        <label class="col-form-label col-form-label-lg" for="inputLarge">What have you brought for me today, operator?</label>
+        <label class="col-form-label col-form-label-lg" for="inputLarge">What have you collected today, operator?</label>
         <input class="form-control form-control-lg" type="text" id="searchInput" autofocus autocomplete="off">
         <button class="btn btn-primary btn-search-update" type="submit">Submit</button>
         <span class="text-muted" onclick="loadLibrary()">(Or perhaps you'd like to see your codex?)</span>

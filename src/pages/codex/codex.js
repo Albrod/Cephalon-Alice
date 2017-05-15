@@ -15,6 +15,18 @@ function loadCodex() {
       commitLibraryChanges();
     }
   });
+  Mousetrap.bind('left', function(e) {
+    if ($(".library-pane").hasClass('active')) {
+      e.preventDefault();
+      loadSearch();
+    }
+  });
+  Mousetrap.bind('right', function(e) {
+    if ($(".search-pane").hasClass('active')) {
+      e.preventDefault();
+      loadLibrary();
+    }
+  });
   for (var i in categories) {
     var cat = categories[i];
     var rawData = $.ajax('../../data/codex/' + cat + '.json', { async: false }).responseText;
@@ -48,17 +60,32 @@ function loadCodex() {
   $(".search-feedback").click(function(event) {
     $(".search-feedback").hide(1000);
   });
+  $(".panel-tabs").click(function(event) {
+    if ($(this).attr("id") === "searchTab") {
+      loadSearch();
+    } else if ($(this).attr("id") === "libraryTab") {
+      loadLibrary();
+    }
+  });
 }
 
 
 function loadSearch() {
+  // Hide library pane.
+  fadeHide($(".library-pane"));
+  $(".panel-nav li.active").removeClass("active");
+
   fadeShow($(".search-pane"));
+    $("#searchTab").parent().addClass("active");
   $(".search-pane").addClass("active");
 }
 
 function loadLibrary() {
   // Hide search pane.
   fadeHide($(".search-pane"));
+  $(".panel-nav li.active").removeClass("active");
+
+
   for (var i in categories) {
     renderLibrary(categories[i]);
   }
@@ -66,6 +93,7 @@ function loadLibrary() {
 
   fadeShow($(".library-pane"));
   $("#total-counter").show();
+  $("#libraryTab").parent().addClass("active");
   $(".library-pane").addClass("active");
 }
 

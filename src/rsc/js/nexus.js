@@ -46,7 +46,7 @@ $(function() {
     }
   });
 
-  $(document).on('click', 'a', function(event){
+  $(document).on('click', 'a.anchor', function(event){
     event.preventDefault();
 
     $('html, body').animate({
