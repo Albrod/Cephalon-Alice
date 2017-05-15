@@ -256,6 +256,7 @@ function commitSearchChanges() {
   var res = val.split(",");
   var addArr = [];
   var errorArr = [];
+  var successArr = [];
 
   for (i in res) {
     var entry = res[i].trim();
@@ -266,10 +267,11 @@ function commitSearchChanges() {
       for (key2 in subData) {
         if (subData[key2] === entry) {
           var id = code + key2;
-          if ($.inArray(id, masteryArr)) {
+          if (masteryArr.indexOf(id) >= 0) {
             errorArr.push(entry);
           } else {
             addArr.push(id);
+            successArr.push(entry);
           }
         }
       }
@@ -282,7 +284,7 @@ function commitSearchChanges() {
     feedbackStr += "Please enter a comma-separated list of entries you wish to mark as mastered.";
   } else if (addArr.length > 0) {
     feedback.addClass("table-success");
-    feedbackStr += "Success! Added: " + addArr.toString() + ".";
+    feedbackStr += "Success! Added: " + successArr.toString() + ".";
   } else {
     feedback.addClass("table-warning");
     feedbackStr += "You've already mastered some of these: " + errorArr.toString() + ".";
