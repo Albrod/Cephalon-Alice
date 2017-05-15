@@ -1,0 +1,78 @@
+[
+  {
+    "id": "001",
+    "name": "Carrier"
+  },
+  {
+    "id": "002",
+    "name": "Dethcube"
+  },
+  {
+    "id": "003",
+    "name": "Diriga"
+  },
+  {
+    "id": "004",
+    "name": "Djinn"
+  },
+  {
+    "id": "005",
+    "name": "Helios"
+  },
+  {
+    "id": "006",
+    "name": "Shade"
+  },
+  {
+    "id": "007",
+    "name": "Taxon"
+  },
+  {
+    "id": "008",
+    "name": "Wyrm"
+  },
+  {
+    "id": "009",
+    "name": "Carrier Prime"
+  },
+  {
+    "id": "010",
+    "name": "Helios Prime"
+  },
+  {
+    "id": "011",
+    "name": "Prisma Shade"
+  },
+  {
+    "id": "012",
+    "name": "Chesa Kubrow"
+  },
+  {
+    "id": "013",
+    "name": "Helminth Charger"
+  },
+  {
+    "id": "014",
+    "name": "Huras Kubrow"
+  },
+  {
+    "id": "015",
+    "name": "Raksa Kubrow"
+  },
+  {
+    "id": "016",
+    "name": "Sahasa Kubrow"
+  },
+  {
+    "id": "017",
+    "name": "Sunika Kubrow"
+  },
+  {
+    "id": "018",
+    "name": "Adarza Kavat"
+  },
+  {
+    "id": "019",
+    "name": "Smeeta Kavat"
+  }
+]
