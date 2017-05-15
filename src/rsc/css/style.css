@@ -15,12 +15,14 @@ body .modal-open {
 }
 
 #searchInput {
-  padding-right: 130px;
+  padding-right: 140px;
 }
-.btn-search-submit {
+.btn-search-update {
   position: relative;
   top: -50px;
-  left: calc(100% - 125px);
+  left: calc(100% - 130px);
+}
+.search-feedback {
 }
 
 .navbar-brand {
@@ -30,7 +32,7 @@ body .modal-open {
 a.anchor {
     display: block;
     position: relative;
-    top: -250px;
+    top: -160px;
     visibility: hidden;
 }
 
@@ -162,7 +164,7 @@ a.anchor {
 
   transition: all .5s;
 }
-.gilded-img.gilded {
+.mastered:not(.dirty) .gilded-img, :not(.mastered).dirty .gilded-img {
   opacity: 1;
 }
 

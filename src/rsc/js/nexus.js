@@ -21,10 +21,6 @@ $(function() {
     });
   });
 
-  $(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-  })
-
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User logged in callback
@@ -66,8 +62,10 @@ function fadeHide(ele) {
   }, 500);
 }
 function fadeShow(ele) {
-  ele.css("display", "");
   setTimeout(function(){
-    ele.css("opacity", "");
+    ele.css("display", "");
+    setTimeout(function(){
+      ele.css("opacity", "");
+    }, 500);
   }, 500);
 }

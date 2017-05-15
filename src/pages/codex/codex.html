@@ -31,20 +31,34 @@
       </ul>
 
       <form class="form-inline">
-        <h5 style="opacity: 0;" class="mr-4 mb-0" id="total-counter"></h5>
+        <h5 style="display:none" class="mr-4 mb-0" id="total-counter"></h5>
         <button class="btn btn-secondary my-2 my-sm-0 btn-logout" type="submit">Logout</button>
       </form>
     </div>
   </nav>
 
-  <div style="display: none;opacity: 0;" class="container search-pane">
+  <!-- Search pane -->
+  <div style="display: none;opacity: 0;"class="container search-pane">
     <div class="row form-group">
       <div class="col-md-1"> </div>
-      <div class="col-md-10">
+      <form class="col-md-10">
         <label class="col-form-label col-form-label-lg" for="inputLarge">What have you brought for me today, operator?</label>
-        <input class="form-control form-control-lg" type="text" id="searchInput" autofocus>
-        <button class="btn btn-primary btn-search-submit" type="submit">Submit</button>
-        <span onclick="loadLibrary()">Full Codex</span>
+        <input class="form-control form-control-lg" type="text" id="searchInput" autofocus autocomplete="off">
+        <button class="btn btn-primary btn-search-update" type="submit">Submit</button>
+        <span class="text-muted" onclick="loadLibrary()">(Or perhaps you'd like to see your codex?)</span>
+      </form>
+      <div class="col-md-1"> </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1"> </div>
+      <div class="col-md-10">
+        <table style="display: none;" class="table table-striped table-hover table-bordered search-feedback">
+          <tbody>
+            <tr>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="col-md-1"> </div>
     </div>
@@ -132,6 +146,8 @@
   <script src="../../rsc/js/bootstrap.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
   <script src="../../rsc/js/nexus.js"></script>
+
+  <script src="../../rsc/js/typeahead.bundle.min.js"></script>
   <script src="../../rsc/js/mousetrap.min.js"></script>
 
   <script src="codex.js"></script>
