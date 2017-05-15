@@ -1,14 +1,50 @@
-{
-  "001": "Artax",
-  "002": "Deth Machine Rifle",
-  "003": "Laser Rifle",
-  "004": "Prime Laser Rifle",
-  "005": "Stinger",
-  "006": "Sweeper",
-  "007": "Sweeper Prime",
-  "008": "Vulklok",
-  "009": "Burst Laser",
-  "010": "Prisma Burst Laser",
-  "011": "Deconstructor",
-  "012": "Deconstructor Prime"
-}
+[
+  {
+    "id": "001",
+    "name": "Artax"
+  },
+  {
+    "id": "002",
+    "name": "Deth Machine Rifle"
+  },
+  {
+    "id": "003",
+    "name": "Laser Rifle"
+  },
+  {
+    "id": "004",
+    "name": "Prime Laser Rifle"
+  },
+  {
+    "id": "005",
+    "name": "Stinger"
+  },
+  {
+    "id": "006",
+    "name": "Sweeper"
+  },
+  {
+    "id": "007",
+    "name": "Sweeper Prime"
+  },
+  {
+    "id": "008",
+    "name": "Vulklok"
+  },
+  {
+    "id": "009",
+    "name": "Burst Laser"
+  },
+  {
+    "id": "010",
+    "name": "Prisma Burst Laser"
+  },
+  {
+    "id": "011",
+    "name": "Deconstructor"
+  },
+  {
+    "id": "012",
+    "name": "Deconstructor Prime"
+  }
+]

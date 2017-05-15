@@ -1,19 +1,70 @@
-{
-  "001": "Corvas",
-  "002": "Cyngas",
-  "003": "Dual Decurion",
-  "004": "Fluctus",
-  "005": "Grattler",
-  "006": "Imperator",
-  "007": "Imperator Vandal",
-  "008": "Phaedra",
-  "009": "Velocitus",
-  "010": "Agkuza",
-  "011": "Centaur",
-  "012": "Kaszas",
-  "013": "Knux",
-  "014": "Onorix",
-  "015": "Rathbone",
-  "016": "Veritux",
-  "017": "Prisma Veritux"
-}
+[
+  {
+    "id": "001",
+    "name": "Corvas"
+  },
+  {
+    "id": "002",
+    "name": "Cyngas"
+  },
+  {
+    "id": "003",
+    "name": "Dual Decurion"
+  },
+  {
+    "id": "004",
+    "name": "Fluctus"
+  },
+  {
+    "id": "005",
+    "name": "Grattler"
+  },
+  {
+    "id": "006",
+    "name": "Imperator"
+  },
+  {
+    "id": "007",
+    "name": "Imperator Vandal"
+  },
+  {
+    "id": "008",
+    "name": "Phaedra"
+  },
+  {
+    "id": "009",
+    "name": "Velocitus"
+  },
+  {
+    "id": "010",
+    "name": "Agkuza"
+  },
+  {
+    "id": "011",
+    "name": "Centaur"
+  },
+  {
+    "id": "012",
+    "name": "Kaszas"
+  },
+  {
+    "id": "013",
+    "name": "Knux"
+  },
+  {
+    "id": "014",
+    "name": "Onorix"
+  },
+  {
+    "id": "015",
+    "name": "Rathbone"
+  },
+  {
+    "id": "016",
+    "name": "Veritux"
+  },
+  {
+    "id": "017",
+    "name": "Prisma Veritux"
+  }
+]

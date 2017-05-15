@@ -34,8 +34,12 @@ function loadCodex() {
   }
   masteryListener();
 
-  loadSearch();
-  //loadLibrary();
+  var load = getURLParameter("load");
+  if (load === "codex") {
+    loadLibrary();
+  } else {
+    loadSearch();
+  }
 
   $(".btn-search-update").click(function( e ) {
     e.preventDefault();
@@ -74,9 +78,9 @@ function loadSearch() {
   // Hide library pane.
   fadeHide($(".library-pane"));
   $(".panel-nav li.active").removeClass("active");
+  $("#searchTab").parent().addClass("active");
 
   fadeShow($(".search-pane"));
-    $("#searchTab").parent().addClass("active");
   $(".search-pane").addClass("active");
 }
 
@@ -84,7 +88,7 @@ function loadLibrary() {
   // Hide search pane.
   fadeHide($(".search-pane"));
   $(".panel-nav li.active").removeClass("active");
-
+  $("#libraryTab").parent().addClass("active");
 
   for (var i in categories) {
     renderLibrary(categories[i]);
@@ -93,7 +97,6 @@ function loadLibrary() {
 
   fadeShow($(".library-pane"));
   $("#total-counter").show();
-  $("#libraryTab").parent().addClass("active");
   $(".library-pane").addClass("active");
 }
 
@@ -121,10 +124,14 @@ function renderLibrary(cat) {
     break;
   }
 
-  var sortArr = sortData(fullData[cat]);
+  // Sort alphanumerically.
+  var sortArr = fullData[cat].sort(function (a, b) {
+    return a.name.localeCompare(b.name);
+  });
+
   $.each( sortArr, function( i, obj ) {
-    var id = obj.key;
-    var entry = obj.value;
+    var id = obj.id;
+    var entry = obj.name;
     var row = null;
     // Check if new row is needed.
 
@@ -265,7 +272,7 @@ function commitSearchChanges() {
       var code = catName(key);
       var subData = fullData[key];
       for (key2 in subData) {
-        if (subData[key2] === entry) {
+        if (subData[key2].name === entry) {
           var id = code + key2;
           if (masteryArr.indexOf(id) >= 0) {
             errorArr.push(entry);
@@ -346,15 +353,6 @@ function submitQuickAdd() {
 
 
 // Utilities
-function sortData(data) {
-  var sort_array = [];
-  for (var key in data) {
-    sort_array.push({key:key,value:data[key]});
-  }
-  sort_array.sort(function(a,b){return a.value.localeCompare(b.value)});
-  return sort_array;
-}
-
 function catID(id) {
   var code = (''+id)[0];
   switch (code) {
