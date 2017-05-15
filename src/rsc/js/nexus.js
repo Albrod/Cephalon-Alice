@@ -69,6 +69,12 @@ function fadeShow(ele) {
     }, 500);
   }, 500);
 }
+function fastShow(ele) {
+  ele.css("display", "");
+  setTimeout(function(){
+    ele.css("opacity", "");
+  }, 250);
+}
 function getURLParameter(name) {
   return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
 }

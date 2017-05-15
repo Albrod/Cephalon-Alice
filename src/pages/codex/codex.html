@@ -25,136 +25,142 @@
 
     <div class="navbar-collapse collapse" id="navbarColor01" aria-expanded="false" style="">
       <!-- <ul class="navbar-nav mr-auto">
-        <li><a class="nav-link" href="#warframes">Warframes</a></li>
-        <li><a class="nav-link" href="#weapons">Weapons</a></li>
-        <li><a class="nav-link" href="#companions">Companions</a></li>
-      </ul> -->
+      <li><a class="nav-link" href="#warframes">Warframes</a></li>
+      <li><a class="nav-link" href="#weapons">Weapons</a></li>
+      <li><a class="nav-link" href="#companions">Companions</a></li>
+    </ul> -->
 
-      <ul class="navbar-nav mr-auto panel-nav">
-        <li><a class="nav-link panel-tabs" id="searchTab">Search</a></li>
-        <li><a class="nav-link panel-tabs" id="libraryTab">Codex</a></li>
-      </ul>
+    <ul class="navbar-nav mr-auto panel-nav">
+      <li><a class="nav-link panel-tabs" id="searchTab">Search</a></li>
+      <li><a class="nav-link panel-tabs" id="libraryTab">Codex</a></li>
+    </ul>
 
-      <form class="form-inline">
-        <h5 style="display:none" class="mr-4 mb-0" id="total-counter"></h5>
-        <button class="btn btn-secondary my-2 my-sm-0 btn-logout" type="submit">Logout</button>
-      </form>
+    <form class="form-inline">
+      <h5 style="display:none" class="mr-4 mb-0" id="total-counter"></h5>
+      <button class="btn btn-secondary my-2 my-sm-0 btn-logout" type="submit">Logout</button>
+    </form>
+  </div>
+</nav>
+
+<!-- Search pane -->
+<div style="display: none;opacity: 0;"class="container search-pane">
+  <div class="row">
+    <div class="col-md-1"> </div>
+    <div class="col-md-10">
+      <label class="col-form-label col-form-label-lg" for="searchInput">What have you collected today, operator?</label>
     </div>
-  </nav>
-
-  <!-- Search pane -->
-  <div style="display: none;opacity: 0;"class="container search-pane">
-    <div class="row form-group">
-      <div class="col-md-1"> </div>
-      <form class="col-md-10">
-        <label class="col-form-label col-form-label-lg" for="inputLarge">What have you collected today, operator?</label>
-        <input class="form-control form-control-lg" type="text" id="searchInput" autofocus autocomplete="off">
-        <button class="btn btn-primary btn-search-update" type="submit">Submit</button>
-        <span class="text-muted" onclick="loadLibrary()">(Or perhaps you'd like to see your codex?)</span>
-      </form>
-      <div class="col-md-1"> </div>
+    <div class="col-md-1"> </div>
+  </div>
+  <div class="row form-group">
+    <div class="col-md-1"> </div>
+    <form class="col-md-10">
+      <input class="form-control form-control-lg" type="text" id="searchInput">
+      <button class="btn btn-primary btn-search-update" type="submit">Submit</button>
+      <span class="text-muted" onclick="loadLibrary()">(Or perhaps you'd like to see your codex?)</span>
+    </form>
+    <div class="col-md-1"> </div>
+  </div>
+  <div class="row">
+    <div class="col-md-1"> </div>
+    <div class="col-md-10">
+      <table style="display: none;opacity: 0" class="table table-hover table-bordered search-feedback">
+        <tbody>
+          <tr>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+    <div class="col-md-1"> </div>
+  </div>
+</div>
+
+<!-- Library pane -->
+<div style="display: none;opacity: 0;" class="mt-1 container library-pane">
+  <h1 class="mb-3">Warframes <small class="text-muted" id="warframesCounter"></small></h1>
+  <a class="anchor" id="warframes"></a>
+  <div class="text-center codex-div" id="warframesDiv">
     <div class="row">
-      <div class="col-md-1"> </div>
-      <div class="col-md-10">
-        <table style="display: none;" class="table table-striped table-hover table-bordered search-feedback">
-          <tbody>
-            <tr>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col-md-1"> </div>
+    </div>
+  </div>
+  <h1 class="mb-3">Archwings <small class="text-muted" id="archwingsCounter"></small></h1>
+  <a class="anchor" id="archwings"></a>
+  <div class="text-center codex-div" id="archwingsDiv">
+    <div class="row">
+    </div>
+  </div>
+  <h1 class="mb-3">Weapons <small class="text-muted" id="weaponsCounter"></small></h1>
+  <a class="anchor" id="weapons"></a>
+  <div class="text-center codex-div" id="weaponsDiv">
+    <div class="row">
+    </div>
+  </div>
+  <h1 class="mb-3">Archwing Weapons <small class="text-muted" id="archwingWeaponsCounter"></small></h1>
+  <a class="anchor" id="archwingWeapons"></a>
+  <div class="text-center codex-div" id="archwingWeaponsDiv">
+    <div class="row">
+    </div>
+  </div>
+  <h1 class="mb-3">Companions <small class="text-muted" id="companionsCounter"></small></h1>
+  <a class="anchor" id="companions"></a>
+  <div class="text-center codex-div" id="companionsDiv">
+    <div class="row">
+    </div>
+  </div>
+  <h1 class="mb-3">Sentinel Weapons <small class="text-muted" id="sentinelWeaponsCounter"></small></h1>
+  <a class="anchor" id="sentinelWeapons"></a>
+  <div class="text-center codex-div" id="sentinelWeaponsDiv">
+    <div class="row">
     </div>
   </div>
 
-  <!-- Library pane -->
-  <div style="display: none;opacity: 0;" class="mt-1 container library-pane">
-    <h1 class="mb-3">Warframes <small class="text-muted" id="warframesCounter"></small></h1>
-    <a class="anchor" id="warframes"></a>
-    <div class="text-center codex-div" id="warframesDiv">
-      <div class="row">
-      </div>
-    </div>
-    <h1 class="mb-3">Archwings <small class="text-muted" id="archwingsCounter"></small></h1>
-    <a class="anchor" id="archwings"></a>
-    <div class="text-center codex-div" id="archwingsDiv">
-      <div class="row">
-      </div>
-    </div>
-    <h1 class="mb-3">Weapons <small class="text-muted" id="weaponsCounter"></small></h1>
-    <a class="anchor" id="weapons"></a>
-    <div class="text-center codex-div" id="weaponsDiv">
-      <div class="row">
-      </div>
-    </div>
-    <h1 class="mb-3">Archwing Weapons <small class="text-muted" id="archwingWeaponsCounter"></small></h1>
-    <a class="anchor" id="archwingWeapons"></a>
-    <div class="text-center codex-div" id="archwingWeaponsDiv">
-      <div class="row">
-      </div>
-    </div>
-    <h1 class="mb-3">Companions <small class="text-muted" id="companionsCounter"></small></h1>
-    <a class="anchor" id="companions"></a>
-    <div class="text-center codex-div" id="companionsDiv">
-      <div class="row">
-      </div>
-    </div>
-    <h1 class="mb-3">Sentinel Weapons <small class="text-muted" id="sentinelWeaponsCounter"></small></h1>
-    <a class="anchor" id="sentinelWeapons"></a>
-    <div class="text-center codex-div" id="sentinelWeaponsDiv">
-      <div class="row">
-      </div>
-    </div>
-
-    <!-- Site footer -->
-    <footer class="mt-5 footer text-center" id="site-footer">
-      <div class="container">
-        Images sourced from <a src="http://warframe.wikia.com">Warframe Wiki</a>, with assets belonging to the Digital Extremes videogame <a src="https://www.warframe.com/">Warframe.</a>
-      </div>
-    </footer>
-  </div>
-
-  <!-- Update panel -->
-  <footer class="footer" id="update-panel">
+  <!-- Site footer -->
+  <footer class="mt-5 footer text-center" id="site-footer">
     <div class="container">
-      <button class="btn btn-secondary my-2 mr-4 btn-update float-right" type="submit">Update</button>
-      <p class="mr-3 float-right" id="update-text"></p>
+      Images sourced from <a src="http://warframe.wikia.com">Warframe Wiki</a>, with assets belonging to the Digital Extremes videogame <a src="https://www.warframe.com/">Warframe.</a>
     </div>
   </footer>
+</div>
 
-  <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Quick Add</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="form-group modal-body">
-          Quickly, Operator. What have you mastered? <small>(Case sensitive!)</small>
-          <input type="text" class="form-control" id="quickInput"/>
-          <div class="form-control-feedback" id="quickInputFeedback"></div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="submitQuickAdd()">Submit</button>
-        </div>
+<!-- Update panel -->
+<footer class="footer" id="update-panel">
+  <div class="container">
+    <button class="btn btn-secondary my-2 mr-4 btn-update float-right" type="submit">Update</button>
+    <p class="mr-3 float-right" id="update-text"></p>
+  </div>
+</footer>
+
+<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Quick Add</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="form-group modal-body">
+        Quickly, Operator. What have you mastered? <small>(Case sensitive!)</small>
+        <input type="text" class="form-control" id="quickInput"/>
+        <div class="form-control-feedback" id="quickInputFeedback"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="submitQuickAdd()">Submit</button>
       </div>
     </div>
   </div>
+</div>
 
-  <script src="../../rsc/js/jquery-3.2.1.min.js"></script>
-  <script src="../../rsc/js/tether.min.js"></script>
-  <script src="../../rsc/js/bootstrap.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-  <script src="../../rsc/js/nexus.js"></script>
+<script src="../../rsc/js/jquery-3.2.1.min.js"></script>
+<script src="../../rsc/js/tether.min.js"></script>
+<script src="../../rsc/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script src="../../rsc/js/nexus.js"></script>
 
-  <script src="../../rsc/js/typeahead.bundle.min.js"></script>
-  <script src="../../rsc/js/mousetrap.min.js"></script>
+<script src="../../rsc/js/typeahead.bundle.min.js"></script>
+<script src="../../rsc/js/mousetrap.min.js"></script>
 
-  <script src="codex.js"></script>
+<script src="codex.js"></script>
 </body>
 </html>

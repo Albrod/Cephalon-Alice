@@ -14,27 +14,15 @@ body .modal-open {
   transition: all .5s;
 }
 
-#searchInput {
-  padding-right: 140px;
-}
-.btn-search-update {
-  position: relative;
-  top: -50px;
-  left: calc(100% - 130px);
-}
-.search-feedback {
-  font-size: 1.4em;
-}
-
 .navbar-brand {
   pointer-events: none;
 }
 
 a.anchor {
-    display: block;
-    position: relative;
-    top: -160px;
-    visibility: hidden;
+  display: block;
+  position: relative;
+  top: -160px;
+  visibility: hidden;
 }
 
 .footer {
@@ -117,12 +105,12 @@ a.anchor {
     display: block;
     font-size: .75em;
   }
- }
- @media (min-width: 992px) {
-   .codex-entry h5 {
-     font-size: 1em;
-   }
- }
+}
+@media (min-width: 992px) {
+  .codex-entry h5 {
+    font-size: 1em;
+  }
+}
 
 
 .codex-img {
@@ -147,11 +135,11 @@ a.anchor {
   background: #666666;
   border: 7px solid green;
 }
- .codex-entry.mastered.dirty .codex-img {
-   opacity: 0.5;
-   background: #666666;
-   border: 7px solid orange;
- }
+.codex-entry.mastered.dirty .codex-img {
+  opacity: 0.5;
+  background: #666666;
+  border: 7px solid orange;
+}
 
 .gilded-img {
   height: auto;
@@ -177,4 +165,45 @@ a.anchor {
 }
 .codex-entry.dirty h5 {
   text-decoration: line-through;
+}
+
+
+#searchInput {
+  padding-right: 140px;
+  color: black;
+}
+.btn-search-update {
+  position: relative;
+  top: -50px;
+  left: calc(100% - 130px);
+}
+.search-feedback {
+  font-size: 1.4em;
+
+  transition: all .5s;
+}
+
+
+/*Bootstrap overwrite*/
+span.twitter-typeahead {
+  position: relative;
+  display: block !important;
+  width: 100%;
+}
+.tt-hint {
+  padding-right: 140px;
+}
+.tt-menu {
+  /*display: block !important;*/
+
+  padding: 10px 5px;
+  width: 50%;
+  font-size: 1.3em;
+  overflow-y: scroll;
+  max-height: 300px;
+
+  background: white;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-top: 0;
+  box-shadow: 10px 10px 5px #888888;
 }

@@ -34,6 +34,8 @@ function loadCodex() {
   }
   masteryListener();
 
+  initTypeahead();
+
   var load = getURLParameter("load");
   if (load === "codex") {
     loadLibrary();
@@ -62,7 +64,7 @@ function loadCodex() {
     $('#quickInput').focus()
   })
   $(".search-feedback").click(function(event) {
-    $(".search-feedback").hide(1000);
+    fadeHide($(".search-feedback"));
   });
   $(".panel-tabs").click(function(event) {
     if ($(this).attr("id") === "searchTab") {
@@ -72,7 +74,6 @@ function loadCodex() {
     }
   });
 }
-
 
 function loadSearch() {
   // Hide library pane.
@@ -258,54 +259,55 @@ function commitLibraryChanges() {
 }
 
 function commitSearchChanges() {
+  var feedback = $(".search-feedback");
+  feedback.removeClass("table-success");
+  feedback.removeClass("table-warning");
+
   // Compile changes from search.
   var val = $("#searchInput").val();
-  var res = val.split(",");
-  var addArr = [];
-  var errorArr = [];
-  var successArr = [];
+  retCode = -1;
+  retVal = null;
 
-  for (i in res) {
-    var entry = res[i].trim();
-    // Search for entry in data.
-    for (key in fullData) {
-      var code = catName(key);
-      var subData = fullData[key];
-      for (key2 in subData) {
-        if (subData[key2].name === entry) {
-          var id = code + subData[key2].id;
-          if (masteryArr.indexOf(id) >= 0) {
-            errorArr.push(entry);
-          } else {
-            addArr.push(id);
-            successArr.push(entry);
-          }
+  var entry = val.trim();
+  // Search for entry in data.
+  for (key in fullData) {
+    var code = catName(key);
+    var subData = fullData[key];
+    for (key2 in subData) {
+      if (subData[key2].name === entry) {
+        var id = code + subData[key2].id;
+        if (masteryArr.indexOf(id) >= 0) {
+          retCode = 1;
+        } else {
+          retCode = 0;
+          retVal = id;
         }
       }
     }
   }
 
-  var feedback = $(".search-feedback");
   var feedbackStr = "";
-  if (errorArr.length === 0 && addArr.length === 0) {
-    feedbackStr += "Please enter a comma-separated list of entries you wish to mark as mastered. ";
+  if (retCode === -1) {
+    feedbackStr = "Please enter <i>something</i> of value, operator.";
   }
-  if (addArr.length > 0) {
+  else if (retCode === 0) {
+    pushToDB([retVal], []);
+
     feedback.addClass("table-success");
-    feedbackStr += "Success! Added: " + successArr.toString() + ". ";
+    feedbackStr = "Success! " + entry + " added to codex, operator.";
   }
-  if (errorArr.length > 0) {
+  if (retCode === 1) {
     feedback.addClass("table-warning");
-    feedbackStr += "You've already mastered some of these: " + errorArr.toString() + ".";
+    feedbackStr += "You've already mastered " + entry + ", operator.";
   }
   feedback.html(feedbackStr);
-  pushToDB(addArr, []);
 
+  $('#searchInput').typeahead('close');
   $("#searchInput").val("");
-  feedback.show(1000);
+  fastShow(feedback);
   setTimeout(function(){
-    feedback.hide(1000);
-  }, 10000);
+    fadeHide(feedback);
+  }, 7500);
 }
 
 function pushToDB(addArr, delArr) {
@@ -389,4 +391,148 @@ function searchByName(name) {
     var cat = categories[i];
     console.log("Please implement me!");
   }
+}
+
+// Typeahead
+function initTypeahead() {
+  var warframesHound = new Bloodhound({
+    datumTokenizer: function (d) { return Bloodhound.tokenizers.whitespace(d.name); },
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    prefetch: {
+      cache: false,
+      url: '../../data/codex/warframes.json',
+      filter: function(list) {
+        return $.map(list, function(item) {
+          return {
+            name: item.name
+          };
+        });
+      }
+    }
+  });
+  var archwingsHound = new Bloodhound({
+    datumTokenizer: function (d) { return Bloodhound.tokenizers.whitespace(d.name); },
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    prefetch: {
+      cache: false,
+      url: '../../data/codex/archwings.json',
+      filter: function(list) {
+        return $.map(list, function(item) {
+          return {
+            name: item.name
+          };
+        });
+      }
+    }
+  });
+  var weaponsHound = new Bloodhound({
+    datumTokenizer: function (d) { return Bloodhound.tokenizers.whitespace(d.name); },
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    prefetch: {
+      cache: false,
+      url: '../../data/codex/weapons.json',
+      filter: function(list) {
+        return $.map(list, function(item) {
+          return {
+            name: item.name
+          };
+        });
+      }
+    }
+  });
+  var archwingWeaponsHound = new Bloodhound({
+    datumTokenizer: function (d) { return Bloodhound.tokenizers.whitespace(d.name); },
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    prefetch: {
+      cache: false,
+      url: '../../data/codex/archwingWeapons.json',
+      filter: function(list) {
+        return $.map(list, function(item) {
+          return {
+            name: item.name
+          };
+        });
+      }
+    }
+  });
+  var companionsHound = new Bloodhound({
+    datumTokenizer: function (d) { return Bloodhound.tokenizers.whitespace(d.name); },
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    prefetch: {
+      cache: false,
+      url: '../../data/codex/companions.json',
+      filter: function(list) {
+        return $.map(list, function(item) {
+          return {
+            name: item.name
+          };
+        });
+      }
+    }
+  });
+  var sentinelWeaponsHound = new Bloodhound({
+    datumTokenizer: function (d) { return Bloodhound.tokenizers.whitespace(d.name); },
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    prefetch: {
+      cache: false,
+      url: '../../data/codex/sentinelWeapons.json',
+      filter: function(list) {
+        return $.map(list, function(item) {
+          return {
+            name: item.name
+          };
+        });
+      }
+    }
+  });
+
+
+  $('#searchInput').typeahead({
+    name: 'searchAhead',
+    hint: true,
+    highlight: true,
+    minLength: 1
+  },{
+    name: 'warframes',
+    source: warframesHound,
+    display: function (d) { return d.name; },
+    templates: {
+      header: '<h5 class="mt-2">Warframes</h5>'
+    }
+  },{
+    name: 'archwings',
+    source: archwingsHound,
+    display: function (d) { return d.name; },
+    templates: {
+      header: '<h5 class="mt-2">Archwings</h5>'
+    }
+  },{
+    name: 'weapons',
+    source: weaponsHound,
+    display: function (d) { return d.name; },
+    templates: {
+      header: '<h5 class="mt-2">Weapons</h5>'
+    }
+  },{
+    name: 'archwingWeapons',
+    source: archwingWeaponsHound,
+    display: function (d) { return d.name; },
+    templates: {
+      header: '<h5 class="mt-2">Archwing Weapons</h5>'
+    }
+  },{
+    name: 'companions',
+    source: companionsHound,
+    display: function (d) { return d.name; },
+    templates: {
+      header: '<h5 class="mt-2">Companions</h5>'
+    }
+  },{
+    name: 'sentinelWeapons',
+    source: sentinelWeaponsHound,
+    display: function (d) { return d.name; },
+    templates: {
+      header: '<h5 class="mt-2">Sentinel Weapons</h5>'
+    }
+  });
 }
