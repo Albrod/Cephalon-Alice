@@ -43,6 +43,7 @@ function loadCodex() {
     loadSearch();
   }
 
+  $(document).on("scroll", onScroll);
   $(".btn-search-update").click(function( e ) {
     e.preventDefault();
     commitSearchChanges();
@@ -73,12 +74,21 @@ function loadCodex() {
       loadLibrary();
     }
   });
+  $(".nav-icon").click(function(event) {
+    var anchor = $(this).data("anchor");
+    $('html, body').animate({
+      scrollTop: $(".anchor#" + anchor).offset().top
+    }, 500);
+  });
 }
+
+
 
 function loadSearch() {
   // Hide library pane.
   fadeHide($(".library-pane"));
   $(".panel-nav li.active").removeClass("active");
+  $(".library-sidebar").removeClass("active");
   $("#searchTab").parent().addClass("active");
 
   fadeShow($(".search-pane"));
@@ -90,6 +100,7 @@ function loadLibrary() {
   fadeHide($(".search-pane"));
   $(".panel-nav li.active").removeClass("active");
   $("#libraryTab").parent().addClass("active");
+  $(".library-sidebar").addClass("active");
 
   for (var i in categories) {
     renderLibrary(categories[i]);
@@ -148,7 +159,17 @@ function renderLibrary(cat) {
         dirtyEntry(div);
       });
 
-      $('<h5>', {class: "mt-2", text: entry}).appendTo(entryDiv)
+      // Check for long text.
+      var wordArr = entry.split(" ");
+      wordArr = wordArr.sort(function(a,b) {
+        return b.length - a.length;
+      });
+      var size = wordArr[0].length;
+      if (size > 12) {
+        $('<h5>', {class: "mt-2", text: entry, style: "font-size: x-small"}).appendTo(entryDiv);
+      } else {
+        $('<h5>', {class: "mt-2", text: entry}).appendTo(entryDiv);
+      }
       var gildedImg = $('<img>', {class: "gilded-img", src: "../../rsc/img/gold_logo.png"}).appendTo(entryDiv);
       gildedImg.click(function( e ) {
         dirtyEntry($(this).parent());
@@ -160,7 +181,17 @@ function renderLibrary(cat) {
         dirtyEntry(div);
       });
 
-      $('<h5>', {class: "mt-2", text: entry}).appendTo(entryDiv);
+      // Check for long text.
+      var wordArr = entry.split(" ");
+      wordArr = wordArr.sort(function(a,b) {
+        return b.length - a.length;
+      });
+      var size = wordArr[0].length;
+      if (size > 12) {
+        $('<h5>', {class: "mt-2", text: entry, style: "font-size: x-small"}).appendTo(entryDiv);
+      } else {
+        $('<h5>', {class: "mt-2", text: entry}).appendTo(entryDiv);
+      }
       var gildedImg = $('<img>', {class: "gilded-img", src: "../../rsc/img/gold_logo.png"}).appendTo(entryDiv);
       gildedImg.click(function( e ) {
         dirtyEntry($(this).parent());
@@ -170,8 +201,7 @@ function renderLibrary(cat) {
     count++;
   });
   totals[cat_id - 1] = count;
-  setTimeout(renderMastery(), 500);
-
+  setTimeout(renderMastery(), 300);
 }
 
 // Apply gilded style and dirty bit to entryDiv

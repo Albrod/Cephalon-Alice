@@ -21,7 +21,7 @@ body .modal-open {
 a.anchor {
   display: block;
   position: relative;
-  top: -160px;
+  top: -100px;
   visibility: hidden;
 }
 
@@ -61,6 +61,41 @@ a.anchor {
 
   pointer-events: all;
 }
+
+.library-sidebar {
+  position: fixed;
+  top:15%;
+  left: -5%;
+
+  transition: left .5s;
+}
+.library-sidebar.active {
+  left: 0;
+}
+.library-sidebar img {
+  width: 40px;
+
+  border-radius: 50%;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: black;
+
+  transition: all .25s;
+}
+.library-sidebar img.active {
+  filter: invert(100%);
+}
+@media(min-width:576px){
+  .library-sidebar img {
+    width: 51px;
+    border-radius: 50%;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: black;
+    border: 1px solid white;
+  }
+}
+
 
 #addModal {
   top: 20%;
