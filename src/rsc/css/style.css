@@ -23,6 +23,7 @@ body .modal-open {
   left: calc(100% - 130px);
 }
 .search-feedback {
+  font-size: 1.4em;
 }
 
 .navbar-brand {

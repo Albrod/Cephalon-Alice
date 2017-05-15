@@ -273,7 +273,7 @@ function commitSearchChanges() {
       var subData = fullData[key];
       for (key2 in subData) {
         if (subData[key2].name === entry) {
-          var id = code + key2;
+          var id = code + subData[key2].id;
           if (masteryArr.indexOf(id) >= 0) {
             errorArr.push(entry);
           } else {
@@ -288,17 +288,20 @@ function commitSearchChanges() {
   var feedback = $(".search-feedback");
   var feedbackStr = "";
   if (errorArr.length === 0 && addArr.length === 0) {
-    feedbackStr += "Please enter a comma-separated list of entries you wish to mark as mastered.";
-  } else if (addArr.length > 0) {
+    feedbackStr += "Please enter a comma-separated list of entries you wish to mark as mastered. ";
+  }
+  if (addArr.length > 0) {
     feedback.addClass("table-success");
-    feedbackStr += "Success! Added: " + successArr.toString() + ".";
-  } else {
+    feedbackStr += "Success! Added: " + successArr.toString() + ". ";
+  }
+  if (errorArr.length > 0) {
     feedback.addClass("table-warning");
     feedbackStr += "You've already mastered some of these: " + errorArr.toString() + ".";
   }
-
   feedback.html(feedbackStr);
   pushToDB(addArr, []);
+
+  $("#searchInput").val("");
   feedback.show(1000);
   setTimeout(function(){
     feedback.hide(1000);
