@@ -27,6 +27,9 @@ function loadCodex() {
       loadLibrary();
     }
   });
+  Mousetrap.bind('?', function(e) {
+    toggleHelpModal();
+  });
   for (var i in categories) {
     var cat = categories[i];
     var rawData = $.ajax('../../data/codex/' + cat + '.json', { async: false }).responseText;
@@ -355,6 +358,11 @@ function pushToDB(addArr, delArr) {
     updates['/users/' + userID + '/codex/' + delArr[i]] = null;
   }
   return firebase.database().ref().update(updates);
+}
+
+
+function toggleHelpModal() {
+  $("#helpModal").modal('toggle');
 }
 
 function toggleQuickModal() {
