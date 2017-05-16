@@ -18,13 +18,13 @@ function loadCodex() {
   Mousetrap.bind('left', function(e) {
     if ($(".library-pane").hasClass('active')) {
       e.preventDefault();
-      loadSearch();
+      loadSearchPanel();
     }
   });
   Mousetrap.bind('right', function(e) {
     if ($(".search-pane").hasClass('active')) {
       e.preventDefault();
-      loadLibrary();
+      loadLibraryPanel();
     }
   });
   Mousetrap.bind('?', function(e) {
@@ -35,15 +35,16 @@ function loadCodex() {
     var rawData = $.ajax('../../data/codex/' + cat + '.json', { async: false }).responseText;
     fullData[cat] = JSON.parse(rawData);
   }
-  masteryListener();
 
+  preloadLibrary();
+  masteryListener();
   initTypeahead();
 
   var load = getURLParameter("load");
   if (load === "codex") {
-    loadLibrary();
+    loadLibraryPanel();
   } else {
-    loadSearch();
+    loadSearchPanel();
   }
 
   $(document).on("scroll", onScroll);
@@ -72,9 +73,9 @@ function loadCodex() {
   });
   $(".panel-tabs").click(function(event) {
     if ($(this).attr("id") === "searchTab") {
-      loadSearch();
+      loadSearchPanel();
     } else if ($(this).attr("id") === "libraryTab") {
-      loadLibrary();
+      loadLibraryPanel();
     }
   });
   $(".nav-icon").click(function(event) {
@@ -85,38 +86,41 @@ function loadCodex() {
   });
 }
 
+function preloadLibrary() {
+  for (var i in categories) {
+    renderLibrary(categories[i]);
+  }
+  updateTotals();
+}
 
-
-function loadSearch() {
+function loadSearchPanel() {
   // Hide library pane.
   fadeHide($(".library-pane"));
-  $(".panel-nav li.active").removeClass("active");
-  $(".library-sidebar").removeClass("active");
+  $("#total-counter").hide();
   $(".library-pane").removeClass("active");
 
+  $(".panel-nav li.active").removeClass("active");
+  $(".library-sidebar").removeClass("active");
   $("#searchTab").parent().addClass("active");
 
   fadeShow($(".search-pane"));
   $(".search-pane").addClass("active");
 }
 
-function loadLibrary() {
+function loadLibraryPanel() {
   // Hide search pane.
   fadeHide($(".search-pane"));
-  $(".panel-nav li.active").removeClass("active");
   $(".search-pane").removeClass("active");
 
-  $("#libraryTab").parent().addClass("active");
+  $(".panel-nav li.active").removeClass("active");
   $(".library-sidebar").addClass("active");
-
-  for (var i in categories) {
-    renderLibrary(categories[i]);
-  }
-  updateTotals();
+  $("#libraryTab").parent().addClass("active");
 
   fadeShow($(".library-pane"));
   $("#total-counter").show();
   $(".library-pane").addClass("active");
+
+  renderMastery();
 }
 
 function renderLibrary(cat) {
@@ -339,8 +343,12 @@ function commitSearchChanges() {
   }
   feedback.html(feedbackStr);
 
-  $('#searchInput').typeahead('close');
-  $("#searchInput").val("");
+  var input = $("#searchInput");
+  input.typeahead('close');
+  input.typeahead('val', '');
+  input.val("");
+  input.blur();
+
   fastShow(feedback);
   setTimeout(function(){
     fadeHide(feedback);
