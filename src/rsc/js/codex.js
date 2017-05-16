@@ -32,7 +32,7 @@ function loadCodex() {
   });
   for (var i in categories) {
     var cat = categories[i];
-    var rawData = $.ajax('../../data/codex/' + cat + '.json', { async: false }).responseText;
+    var rawData = $.ajax('data/' + cat + '.json', { async: false }).responseText;
     fullData[cat] = JSON.parse(rawData);
   }
 
@@ -162,7 +162,7 @@ function renderLibrary(cat) {
     var entryDiv = $('<div>', {class: "col-md-2 mb-2 codex-entry", id: cat_id + id}).appendTo(row);
 
     var entryImg = null;
-    var image_url = "../../rsc/img/" + cat + "/" + entry + ".png";
+    var image_url = "rsc/img/" + cat + "/" + entry + ".png";
     $.get(image_url).done(function() {
       entryImg = $('<img>', {class: "codex-img", src: image_url}).appendTo(entryDiv);
       entryImg.click(function( e ) {
@@ -181,12 +181,12 @@ function renderLibrary(cat) {
       } else {
         $('<h5>', {class: "mt-2", text: entry}).appendTo(entryDiv);
       }
-      var gildedImg = $('<img>', {class: "gilded-img", src: "../../rsc/img/gold_logo.png"}).appendTo(entryDiv);
+      var gildedImg = $('<img>', {class: "gilded-img", src: "rsc/img/gold_logo.png"}).appendTo(entryDiv);
       gildedImg.click(function( e ) {
         dirtyEntry($(this).parent());
       });
     }).fail(function() {
-      entryImg = $('<img>', {class: "codex-img", src: "../../rsc/img/silver_logo.png"}).appendTo(entryDiv);
+      entryImg = $('<img>', {class: "codex-img", src: "rsc/img/silver_logo.png"}).appendTo(entryDiv);
       entryImg.click(function( e ) {
         var div = $(this).parent();
         dirtyEntry(div);
@@ -203,7 +203,7 @@ function renderLibrary(cat) {
       } else {
         $('<h5>', {class: "mt-2", text: entry}).appendTo(entryDiv);
       }
-      var gildedImg = $('<img>', {class: "gilded-img", src: "../../rsc/img/gold_logo.png"}).appendTo(entryDiv);
+      var gildedImg = $('<img>', {class: "gilded-img", src: "rsc/img/gold_logo.png"}).appendTo(entryDiv);
       gildedImg.click(function( e ) {
         dirtyEntry($(this).parent());
       });
@@ -450,7 +450,7 @@ function initTypeahead() {
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     prefetch: {
       cache: false,
-      url: '../../data/codex/warframes.json',
+      url: 'data/warframes.json',
       filter: function(list) {
         return $.map(list, function(item) {
           return {
@@ -465,7 +465,7 @@ function initTypeahead() {
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     prefetch: {
       cache: false,
-      url: '../../data/codex/archwings.json',
+      url: 'data/archwings.json',
       filter: function(list) {
         return $.map(list, function(item) {
           return {
@@ -480,7 +480,7 @@ function initTypeahead() {
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     prefetch: {
       cache: false,
-      url: '../../data/codex/weapons.json',
+      url: 'data/weapons.json',
       filter: function(list) {
         return $.map(list, function(item) {
           return {
@@ -495,7 +495,7 @@ function initTypeahead() {
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     prefetch: {
       cache: false,
-      url: '../../data/codex/archwingWeapons.json',
+      url: 'data/archwingWeapons.json',
       filter: function(list) {
         return $.map(list, function(item) {
           return {
@@ -510,7 +510,7 @@ function initTypeahead() {
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     prefetch: {
       cache: false,
-      url: '../../data/codex/companions.json',
+      url: 'data/companions.json',
       filter: function(list) {
         return $.map(list, function(item) {
           return {
@@ -525,7 +525,7 @@ function initTypeahead() {
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     prefetch: {
       cache: false,
-      url: '../../data/codex/sentinelWeapons.json',
+      url: 'data/sentinelWeapons.json',
       filter: function(list) {
         return $.map(list, function(item) {
           return {

@@ -15,7 +15,7 @@ $(function() {
   $(".btn-logout").click(function( e ) {
     e.preventDefault();
     firebase.auth().signOut().then(function() {
-      window.location.href = "../login/login.html";
+      window.location.href = "login.html";
     }).catch(function(error) {
       console.log(errorCode + " | " + errorMessage );
     });
@@ -26,7 +26,7 @@ $(function() {
       // User logged in callback
       if (window.location.pathname.includes("login.html")) {
         // Enter site if logged in.
-        window.location.href = "../codex/codex.html";
+        window.location.href = "codex.html";
       }
 
       // Page load functions
@@ -38,7 +38,7 @@ $(function() {
       // No user is signed in.
       if (!window.location.pathname.includes("login.html")) {
         // Make sure we're not looping on login page.
-        window.location.href = "../login/login.html";
+        window.location.href = "login.html";
       }
     }
     if (window.location.pathname.includes("login.html")) {
