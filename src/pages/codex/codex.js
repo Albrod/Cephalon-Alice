@@ -92,6 +92,8 @@ function loadSearch() {
   fadeHide($(".library-pane"));
   $(".panel-nav li.active").removeClass("active");
   $(".library-sidebar").removeClass("active");
+  $(".library-pane").removeClass("active");
+
   $("#searchTab").parent().addClass("active");
 
   fadeShow($(".search-pane"));
@@ -102,6 +104,8 @@ function loadLibrary() {
   // Hide search pane.
   fadeHide($(".search-pane"));
   $(".panel-nav li.active").removeClass("active");
+  $(".search-pane").removeClass("active");
+
   $("#libraryTab").parent().addClass("active");
   $(".library-sidebar").addClass("active");
 
