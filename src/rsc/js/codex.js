@@ -235,8 +235,26 @@ function dirtyEntry(div) {
 function updateData() {
   var database = firebase.database();
   database.ref('/data/version').once('value').then(snapshot => {
-    var version = snapshot.val();
-    console.log(version);
+    var dbVersion = snapshot.val();
+    var localVersion = $.ajax('version', { async: false }).responseText.trim();
+    if (dbVersion === localVersion) {
+      console.log("DB up-to-date. No refresh needed.");
+    } else {
+      var updates = {};
+      var dbData = {};
+      for (var i in fullData) {
+        var catData = fullData[i];
+        for (var j in catData) {
+          var innerData = {"id": catName(i) + catData[j].id};
+
+          dbData[catData[j].name] = innerData;
+        }
+        // Push changes to DB.
+      }
+      updates['/data/index'] = dbData;
+      updates['/data/version'] = localVersion;
+      firebase.database().ref().update(updates);
+    }
   });
 }
 
