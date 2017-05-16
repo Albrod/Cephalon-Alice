@@ -74,5 +74,53 @@
   {
     "id": "019",
     "name": "Smeeta Kavat"
+  },
+  {
+    "id": "021",
+    "name": "Artax"
+  },
+  {
+    "id": "022",
+    "name": "Deth Machine Rifle"
+  },
+  {
+    "id": "023",
+    "name": "Laser Rifle"
+  },
+  {
+    "id": "024",
+    "name": "Prime Laser Rifle"
+  },
+  {
+    "id": "025",
+    "name": "Stinger"
+  },
+  {
+    "id": "026",
+    "name": "Sweeper"
+  },
+  {
+    "id": "027",
+    "name": "Sweeper Prime"
+  },
+  {
+    "id": "028",
+    "name": "Vulklok"
+  },
+  {
+    "id": "029",
+    "name": "Burst Laser"
+  },
+  {
+    "id": "030",
+    "name": "Prisma Burst Laser"
+  },
+  {
+    "id": "031",
+    "name": "Deconstructor"
+  },
+  {
+    "id": "032",
+    "name": "Deconstructor Prime"
   }
 ]

@@ -1,0 +1,16 @@
+{
+  "name": "cephalon-alice",
+  "version": "1.0.0",
+  "description": "A Warframe codex tracker and general assistant.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R-Jimenez/Cephalon-Alice.git"
+  },
+  "author": "R-Jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/R-Jimenez/Cephalon-Alice/issues"
+  },
+  "homepage": "https://github.com/R-Jimenez/Cephalon-Alice#readme"
+}

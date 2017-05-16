@@ -1,6 +1,6 @@
-var mastered = [0,0,0,0,0,0];
-var totals = [0,0,0,0,0,0];
-var categories = ["warframes", "archwings", "weapons", "archwingWeapons", "companions", "sentinelWeapons"];
+var mastered = [0,0,0,0,0];
+var totals = [0,0,0,0,0];
+var categories = ["warframes", "archwings", "weapons", "archwingWeapons", "companions"];
 var counters;
 var fullData = {};
 var masteryArr = [];
@@ -35,6 +35,8 @@ function loadCodex() {
     var rawData = $.ajax('data/' + cat + '.json', { async: false }).responseText;
     fullData[cat] = JSON.parse(rawData);
   }
+
+  updateData();
 
   preloadLibrary();
   masteryListener();
@@ -177,7 +179,7 @@ function renderLibrary(cat) {
       });
       var size = wordArr[0].length;
       if (size > 12) {
-        $('<h5>', {class: "mt-2", text: entry, style: "font-size: x-small"}).appendTo(entryDiv);
+        $('<h5>', {class: "mt-2", text: entry, style: "font-size: xx-small"}).appendTo(entryDiv);
       } else {
         $('<h5>', {class: "mt-2", text: entry}).appendTo(entryDiv);
       }
@@ -229,14 +231,23 @@ function dirtyEntry(div) {
   }
 }
 
+// Check if DB data is outdated.
+function updateData() {
+  var database = firebase.database();
+  database.ref('/data/version').once('value').then(snapshot => {
+    var version = snapshot.val();
+    console.log(version);
+  });
+}
+
 // Listener for full library rendering
 function masteryListener() {
   var userID = firebase.auth().currentUser.uid;
   var database = firebase.database();
   // Establish listener.
-  var codexRef = firebase.database().ref('/users/' + userID + '/codex');
+  var codexRef = database.ref('/users/' + userID + '/codex');
   codexRef.on('value', function(snapshot) {
-    mastered = [0,0,0,0,0,0];
+    mastered = [0,0,0,0,0];
     masteryArr = [];
 
     // Cache new data.
@@ -272,7 +283,6 @@ function updateTotals() {
   $("#weaponsCounter").html(mastered[2] + "/" + totals[2]);
   $("#archwingWeaponsCounter").html(mastered[3] + "/" + totals[3]);
   $("#companionsCounter").html(mastered[4] + "/" + totals[4]);
-  $("#sentinelWeaponsCounter").html(mastered[5] + "/" + totals[5]);
 
   function add(a, b) {
     return a + b;
@@ -416,7 +426,6 @@ function catID(id) {
     case 3: return 'weapons';
     case 4: return 'archwingWeapons';
     case 5: return 'companions';
-    case 6: return 'sentinelWeapons';
   }
 }
 function catName(name) {
@@ -426,7 +435,6 @@ function catName(name) {
     case 'weapons': return 3;
     case 'archwingWeapons': return 4;
     case 'companions': return 5;
-    case 'sentinelWeapons': return 6;
   }
 }
 
@@ -520,21 +528,6 @@ function initTypeahead() {
       }
     }
   });
-  var sentinelWeaponsHound = new Bloodhound({
-    datumTokenizer: function (d) { return Bloodhound.tokenizers.whitespace(d.name); },
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
-    prefetch: {
-      cache: false,
-      url: 'data/sentinelWeapons.json',
-      filter: function(list) {
-        return $.map(list, function(item) {
-          return {
-            name: item.name
-          };
-        });
-      }
-    }
-  });
 
 
   $('#searchInput').typeahead({
@@ -576,13 +569,6 @@ function initTypeahead() {
     display: function (d) { return d.name; },
     templates: {
       header: '<h5 class="mt-2">Companions</h5>'
-    }
-  },{
-    name: 'sentinelWeapons',
-    source: sentinelWeaponsHound,
-    display: function (d) { return d.name; },
-    templates: {
-      header: '<h5 class="mt-2">Sentinel Weapons</h5>'
     }
   });
 }
