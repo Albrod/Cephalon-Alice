@@ -355,13 +355,13 @@ function commitSearchChanges() {
   retCode = -1;
   retVal = null;
 
-  var entry = val.trim();
+  var entry = val.trim().toLowerCase();
   // Search for entry in data.
   for (key in fullData) {
     var code = catName(key);
     var subData = fullData[key];
     for (key2 in subData) {
-      if (subData[key2].name === entry) {
+      if (subData[key2].name.toLowerCase() === entry) {
         var id = code + subData[key2].id;
         if (masteryArr.indexOf(id) >= 0) {
           retCode = 1;
@@ -369,6 +369,8 @@ function commitSearchChanges() {
           retCode = 0;
           retVal = id;
         }
+        entry = subData[key2].name;
+        break;
       }
     }
   }
