@@ -1,7 +1,8 @@
 [
   {
     "id": "001",
-    "name": "Ash"
+    "name": "Ash",
+    "source": "Grineer Manics Drops"
   },
   {
     "id": "002",
@@ -9,11 +10,13 @@
   },
   {
     "id": "003",
-    "name": "Atlas"
+    "name": "Atlas",
+    "source": "The Jordas Precept (Quest)"
   },
   {
     "id": "004",
-    "name": "Banshee"
+    "name": "Banshee",
+    "source": "Tenno Lab"
   },
   {
     "id": "005",
@@ -21,11 +24,13 @@
   },
   {
     "id": "006",
-    "name": "Chroma"
+    "name": "Chroma",
+    "source": "The New Strange (Quest) / Junctions"
   },
   {
     "id": "007",
-    "name": "Ember"
+    "name": "Ember",
+    "source": "General Sargas Ruk (Saturn)"
   },
   {
     "id": "008",
@@ -33,15 +38,18 @@
   },
   {
     "id": "009",
-    "name": "Equinox"
+    "name": "Equinox",
+    "source": "Tyl Regor (Uranus)"
   },
   {
     "id": "010",
-    "name": "Excalibur"
+    "name": "Excalibur",
+    "source": "Ambulas (Pluto)"
   },
   {
     "id": "011",
-    "name": "Frost"
+    "name": "Frost",
+    "source": "Lieutenant Lech Kril (Mars)"
   },
   {
     "id": "012",
@@ -49,19 +57,23 @@
   },
   {
     "id": "013",
-    "name": "Inaros"
+    "name": "Inaros",
+    "source": "Sands of Inaros (Quest)"
   },
   {
     "id": "014",
-    "name": "Ivara"
+    "name": "Ivara",
+    "source": "Spy Missions"
   },
   {
     "id": "015",
-    "name": "Limbo"
+    "name": "Limbo",
+    "source": "The Limbo Theorem (Quest)"
   },
   {
     "id": "016",
-    "name": "Loki"
+    "name": "Loki",
+    "source": "Hyena Pack (Neptune)"
   },
   {
     "id": "017",
@@ -69,7 +81,8 @@
   },
   {
     "id": "018",
-    "name": "Mag"
+    "name": "Mag",
+    "source": "The Sergeant (Phobos)"
   },
   {
     "id": "019",
@@ -77,15 +90,18 @@
   },
   {
     "id": "020",
-    "name": "Mesa"
+    "name": "Mesa",
+    "source": "Mutalist Alad V (Eris)"
   },
   {
     "id": "021",
-    "name": "Mirage"
+    "name": "Mirage",
+    "source": "Hidden Messages (Quest)"
   },
   {
     "id": "022",
-    "name": "Nekros"
+    "name": "Nekros",
+    "source": "Orokin Derelict Assassination"
   },
   {
     "id": "023",
@@ -93,15 +109,18 @@
   },
   {
     "id": "024",
-    "name": "Nezha"
+    "name": "Nezha",
+    "source": "Tenno Lab"
   },
   {
     "id": "025",
-    "name": "Nidus"
+    "name": "Nidus",
+    "source": "Main: The Glast Gambit (Quest)<br/>Components: Infested Salvage (Eris) - Rotation C"
   },
   {
     "id": "026",
-    "name": "Nova"
+    "name": "Nova",
+    "source": "Raptors (Europa)"
   },
   {
     "id": "027",
@@ -109,7 +128,8 @@
   },
   {
     "id": "028",
-    "name": "Nyx"
+    "name": "Nyx",
+    "source": "Phorid (Infested Invasion)"
   },
   {
     "id": "029",
@@ -117,15 +137,18 @@
   },
   {
     "id": "030",
-    "name": "Oberon"
+    "name": "Oberon",
+    "source": "Eximus Drops"
   },
   {
     "id": "031",
-    "name": "Octavia"
+    "name": "Octavia",
+    "source": "Main: Octavia's Anthem (Quest)<br/>Chassis: Music Note Puzzle (Lua)<br/>Systems: Crossfire Exterminate Caches (Lua)<br/>Neuroptics: Orokin Derelict Survival - Rotation C"
   },
   {
     "id": "032",
-    "name": "Rhino"
+    "name": "Rhino",
+    "source": "Jackal (Venus)"
   },
   {
     "id": "033",
@@ -133,7 +156,8 @@
   },
   {
     "id": "034",
-    "name": "Saryn"
+    "name": "Saryn",
+    "source": "Kela De Thaym (Sedna)"
   },
   {
     "id": "035",
@@ -141,11 +165,13 @@
   },
   {
     "id": "036",
-    "name": "Titania"
+    "name": "Titania",
+    "source": "The Silver Grove (Quest)"
   },
   {
     "id": "037",
-    "name": "Trinity"
+    "name": "Trinity",
+    "source": "Captain Vor and Lieutenant Lech Kril (Ceres)"
   },
   {
     "id": "038",
@@ -153,7 +179,8 @@
   },
   {
     "id": "039",
-    "name": "Valkyr"
+    "name": "Valkyr",
+    "source": "Alad V (Jupiter)"
   },
   {
     "id": "040",
@@ -161,7 +188,8 @@
   },
   {
     "id": "041",
-    "name": "Vauban"
+    "name": "Vauban",
+    "source": "Alert Missions"
   },
   {
     "id": "042",
@@ -169,7 +197,8 @@
   },
   {
     "id": "043",
-    "name": "Volt"
+    "name": "Volt",
+    "source": "Tenno Lab"
   },
   {
     "id": "044",
@@ -177,11 +206,13 @@
   },
   {
     "id": "045",
-    "name": "Wukong"
+    "name": "Wukong",
+    "source": "Tenno Lab"
   },
   {
     "id": "046",
-    "name": "Zephyr"
+    "name": "Zephyr",
+    "source": "Tenno Lab"
   },
   {
     "id": "047",
@@ -189,6 +220,7 @@
   },
   {
     "id": "048",
-    "name": "Hydroid"
+    "name": "Hydroid",
+    "source": "Councilor Vay Hek (Earth)"
   }
 ]

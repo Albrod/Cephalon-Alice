@@ -6,6 +6,11 @@ var fullData = {};
 var masteryArr = [];
 
 function loadCodex() {
+  if (Object.keys(fullData).length > 0) {
+    console.log("Sneaky auth loop averted!");
+    return;
+  }
+
   Mousetrap.bind('space', function(e) {
     toggleQuickModal();
   });
@@ -42,6 +47,7 @@ function loadCodex() {
   Mousetrap.bind('?', function(e) {
     toggleHelpModal();
   });
+
   for (var i in categories) {
     var cat = categories[i];
     var rawData = $.ajax('data/' + cat + '.json', { async: false }).responseText;
@@ -110,24 +116,12 @@ function loadCodex() {
       scrollTop: $(".anchor#" + anchor).offset().top
     }, 500);
   });
+  $(document).on('contextmenu', '.gilded-img', function(e) {
+    e.preventDefault();
+    var id = $(this).parent().attr("id");
+    var entry = retrieveEntryByID(id);
 
-  var timeoutId;
-  $("#userInfoSlide").html("User ID: " + firebase.auth().currentUser.uid);
-  $(".btn-logout").hover(function() {
-    if (!timeoutId) {
-      timeoutId = window.setTimeout(function() {
-        timeoutId = null; // EDIT: added this line
-        $("#userInfoSlide").addClass('active');
-      }, 2000);
-    }
-  }, function () {
-    if (timeoutId) {
-      window.clearTimeout(timeoutId);
-      timeoutId = null;
-    }
-  });
-  $("#userInfoSlide").click(function(event) {
-
+    detailsLookupInfo(entry);
   });
 }
 
@@ -154,32 +148,28 @@ function loadSearchPanel() {
 
 function searchLookup() {
   var val = $("#searchInput").val().toLowerCase();
+  var entry = retrieveEntryByName(val);
 
-  // Grab info from DB.
-  var database = firebase.database();
-  database.ref('/data/index/' + val).once('value').then(snapshot => {
-    var entry = snapshot.val();
-    if (entry) {
-      searchLookupInfo(val, entry);
+  if (entry) {
+    searchLookupInfo(entry);
 
-      $(".search-info").addClass("active");
-      $(".search-pane").addClass("slideup");
-      fadeShow($(".search-info"));
+    $(".search-info").addClass("active");
+    $(".search-pane").addClass("slideup");
+    fadeShow($(".search-info"));
 
-      $(".btn-search-find").html("Close");
-    } else {
-      var feedback = $(".search-feedback");
-      feedback.removeClass("table-success");
-      feedback.removeClass("table-warning");
+    $(".btn-search-find").html("Close");
+  } else {
+    var feedback = $(".search-feedback");
+    feedback.removeClass("table-success");
+    feedback.removeClass("table-warning");
 
-      feedback.addClass("table-warning");
-      feedback.html("Please enter a <i>real</i> item, operator.");
-      fadeShow(feedback);
-      setTimeout(function(){
-        fadeHide(feedback);
-      }, 7500);
-    }
-  });
+    feedback.addClass("table-warning");
+    feedback.html("Please enter a <i>real</i> item, operator.");
+    fadeShow(feedback);
+    setTimeout(function(){
+      fadeHide(feedback);
+    }, 7500);
+  }
 }
 
 function submitInfo() {
@@ -188,6 +178,9 @@ function submitInfo() {
 }
 
 function loadLibraryPanel() {
+  renderImages();
+  renderMastery();
+
   // Hide search pane.
   fadeHide($(".search-pane"));
   $(".search-pane").removeClass("active");
@@ -199,8 +192,6 @@ function loadLibraryPanel() {
   fadeShow($(".library-pane"));
   $("#total-counter").show();
   $(".library-pane").addClass("active");
-
-  renderMastery();
 }
 
 function renderLibrary(cat) {
@@ -242,9 +233,9 @@ function renderLibrary(cat) {
     var entryDiv = $('<div>', {class: "col-md-2 mb-2 codex-entry", id: cat_id + id}).appendTo(row);
 
     var entryImg = null;
-    var image_url = "rsc/img/" + cat + "/" + entry + ".png";
+    var image_url = "rsc/img/items/" + entry.toLowerCase() + ".png";
     $.get(image_url).done(function() {
-      entryImg = $('<img>', {class: "codex-img", src: image_url}).appendTo(entryDiv);
+      entryImg = $('<img>', {class: "codex-img"}).appendTo(entryDiv);
       entryImg.click(function( e ) {
         var div = $(this).parent();
         dirtyEntry(div);
@@ -261,7 +252,7 @@ function renderLibrary(cat) {
       } else {
         $('<h5>', {class: "mt-2", text: entry}).appendTo(entryDiv);
       }
-      var gildedImg = $('<img>', {class: "gilded-img", src: "rsc/img/gold_logo.png"}).appendTo(entryDiv);
+      var gildedImg = $('<img>', {class: "gilded-img"}).appendTo(entryDiv);
       gildedImg.click(function( e ) {
         dirtyEntry($(this).parent());
       });
@@ -293,6 +284,12 @@ function renderLibrary(cat) {
   });
   totals[cat_id - 1] = count;
   setTimeout(renderMastery(), 300);
+}
+
+function renderImages() {
+  $(".codex-img").each(function() {
+    $( this ).addClass( "foo" );
+  });
 }
 
 // Apply gilded style and dirty bit to entryDiv
@@ -388,23 +385,52 @@ function updateTotals() {
   $("#total-counter").html(userSum + "/" + totalSum + " Mastered");
 }
 
-function searchLookupInfo(val, entry) {
+function searchLookupInfo(entry) {
   var id = entry.id;
+  var name = entry.name;
 
-  var cat = catID(id);
-  $(".search-info-img").attr("src","rsc/img/" + cat + "/" + val + ".png");
+  // Load id
+  $(".search-info-img").attr("src","rsc/img/items/" + name.toLowerCase() + ".png");
+  $(".btn-search-info-submit").data('id', id);
 
-  $(".search-info-name").html(val);
+  // Load name
+  $(".search-info-name").html(name);
+
+  // Load mastery
   var masterySpan = $(".search-info-mastery");
   if (masteryArr.indexOf(id) >= 0) {
-    masterySpan.html("Mastery: Yes");
+    masterySpan.html("<strong>Mastered</strong>: Yes");
     masterySpan.parent().addClass('table-success');
     fadeHide($(".btn-search-info-submit"));
   } else {
-    masterySpan.html("Mastery: No");
+    masterySpan.html("<strong>Mastered</strong>: No");
     masterySpan.parent().addClass('table-warning');
     fadeShow($(".btn-search-info-submit"));
   }
+
+  // Load source
+  if (entry.source) {
+    var sourceSpan = $(".search-info-source");
+    sourceSpan.html("<strong>Source</strong>: <p class=\"search-info-source-p\">" + entry.source + "</p>");
+  }
+}
+function detailsLookupInfo(entry) {
+  var id = entry.id;
+  var name = entry.name;
+
+  // Load id
+  $(".details-info-img").attr("src","rsc/img/items/" + name.toLowerCase() + ".png");
+
+  // Load name
+  $(".details-info-name").html(name);
+
+  // Load source
+  if (entry.source) {
+    var sourceSpan = $(".details-info-source");
+    sourceSpan.html("<strong>Source</strong>: <p class=\"info-source-p\">" + entry.source + "</p>");
+  }
+
+  toggleDetailsModal();
 }
 
 function commitLibraryChanges() {
@@ -431,7 +457,7 @@ function commitInfoChanges() {
 
   btn.parent().removeClass('table-warning');
   btn.parent().addClass('table-success');
-  $(".search-info-mastery").html("Mastered: Yes ");
+  $(".search-info-mastery").html("<strong>Mastered</strong>: Yes");
 }
 
 function commitSearchChanges() {
@@ -519,6 +545,12 @@ function toggleQuickModal() {
     $("#addModal").modal('toggle');
   }
 }
+function toggleDetailsModal() {
+  if ($(".library-pane").hasClass("active")) {
+    $("#detailsModal").modal('toggle');
+  }
+}
+
 function submitQuickAdd() {
   var entry = $("#quickInput").val();
   var search = $("h5:contains('" + entry + "')").filter(function() {
@@ -545,7 +577,7 @@ function submitQuickAdd() {
 
 
 // Utilities
-function catID(id) {
+function categoryFromID(id) {
   var code = (''+id)[0];
   switch (code) {
     case "1": return 'warframes';
@@ -555,7 +587,7 @@ function catID(id) {
     case "5": return 'companions';
   }
 }
-function catName(name) {
+function categoryFromName(name) {
   switch (name) {
     case 'warframes': return 1;
     case 'archwings': return 2;
@@ -698,4 +730,26 @@ function initTypeahead() {
       header: '<h5 class="mt-2">Companions</h5>'
     }
   });
+}
+
+function retrieveEntryByName(name) {
+  for (key in fullData) {
+    var catData = fullData[key];
+    for (key2 in catData) {
+      if (catData[key2].name.toLowerCase() === name.toLowerCase()) {
+        return catData[key2];
+      }
+    }
+  }
+}
+function retrieveEntryByID(id) {
+  for (key in fullData) {
+    var catData = fullData[key];
+    for (key2 in catData) {
+      var fullID = (categories.indexOf(key) + 1) + catData[key2].id;
+      if (fullID === id) {
+        return catData[key2];
+      }
+    }
+  }
 }

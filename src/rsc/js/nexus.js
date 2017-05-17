@@ -73,15 +73,15 @@ function getURLParameter(name) {
   return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
 }
 function onScroll(event){
-    var scrollPos = $(document).scrollTop() + 50;
-    $('.library-sidebar img').each(function () {
-        var refElement = $("#" + $(this).data("anchor") + "Div");
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('.library-sidebar img').removeClass("active");
-            $(this).addClass("active");
-        }
-        else{
-            $(this).removeClass("active");
-        }
-    });
+  var scrollPos = $(document).scrollTop() + 50;
+  $('.library-sidebar img').each(function () {
+    var refElement = $("#" + $(this).data("anchor") + "Div");
+    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+      $('.library-sidebar img').removeClass("active");
+      $(this).addClass("active");
+    }
+    else{
+      $(this).removeClass("active");
+    }
+  });
 }

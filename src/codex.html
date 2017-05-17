@@ -81,17 +81,21 @@
         <img class="search-info-img"/>
         <div class="col-6">
           <table class="table table-hover table-bordered table-striped">
-            <thead>
+            <thead class="thead-inverse">
               <tr>
                 <th class="search-info-name">
-
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>
-                  <span class="search-info-mastery"></span><button class="btn btn-sm btn-primary float-right btn-search-info-submit" data-id="1007" type="submit">Add</button>
+                  <span class="search-info-mastery"></span><button class="btn btn-sm btn-primary float-right btn-search-info-submit" type="submit">Add</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="search-info-source"></span>
                 </td>
               </tr>
             </tbody>
@@ -159,104 +163,142 @@
   </div>
 </footer>
 
-<!-- Quick add modal -->
-<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+<!-- Details modal -->
+<div class="modal modal-responsive fade" id="detailsModal" tabindex="-1" role="dialog" aria-labelledby="detailsModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="addModalLabel">Quick Add</h5>
+        <h5 class="modal-title" id="detailsModalLabel">Details</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="form-group modal-body">
-        Quickly, Operator. What have you mastered? <small>(Case sensitive!)</small>
-        <input type="text" class="form-control" id="quickInput"/>
-        <div class="form-control-feedback" id="quickInputFeedback"></div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" onclick="submitQuickAdd()">Submit</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Keyboard help modal -->
-<div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="helpModalLabel">Keyboard Shortcuts</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="keyboard-shortcuts clearfix" id="keyboard-shortcut-menu">
-          <table class="modal-table">
-            <thead>
-              <tr>
-                <th colspan="2">Search Panel</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="shortcut">
-                  <b class="sc-key">Right arrow</b>
-                </td>
-                <td class="shortcut-label">Switch to codex.</td>
-              </tr>
-              <tr>
-                <td class="shortcut">
-                  <b class="sc-key">Esc</b>
-                </td>
-                <td class="shortcut-label">Close item info panel.</td>
-              </tr>
-            </tbody>
-          </table>
-          <table class="modal-table">
-            <thead>
-              <tr>
-                <th colspan="2">Codex Panel</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="shortcut">
-                  <b class="sc-key">Left arrow</b>
-                </td>
-                <td class="shortcut-label">Switch to search.</td>
-              </tr>
-              <tr>
-                <td class="shortcut">
-                  <b class="sc-key">Space</b>
-                </td>
-                <td class="shortcut-label">Open quick add menu.</td>
-              </tr>
-              <tr>
-                <td class="shortcut">
-                  <b class="sc-key">Enter</b>
-                </td>
-                <td class="shortcut-label">Submit changes.</td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="container modal-body">
+        <div class="row justify-content-center align-middle">
+          <img class="details-info-img"/>
+          <div class="mt-2 col-6">
+            <table class="table table-hover table-bordered table-striped">
+              <thead class="thead-inverse">
+                <tr>
+                  <th class="details-info-name">
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span class="details-info-source"></span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<script src="rsc/js/jquery-3.2.1.min.js"></script>
-<script src="rsc/js/tether.min.js"></script>
-<script src="rsc/js/bootstrap.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
-<script src="rsc/js/nexus.js"></script>
+  <!-- Quick add modal -->
+  <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addModalLabel">Quick Add</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="form-group modal-body">
+          Quickly, Operator. What have you mastered? <small>(Case sensitive!)</small>
+          <input type="text" class="form-control" id="quickInput"/>
+          <div class="form-control-feedback" id="quickInputFeedback"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="submitQuickAdd()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<script src="rsc/js/typeahead.bundle.min.js"></script>
-<script src="rsc/js/mousetrap.min.js"></script>
+  <!-- Keyboard help modal -->
+  <div class="modal fade" id="helpModal" tabindex="-1" role="dialog" aria-labelledby="helpModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="helpModalLabel">Keyboard Shortcuts</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="keyboard-shortcuts clearfix" id="keyboard-shortcut-menu">
+            <table class="modal-table">
+              <thead>
+                <tr>
+                  <th colspan="2">Search Panel</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="shortcut">
+                    <b class="sc-key">Right arrow</b>
+                  </td>
+                  <td class="shortcut-label">Switch to codex.</td>
+                </tr>
+                <tr>
+                  <td class="shortcut">
+                    <b class="sc-key">Esc</b>
+                  </td>
+                  <td class="shortcut-label">Close item info panel.</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="modal-table">
+              <thead>
+                <tr>
+                  <th colspan="2">Codex Panel</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="shortcut">
+                    <b class="sc-key">Left arrow</b>
+                  </td>
+                  <td class="shortcut-label">Switch to search.</td>
+                </tr>
+                <tr>
+                  <td class="shortcut">
+                    <b class="sc-key">Space</b>
+                  </td>
+                  <td class="shortcut-label">Open quick add menu.</td>
+                </tr>
+                <tr>
+                  <td class="shortcut">
+                    <b class="sc-key">Enter</b>
+                  </td>
+                  <td class="shortcut-label">Submit changes.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<script src="rsc/js/codex.js"></script>
+  <script src="rsc/js/jquery-3.2.1.min.js"></script>
+  <script src="rsc/js/tether.min.js"></script>
+  <script src="rsc/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+  <script src="rsc/js/nexus.js"></script>
+
+  <script src="rsc/js/typeahead.bundle.min.js"></script>
+  <script src="rsc/js/mousetrap.min.js"></script>
+
+  <script src="rsc/js/codex.js"></script>
 </body>
 </html>
