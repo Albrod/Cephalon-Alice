@@ -288,7 +288,12 @@ function renderLibrary(cat) {
 
 function renderImages() {
   $(".codex-img").each(function() {
-    $( this ).addClass( "foo" );
+    var name = $(this).next().html();
+    name = name.replace("&amp;", "&");
+    $(this).attr("src", "rsc/img/items/" + name.toLowerCase() + ".png");
+  });
+  $(".gilded-img").each(function() {
+    $(this).attr("src", "rsc/img/gold_logo.png");
   });
 }
 
