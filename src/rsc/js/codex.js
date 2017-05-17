@@ -36,18 +36,17 @@ function loadCodex() {
     fullData[cat] = JSON.parse(rawData);
   }
 
-  updateData();
-
-  preloadLibrary();
-  masteryListener();
   initTypeahead();
-
   var load = getURLParameter("load");
   if (load === "codex") {
     loadLibraryPanel();
   } else {
     loadSearchPanel();
   }
+
+  updateData();
+  preloadLibrary();
+  masteryListener();
 
   $(document).on("scroll", onScroll);
   $(".btn-search-update").click(function( e ) {
@@ -85,6 +84,25 @@ function loadCodex() {
     $('html, body').animate({
       scrollTop: $(".anchor#" + anchor).offset().top
     }, 500);
+  });
+
+  var timeoutId;
+  $("#userInfoSlide").html("User ID: " + firebase.auth().currentUser.uid);
+  $(".btn-logout").hover(function() {
+    if (!timeoutId) {
+      timeoutId = window.setTimeout(function() {
+        timeoutId = null; // EDIT: added this line
+        $("#userInfoSlide").addClass('active');
+      }, 2000);
+    }
+  }, function () {
+    if (timeoutId) {
+      window.clearTimeout(timeoutId);
+      timeoutId = null;
+    }
+  });
+  $("#userInfoSlide").click(function(event) {
+
   });
 }
 
@@ -247,7 +265,7 @@ function updateData() {
         for (var j in catData) {
           var innerData = {"id": catName(i) + catData[j].id};
 
-          dbData[catData[j].name] = innerData;
+          dbData[catData[j].name.toLowerCase()] = innerData;
         }
         // Push changes to DB.
       }

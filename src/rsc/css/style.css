@@ -1,21 +1,62 @@
+/*Site-wide*/
 body .modal-open {
   overflow: scroll; !important;
 }
-
-.library-pane {
-  top: 100px;
-
-  transition: all .5s;
+.navbar-brand {
+  pointer-events: none;
 }
+.splash-container {
+  margin-top: 10%;
+  top: 106px;
+}
+
+#userInfoSlide {
+  position:absolute;
+  top: 91px;
+  right: -50%;
+  background: black;
+  color: white;
+  padding: 10px 50px 10px 20px;
+
+  transition: all 1s;
+}
+#userInfoSlide.active {
+  right: 0;
+}
+
+/*Search pane*/
 .search-pane {
-  margin-top: 15%;
   top: 106px;
 
   transition: all .5s;
 }
+@media(min-width:576px){
+  .search-pane {
+    margin-top: 15%;
+  }
+}
 
-.navbar-brand {
-  pointer-events: none;
+#searchInput {
+  padding-right: 140px;
+  color: black;
+}
+.btn-search-update {
+  position: relative;
+  top: -50px;
+  left: calc(100% - 130px);
+}
+.search-feedback {
+  font-size: 1.4em;
+
+  transition: all .5s;
+}
+
+
+/*Library pane*/
+.library-pane {
+  top: 100px;
+
+  transition: all .5s;
 }
 
 a.anchor {
@@ -114,14 +155,6 @@ a.anchor {
 .tooltip.tooltip-bottom .tooltip-inner::before, .tooltip.bs-tether-element-attached-top .tooltip-inner::before {
   border-bottom-color: #999999;
 }
-
-/*Login*/
-.splash-container {
-  margin-top: 10%;
-  top: 106px;
-}
-
-/*Codex*/
 .codex-entry {
   max-width: 285px;
   margin: auto;
@@ -200,22 +233,6 @@ a.anchor {
 }
 .codex-entry.dirty h5 {
   text-decoration: line-through;
-}
-
-
-#searchInput {
-  padding-right: 140px;
-  color: black;
-}
-.btn-search-update {
-  position: relative;
-  top: -50px;
-  left: calc(100% - 130px);
-}
-.search-feedback {
-  font-size: 1.4em;
-
-  transition: all .5s;
 }
 
 

@@ -40,7 +40,10 @@ function loadLogin() {
     $("#emailFeedback").html("");
     $("#passwordFeedback").html("");
 
-    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(function(user) {
+      var user = firebase.auth().currentUser;
+      registerUser(user); // Optional
+    },  function (error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
@@ -58,4 +61,13 @@ function loadLogin() {
       }
     });
   });
+}
+
+function registerUser (user) {
+  var email = user.email;
+  var uid = user.uid;
+
+  var updates = {};
+  updates['/users/' + uid + '/email'] = email;
+  firebase.database().ref().update(updates);
 }
