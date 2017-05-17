@@ -44,7 +44,7 @@
 </nav>
 
 <!-- Search pane -->
-<div style="display: none;opacity: 0;"class="container search-pane">
+<div style="display: none;opacity: 0;" class="container search-pane">
   <div class="row">
     <div class="col-md-1"> </div>
     <div class="col-md-10">
@@ -56,8 +56,8 @@
     <div class="col-md-1"> </div>
     <form class="col-md-10">
       <input class="form-control form-control-lg" type="text" id="searchInput">
-      <button class="btn btn-primary btn-search-update" type="submit">Submit</button>
-      <span class="text-muted" style="left:-120px;position:relative" onclick="loadLibrary()">(Click for Full Codex)</span>
+      <button class="btn btn-primary btn-search-find" type="submit">Search</button>
+      <span class="text-muted" style="left:-120px;position:relative" onclick="loadLibraryPanel()">(Click for Full Codex)</span>
     </form>
     <div class="col-md-1"> </div>
   </div>
@@ -73,6 +73,33 @@
       </table>
     </div>
     <div class="col-md-1"> </div>
+  </div>
+  <div style="display: none;opacity: 0;" class="row search-info">
+    <div class="col-md-1"></div>
+    <div class="container col-md-10">
+      <div class="row justify-content-center align-middle">
+        <img class="search-info-img"/>
+        <div class="col-6">
+          <table class="table table-hover table-bordered table-striped">
+            <thead>
+              <tr>
+                <th class="search-info-name">
+
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="search-info-mastery"></span><button class="btn btn-sm btn-primary float-right btn-search-info-submit" data-id="1007" type="submit">Add</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
   </div>
 </div>
 
@@ -179,6 +206,12 @@
                   <b class="sc-key">Right arrow</b>
                 </td>
                 <td class="shortcut-label">Switch to codex.</td>
+              </tr>
+              <tr>
+                <td class="shortcut">
+                  <b class="sc-key">Esc</b>
+                </td>
+                <td class="shortcut-label">Close item info panel.</td>
               </tr>
             </tbody>
           </table>

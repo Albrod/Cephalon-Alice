@@ -15,6 +15,18 @@ function loadCodex() {
       commitLibraryChanges();
     }
   });
+  Mousetrap.bind('escape', function(e) {
+    if ($(".search-pane").hasClass('active')) {
+      e.preventDefault();
+      if ($(".search-info").hasClass("active")) {
+        $(".search-info").removeClass("active");
+        $(".search-pane").removeClass("slideup");
+        fadeHide($(".search-info"));
+
+        $(".btn-search-find").html("Search");
+      }
+    }
+  });
   Mousetrap.bind('left', function(e) {
     if ($(".library-pane").hasClass('active')) {
       e.preventDefault();
@@ -49,10 +61,19 @@ function loadCodex() {
   masteryListener();
 
   $(document).on("scroll", onScroll);
-  $(".btn-search-update").click(function( e ) {
+  $(".btn-search-find").click(function( e ) {
     e.preventDefault();
-    commitSearchChanges();
+    if ($(".search-info").hasClass('active')) {
+      $(".search-info").removeClass("active");
+      $(".search-pane").removeClass("slideup");
+      fadeHide($(".search-info"));
+
+      $(".btn-search-find").html("Search");
+    } else {
+      searchLookup();
+    }
   });
+
   $(".btn-update").click(function( e ) {
     e.preventDefault();
     commitLibraryChanges();
@@ -71,6 +92,10 @@ function loadCodex() {
   })
   $(".search-feedback").click(function(event) {
     fadeHide($(".search-feedback"));
+  });
+  $(".btn-search-info-submit").click(function(event) {
+    submitInfo();
+    $("#searchInput").blur();
   });
   $(".panel-tabs").click(function(event) {
     if ($(this).attr("id") === "searchTab") {
@@ -125,6 +150,41 @@ function loadSearchPanel() {
 
   fadeShow($(".search-pane"));
   $(".search-pane").addClass("active");
+}
+
+function searchLookup() {
+  var val = $("#searchInput").val().toLowerCase();
+
+  // Grab info from DB.
+  var database = firebase.database();
+  database.ref('/data/index/' + val).once('value').then(snapshot => {
+    var entry = snapshot.val();
+    if (entry) {
+      searchLookupInfo(val, entry);
+
+      $(".search-info").addClass("active");
+      $(".search-pane").addClass("slideup");
+      fadeShow($(".search-info"));
+
+      $(".btn-search-find").html("Close");
+    } else {
+      var feedback = $(".search-feedback");
+      feedback.removeClass("table-success");
+      feedback.removeClass("table-warning");
+
+      feedback.addClass("table-warning");
+      feedback.html("Please enter a <i>real</i> item, operator.");
+      fadeShow(feedback);
+      setTimeout(function(){
+        fadeHide(feedback);
+      }, 7500);
+    }
+  });
+}
+
+function submitInfo() {
+  fadeHide($(".btn-search-info-submit"));
+  commitInfoChanges();
 }
 
 function loadLibraryPanel() {
@@ -328,6 +388,24 @@ function updateTotals() {
   $("#total-counter").html(userSum + "/" + totalSum + " Mastered");
 }
 
+function searchLookupInfo(val, entry) {
+  var id = entry.id;
+
+  var cat = catID(id);
+  $(".search-info-img").attr("src","rsc/img/" + cat + "/" + val + ".png");
+
+  $(".search-info-name").html(val);
+  var masterySpan = $(".search-info-mastery");
+  if (masteryArr.indexOf(id) >= 0) {
+    masterySpan.html("Mastery: Yes");
+    masterySpan.parent().addClass('table-success');
+    fadeHide($(".btn-search-info-submit"));
+  } else {
+    masterySpan.html("Mastery: No");
+    masterySpan.parent().addClass('table-warning');
+    fadeShow($(".btn-search-info-submit"));
+  }
+}
 
 function commitLibraryChanges() {
   // Compile changes from library.
@@ -343,6 +421,17 @@ function commitLibraryChanges() {
     });
     pushToDB(addArr, delArr);
   }
+}
+
+function commitInfoChanges() {
+  // Compile changes from search.
+  var btn = $(".btn-search-info-submit");
+  var id = btn.data("id");
+  pushToDB([id], []);
+
+  btn.parent().removeClass('table-warning');
+  btn.parent().addClass('table-success');
+  $(".search-info-mastery").html("Mastered: Yes ");
 }
 
 function commitSearchChanges() {
@@ -397,7 +486,7 @@ function commitSearchChanges() {
   input.val("");
   input.blur();
 
-  fastShow(feedback);
+  fadeShow(feedback);
   setTimeout(function(){
     fadeHide(feedback);
   }, 7500);
@@ -459,11 +548,11 @@ function submitQuickAdd() {
 function catID(id) {
   var code = (''+id)[0];
   switch (code) {
-    case 1: return 'warframes';
-    case 2: return 'archwings';
-    case 3: return 'weapons';
-    case 4: return 'archwingWeapons';
-    case 5: return 'companions';
+    case "1": return 'warframes';
+    case "2": return 'archwings';
+    case "3": return 'weapons';
+    case "4": return 'archwingWeapons';
+    case "5": return 'companions';
   }
 }
 function catName(name) {

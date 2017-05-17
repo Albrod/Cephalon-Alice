@@ -59,20 +59,14 @@ function fadeHide(ele) {
   ele.css("opacity", "0");
   setTimeout(function(){
     ele.css("display", "none");
-  }, 300);
+  }, 250);
 }
 function fadeShow(ele) {
   setTimeout(function(){
     ele.css("display", "");
     setTimeout(function(){
       ele.css("opacity", "");
-    }, 300);
-  }, 300);
-}
-function fastShow(ele) {
-  ele.css("display", "");
-  setTimeout(function(){
-    ele.css("opacity", "");
+    }, 250);
   }, 250);
 }
 function getURLParameter(name) {

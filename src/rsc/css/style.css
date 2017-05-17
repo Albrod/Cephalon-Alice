@@ -34,13 +34,16 @@ body .modal-open {
   .search-pane {
     margin-top: 15%;
   }
+  .search-pane.slideup {
+    margin-top: 5%;
+  }
 }
 
 #searchInput {
   padding-right: 140px;
   color: black;
 }
-.btn-search-update {
+.btn-search-find {
   position: relative;
   top: -50px;
   left: calc(100% - 130px);
@@ -50,6 +53,23 @@ body .modal-open {
 
   transition: all .5s;
 }
+.search-info-img {
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+
+  background: #dddddd;
+  box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.5);
+  border-radius: 15px;
+  border: 1px solid rgba(0,0,0,0.75);
+
+  transition: all .5s;
+}
+.search-info {
+  transition: all .5s;
+}
+
 
 
 /*Library pane*/
