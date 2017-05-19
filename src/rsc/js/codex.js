@@ -6,6 +6,8 @@ var fullData = {};
 var masteryArr = [];
 
 function loadCodex() {
+  verifyData();
+
   if (Object.keys(fullData).length > 0) {
     console.log("Sneaky auth loop averted!");
     return;
@@ -125,6 +127,23 @@ function loadCodex() {
     detailsLookupInfo(name, entry);
   });
 }
+
+function verifyData() {
+var database = firebase.database();
+// Establish listener.
+var codexRef = database.ref('/users/');
+codexRef.once('value').then(function(snapshot) {
+  var newData = snapshot.val();
+  for (user in newData) {
+    for (entry in newData[user]["codex"]) {
+      if (entry.length !== 4) {
+        console.log("Bad Data! User: " + user + "\nData:" + entry);
+      }
+    }
+  }
+});
+}
+
 
 function preloadLibrary() {
   for (var i in categories) {
