@@ -1,126 +1,95 @@
-[
-  {
-    "id": "001",
-    "name": "Carrier"
+{
+  "Carrier": {
+    "id": "5001"
   },
-  {
-    "id": "002",
-    "name": "Dethcube"
+  "Dethcube": {
+    "id": "5002"
   },
-  {
-    "id": "003",
-    "name": "Diriga"
+  "Diriga": {
+    "id": "5003"
   },
-  {
-    "id": "004",
-    "name": "Djinn"
+  "Djinn": {
+    "id": "5004"
   },
-  {
-    "id": "005",
-    "name": "Helios"
+  "Helios": {
+    "id": "5005"
   },
-  {
-    "id": "006",
-    "name": "Shade"
+  "Shade": {
+    "id": "5006"
   },
-  {
-    "id": "007",
-    "name": "Taxon"
+  "Taxon": {
+    "id": "5007"
   },
-  {
-    "id": "008",
-    "name": "Wyrm"
+  "Wyrm": {
+    "id": "5008"
   },
-  {
-    "id": "009",
-    "name": "Carrier Prime"
+  "Carrier Prime": {
+    "id": "5009"
   },
-  {
-    "id": "010",
-    "name": "Helios Prime"
+  "Helios Prime": {
+    "id": "5010"
   },
-  {
-    "id": "011",
-    "name": "Prisma Shade"
+  "Prisma Shade": {
+    "id": "5011"
   },
-  {
-    "id": "012",
-    "name": "Chesa Kubrow"
+  "Chesa Kubrow": {
+    "id": "5012"
   },
-  {
-    "id": "013",
-    "name": "Helminth Charger"
+  "Helminth Charger": {
+    "id": "5013"
   },
-  {
-    "id": "014",
-    "name": "Huras Kubrow"
+  "Huras Kubrow": {
+    "id": "5014"
   },
-  {
-    "id": "015",
-    "name": "Raksa Kubrow"
+  "Raksa Kubrow": {
+    "id": "5015"
   },
-  {
-    "id": "016",
-    "name": "Sahasa Kubrow"
+  "Sahasa Kubrow": {
+    "id": "5016"
   },
-  {
-    "id": "017",
-    "name": "Sunika Kubrow"
+  "Sunika Kubrow": {
+    "id": "5017"
   },
-  {
-    "id": "018",
-    "name": "Adarza Kavat"
+  "Adarza Kavat": {
+    "id": "5018"
   },
-  {
-    "id": "019",
-    "name": "Smeeta Kavat"
+  "Smeeta Kavat": {
+    "id": "5019"
   },
-  {
-    "id": "021",
-    "name": "Artax"
+  "Artax": {
+    "id": "5021"
   },
-  {
-    "id": "022",
-    "name": "Deth Machine Rifle"
+  "Deth Machine Rifle": {
+    "id": "5022"
   },
-  {
-    "id": "023",
-    "name": "Laser Rifle"
+  "Laser Rifle": {
+    "id": "5023"
   },
-  {
-    "id": "024",
-    "name": "Prime Laser Rifle"
+  "Prime Laser Rifle": {
+    "id": "5024"
   },
-  {
-    "id": "025",
-    "name": "Stinger"
+  "Stinger": {
+    "id": "5025"
   },
-  {
-    "id": "026",
-    "name": "Sweeper"
+  "Sweeper": {
+    "id": "5026"
   },
-  {
-    "id": "027",
-    "name": "Sweeper Prime"
+  "Sweeper Prime": {
+    "id": "5027"
   },
-  {
-    "id": "028",
-    "name": "Vulklok"
+  "Vulklok": {
+    "id": "5028"
   },
-  {
-    "id": "029",
-    "name": "Burst Laser"
+  "Burst Laser": {
+    "id": "5029"
   },
-  {
-    "id": "030",
-    "name": "Prisma Burst Laser"
+  "Prisma Burst Laser": {
+    "id": "5030"
   },
-  {
-    "id": "031",
-    "name": "Deconstructor"
+  "Deconstructor": {
+    "id": "5031"
   },
-  {
-    "id": "032",
-    "name": "Deconstructor Prime"
+  "Deconstructor Prime": {
+    "id": "5032"
   }
-]
+}

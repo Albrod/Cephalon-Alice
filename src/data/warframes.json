@@ -1,226 +1,178 @@
-[
-  {
-    "id": "001",
-    "name": "Ash",
+{
+  "Ash": {
+    "id": "1001",
     "source": "Grineer Manics Drops"
   },
-  {
-    "id": "002",
-    "name": "Ash Prime"
+  "Ash Prime": {
+    "id": "1002"
   },
-  {
-    "id": "003",
-    "name": "Atlas",
+  "Atlas": {
+    "id": "1003",
     "source": "The Jordas Precept (Quest)"
   },
-  {
-    "id": "004",
-    "name": "Banshee",
+  "Banshee": {
+    "id": "1004",
     "source": "Tenno Lab"
   },
-  {
-    "id": "005",
-    "name": "Banshee Prime"
+  "Banshee Prime": {
+    "id": "1005"
   },
-  {
-    "id": "006",
-    "name": "Chroma",
+  "Chroma": {
+    "id": "1006",
     "source": "The New Strange (Quest) / Junctions"
   },
-  {
-    "id": "007",
-    "name": "Ember",
+  "Ember": {
+    "id": "1007",
     "source": "General Sargas Ruk (Saturn)"
   },
-  {
-    "id": "008",
-    "name": "Ember Prime"
+  "Ember Prime": {
+    "id": "1008"
   },
-  {
-    "id": "009",
-    "name": "Equinox",
+  "Equinox": {
+    "id": "1009",
     "source": "Tyl Regor (Uranus)"
   },
-  {
-    "id": "010",
-    "name": "Excalibur",
+  "Excalibur": {
+    "id": "1010",
     "source": "Ambulas (Pluto)"
   },
-  {
-    "id": "011",
-    "name": "Frost",
+  "Frost": {
+    "id": "1011",
     "source": "Lieutenant Lech Kril (Mars)"
   },
-  {
-    "id": "012",
-    "name": "Frost Prime"
+  "Frost Prime": {
+    "id": "1012"
   },
-  {
-    "id": "013",
-    "name": "Inaros",
+  "Inaros": {
+    "id": "1013",
     "source": "Sands of Inaros (Quest)"
   },
-  {
-    "id": "014",
-    "name": "Ivara",
+  "Ivara": {
+    "id": "1014",
     "source": "Spy Missions"
   },
-  {
-    "id": "015",
-    "name": "Limbo",
+  "Limbo": {
+    "id": "1015",
     "source": "The Limbo Theorem (Quest)"
   },
-  {
-    "id": "016",
-    "name": "Loki",
+  "Loki": {
+    "id": "1016",
     "source": "Hyena Pack (Neptune)"
   },
-  {
-    "id": "017",
-    "name": "Loki Prime"
+  "Loki Prime": {
+    "id": "1017"
   },
-  {
-    "id": "018",
-    "name": "Mag",
+  "Mag": {
+    "id": "1018",
     "source": "The Sergeant (Phobos)"
   },
-  {
-    "id": "019",
-    "name": "Mag Prime"
+  "Mag Prime": {
+    "id": "1019"
   },
-  {
-    "id": "020",
-    "name": "Mesa",
+  "Mesa": {
+    "id": "1020",
     "source": "Mutalist Alad V (Eris)"
   },
-  {
-    "id": "021",
-    "name": "Mirage",
+  "Mirage": {
+    "id": "1021",
     "source": "Hidden Messages (Quest)"
   },
-  {
-    "id": "022",
-    "name": "Nekros",
+  "Nekros": {
+    "id": "1022",
     "source": "Orokin Derelict Assassination"
   },
-  {
-    "id": "023",
-    "name": "Nekros Prime"
+  "Nekros Prime": {
+    "id": "1023"
   },
-  {
-    "id": "024",
-    "name": "Nezha",
+  "Nezha": {
+    "id": "1024",
     "source": "Tenno Lab"
   },
-  {
-    "id": "025",
-    "name": "Nidus",
+  "Nidus": {
+    "id": "1025",
     "source": "Main: The Glast Gambit (Quest)<br/>Components: Infested Salvage (Eris) - Rotation C"
   },
-  {
-    "id": "026",
-    "name": "Nova",
+  "Nova": {
+    "id": "1026",
     "source": "Raptors (Europa)"
   },
-  {
-    "id": "027",
-    "name": "Nova Prime"
+  "Nova Prime": {
+    "id": "1027"
   },
-  {
-    "id": "028",
-    "name": "Nyx",
+  "Nyx": {
+    "id": "1028",
     "source": "Phorid (Infested Invasion)"
   },
-  {
-    "id": "029",
-    "name": "Nyx Prime"
+  "Nyx Prime": {
+    "id": "1029"
   },
-  {
-    "id": "030",
-    "name": "Oberon",
+  "Oberon": {
+    "id": "1030",
     "source": "Eximus Drops"
   },
-  {
-    "id": "031",
-    "name": "Octavia",
+  "Octavia": {
+    "id": "1031",
     "source": "Main: Octavia's Anthem (Quest)<br/>Chassis: Music Note Puzzle (Lua)<br/>Systems: Crossfire Exterminate Caches (Lua)<br/>Neuroptics: Orokin Derelict Survival - Rotation C"
   },
-  {
-    "id": "032",
-    "name": "Rhino",
+  "Rhino": {
+    "id": "1032",
     "source": "Jackal (Venus)"
   },
-  {
-    "id": "033",
-    "name": "Rhino Prime"
+  "Rhino Prime": {
+    "id": "1033"
   },
-  {
-    "id": "034",
-    "name": "Saryn",
+  "Saryn": {
+    "id": "1034",
     "source": "Kela De Thaym (Sedna)"
   },
-  {
-    "id": "035",
-    "name": "Saryn Prime"
+  "Saryn Prime": {
+    "id": "1035"
   },
-  {
-    "id": "036",
-    "name": "Titania",
+  "Titania": {
+    "id": "1036",
     "source": "The Silver Grove (Quest)"
   },
-  {
-    "id": "037",
-    "name": "Trinity",
+  "Trinity": {
+    "id": "1037",
     "source": "Captain Vor and Lieutenant Lech Kril (Ceres)"
   },
-  {
-    "id": "038",
-    "name": "Trinity Prime"
+  "Trinity Prime": {
+    "id": "1038"
   },
-  {
-    "id": "039",
-    "name": "Valkyr",
+  "Valkyr": {
+    "id": "1039",
     "source": "Alad V (Jupiter)"
   },
-  {
-    "id": "040",
-    "name": "Valkyr Prime"
+  "Valkyr Prime": {
+    "id": "1040"
   },
-  {
-    "id": "041",
-    "name": "Vauban",
+  "Vauban": {
+    "id": "1041",
     "source": "Alert Missions"
   },
-  {
-    "id": "042",
-    "name": "Vauban Prime"
+  "Vauban Prime": {
+    "id": "1042"
   },
-  {
-    "id": "043",
-    "name": "Volt",
+  "Volt": {
+    "id": "1043",
     "source": "Tenno Lab"
   },
-  {
-    "id": "044",
-    "name": "Volt Prime"
+  "Volt Prime": {
+    "id": "1044"
   },
-  {
-    "id": "045",
-    "name": "Wukong",
+  "Wukong": {
+    "id": "1045",
     "source": "Tenno Lab"
   },
-  {
-    "id": "046",
-    "name": "Zephyr",
+  "Zephyr": {
+    "id": "1046",
     "source": "Tenno Lab"
   },
-  {
-    "id": "047",
-    "name": "Excalibur Prime"
+  "Excalibur Prime": {
+    "id": "1047"
   },
-  {
-    "id": "048",
-    "name": "Hydroid",
+  "Hydroid": {
+    "id": "1048",
     "source": "Councilor Vay Hek (Earth)"
   }
-]
+}

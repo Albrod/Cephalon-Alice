@@ -1,1178 +1,884 @@
-[
-  {
-    "id": "098",
-    "name": "Akbolto"
-  },
-  {
-    "id": "099",
-    "name": "Akbronco"
-  },
-  {
-    "id": "214",
-    "name": "Fragor"
-  },
-  {
-    "id": "215",
-    "name": "Fragor Prime"
-  },
-  {
-    "id": "212",
-    "name": "Fang"
-  },
-  {
-    "id": "213",
-    "name": "Fang Prime"
-  },
-  {
-    "id": "210",
-    "name": "Ether Reaper"
-  },
-  {
-    "id": "211",
-    "name": "Ether Sword"
-  },
-  {
-    "id": "090",
-    "name": "Vectis Prime"
-  },
-  {
-    "id": "091",
-    "name": "Vulkar"
-  },
-  {
-    "id": "092",
-    "name": "Vulkar Wraith"
-  },
-  {
-    "id": "093",
-    "name": "Zarr"
-  },
-  {
-    "id": "094",
-    "name": "Zenith"
-  },
-  {
-    "id": "095",
-    "name": "Zhuge"
-  },
-  {
-    "id": "096",
-    "name": "Acrid"
-  },
-  {
-    "id": "097",
-    "name": "Afuris"
-  },
-  {
-    "id": "010",
-    "name": "Burston"
-  },
-  {
-    "id": "011",
-    "name": "Burston Prime"
-  },
-  {
-    "id": "012",
-    "name": "Buzlok"
-  },
-  {
-    "id": "013",
-    "name": "Cernos"
-  },
-  {
-    "id": "014",
-    "name": "Cernos Prime"
-  },
-  {
-    "id": "015",
-    "name": "Convectrix"
-  },
-  {
-    "id": "016",
-    "name": "Daikyu"
-  },
-  {
-    "id": "017",
-    "name": "Dera"
-  },
-  {
-    "id": "018",
-    "name": "Dera Vandal"
-  },
-  {
-    "id": "019",
-    "name": "Dex Sybaris"
+{
+  "Akbolto": {
+    "id": "3098"
   },
-  {
-    "id": "139",
-    "name": "Lato Vandal"
+  "Akbronco": {
+    "id": "3099"
   },
-  {
-    "id": "138",
-    "name": "Lato Prime"
+  "Fragor": {
+    "id": "3214"
   },
-  {
-    "id": "166",
-    "name": "Twin Grakatas"
+  "Fragor Prime": {
+    "id": "3215"
   },
-  {
-    "id": "268",
-    "name": "Redeemer"
+  "Fang": {
+    "id": "3212"
   },
-  {
-    "id": "160",
-    "name": "Spira Prime"
+  "Fang Prime": {
+    "id": "3213"
   },
-  {
-    "id": "264",
-    "name": "Prova"
+  "Ether Reaper": {
+    "id": "3210"
   },
-  {
-    "id": "161",
-    "name": "Staticor"
+  "Ether Sword": {
+    "id": "3211"
   },
-  {
-    "id": "289",
-    "name": "Twin Basolk"
+  "Vectis Prime": {
+    "id": "3090"
   },
-  {
-    "id": "288",
-    "name": "Tonbo"
+  "Vulkar": {
+    "id": "3091"
   },
-  {
-    "id": "122",
-    "name": "Despair"
+  "Vulkar Wraith": {
+    "id": "3092"
   },
-  {
-    "id": "162",
-    "name": "Stug"
+  "Zarr": {
+    "id": "3093"
   },
-  {
-    "id": "281",
-    "name": "Skana"
+  "Zenith": {
+    "id": "3094"
   },
-  {
-    "id": "280",
-    "name": "Silva & Aegis"
+  "Zhuge": {
+    "id": "3095"
   },
-  {
-    "id": "283",
-    "name": "Sydon"
+  "Acrid": {
+    "id": "3096"
   },
-  {
-    "id": "282",
-    "name": "Skana Prime"
+  "Afuris": {
+    "id": "3097"
   },
-  {
-    "id": "285",
-    "name": "Tekko"
+  "Burston": {
+    "id": "3010"
   },
-  {
-    "id": "284",
-    "name": "Synoid Heliocor"
+  "Burston Prime": {
+    "id": "3011"
   },
-  {
-    "id": "287",
-    "name": "Tipedo"
+  "Buzlok": {
+    "id": "3012"
   },
-  {
-    "id": "286",
-    "name": "Telos Boltace"
+  "Cernos": {
+    "id": "3013"
   },
-  {
-    "id": "025",
-    "name": "Gorgon"
+  "Cernos Prime": {
+    "id": "3014"
   },
-  {
-    "id": "024",
-    "name": "Glaxion"
+  "Convectrix": {
+    "id": "3015"
   },
-  {
-    "id": "027",
-    "name": "Grakata"
+  "Daikyu": {
+    "id": "3016"
   },
-  {
-    "id": "026",
-    "name": "Gorgon Wraith"
+  "Dera": {
+    "id": "3017"
   },
-  {
-    "id": "021",
-    "name": "Dread"
+  "Dera Vandal": {
+    "id": "3018"
   },
-  {
-    "id": "020",
-    "name": "Drakgoon"
+  "Dex Sybaris": {
+    "id": "3019"
   },
-  {
-    "id": "126",
-    "name": "Dual Toxocyst"
+  "Lato Vandal": {
+    "id": "3139"
   },
-  {
-    "id": "127",
-    "name": "Embolist"
+  "Lato Prime": {
+    "id": "3138"
   },
-  {
-    "id": "128",
-    "name": "Euphona Prime"
+  "Twin Grakatas": {
+    "id": "3166"
   },
-  {
-    "id": "129",
-    "name": "Furis"
+  "Redeemer": {
+    "id": "3268"
   },
-  {
-    "id": "269",
-    "name": "Ripkas"
+  "Spira Prime": {
+    "id": "3160"
   },
-  {
-    "id": "219",
-    "name": "Galatine Prime"
+  "Prova": {
+    "id": "3264"
   },
-  {
-    "id": "029",
-    "name": "Harpak"
+  "Staticor": {
+    "id": "3161"
   },
-  {
-    "id": "028",
-    "name": "Grinlok"
+  "Twin Basolk": {
+    "id": "3289"
   },
-  {
-    "id": "133",
-    "name": "Kohmak"
+  "Tonbo": {
+    "id": "3288"
   },
-  {
-    "id": "132",
-    "name": "Hikou Prime"
+  "Despair": {
+    "id": "3122"
   },
-  {
-    "id": "085",
-    "name": "Tigris Prime"
+  "Stug": {
+    "id": "3162"
   },
-  {
-    "id": "135",
-    "name": "Kulstar"
+  "Skana": {
+    "id": "3281"
   },
-  {
-    "id": "265",
-    "name": "Prova Vandal"
+  "Silva & Aegis": {
+    "id": "3280"
   },
-  {
-    "id": "131",
-    "name": "Hikou"
+  "Sydon": {
+    "id": "3283"
   },
-  {
-    "id": "124",
-    "name": "Dex Furis"
+  "Skana Prime": {
+    "id": "3282"
   },
-  {
-    "id": "130",
-    "name": "Gammacor"
+  "Tekko": {
+    "id": "3285"
   },
-  {
-    "id": "216",
-    "name": "Furax"
+  "Synoid Heliocor": {
+    "id": "3284"
   },
-  {
-    "id": "137",
-    "name": "Lato"
+  "Tipedo": {
+    "id": "3287"
   },
-  {
-    "id": "294",
-    "name": "Zenistar"
+  "Telos Boltace": {
+    "id": "3286"
   },
-  {
-    "id": "292",
-    "name": "Venka Prime"
+  "Gorgon": {
+    "id": "3025"
   },
-  {
-    "id": "293",
-    "name": "War"
+  "Glaxion": {
+    "id": "3024"
   },
-  {
-    "id": "290",
-    "name": "Vaykor Sydon"
+  "Grakata": {
+    "id": "3027"
   },
-  {
-    "id": "136",
-    "name": "Kunai"
+  "Gorgon Wraith": {
+    "id": "3026"
   },
-  {
-    "id": "164",
-    "name": "Talons"
+  "Dread": {
+    "id": "3021"
   },
-  {
-    "id": "146",
-    "name": "MK1-Kunai"
+  "Drakgoon": {
+    "id": "3020"
   },
-  {
-    "id": "199",
-    "name": "Dragon Nikana"
+  "Dual Toxocyst": {
+    "id": "3126"
   },
-  {
-    "id": "198",
-    "name": "Dex Dakra"
+  "Embolist": {
+    "id": "3127"
   },
-  {
-    "id": "084",
-    "name": "Tigris"
+  "Euphona Prime": {
+    "id": "3128"
   },
-  {
-    "id": "147",
-    "name": "Nukor"
+  "Furis": {
+    "id": "3129"
   },
-  {
-    "id": "195",
-    "name": "Dark Split-Sword"
+  "Ripkas": {
+    "id": "3269"
   },
-  {
-    "id": "194",
-    "name": "Dark Dagger"
+  "Galatine Prime": {
+    "id": "3219"
   },
-  {
-    "id": "197",
-    "name": "Destreza"
+  "Harpak": {
+    "id": "3029"
   },
-  {
-    "id": "134",
-    "name": "Kraken"
+  "Grinlok": {
+    "id": "3028"
   },
-  {
-    "id": "191",
-    "name": "Cerata"
+  "Kohmak": {
+    "id": "3133"
   },
-  {
-    "id": "203",
-    "name": "Dual Ichor"
+  "Hikou Prime": {
+    "id": "3132"
   },
-  {
-    "id": "193",
-    "name": "Dakra Prime"
+  "Tigris Prime": {
+    "id": "3085"
   },
-  {
-    "id": "192",
-    "name": "Cronus"
+  "Kulstar": {
+    "id": "3135"
   },
-  {
-    "id": "115",
-    "name": "Bolto"
+  "Prova Vandal": {
+    "id": "3265"
   },
-  {
-    "id": "114",
-    "name": "Ballistica"
+  "Hikou": {
+    "id": "3131"
   },
-  {
-    "id": "038",
-    "name": "Kohm"
+  "Dex Furis": {
+    "id": "3124"
   },
-  {
-    "id": "039",
-    "name": "Lanka"
+  "Gammacor": {
+    "id": "3130"
   },
-  {
-    "id": "111",
-    "name": "Angstrum"
+  "Furax": {
+    "id": "3216"
   },
-  {
-    "id": "110",
-    "name": "Akzani"
+  "Lato": {
+    "id": "3137"
   },
-  {
-    "id": "113",
-    "name": "Azima"
+  "Zenistar": {
+    "id": "3294"
   },
-  {
-    "id": "112",
-    "name": "Atomos"
+  "Venka Prime": {
+    "id": "3292"
   },
-  {
-    "id": "032",
-    "name": "Hind"
+  "War": {
+    "id": "3293"
   },
-  {
-    "id": "033",
-    "name": "Ignis"
+  "Vaykor Sydon": {
+    "id": "3290"
   },
-  {
-    "id": "030",
-    "name": "Hek"
+  "Kunai": {
+    "id": "3136"
   },
-  {
-    "id": "031",
-    "name": "Hema"
+  "Talons": {
+    "id": "3164"
   },
-  {
-    "id": "036",
-    "name": "Karak"
+  "MK1-Kunai": {
+    "id": "3146"
   },
-  {
-    "id": "037",
-    "name": "Karak Wraith"
+  "Dragon Nikana": {
+    "id": "3199"
   },
-  {
-    "id": "034",
-    "name": "Ignis Wraith"
+  "Dex Dakra": {
+    "id": "3198"
   },
-  {
-    "id": "035",
-    "name": "Javlok"
+  "Tigris": {
+    "id": "3084"
   },
-  {
-    "id": "174",
-    "name": "Vasto Prime"
+  "Nukor": {
+    "id": "3147"
   },
-  {
-    "id": "140",
-    "name": "Lex"
+  "Dark Split-Sword": {
+    "id": "3195"
   },
-  {
-    "id": "050",
-    "name": "Opticor"
+  "Dark Dagger": {
+    "id": "3194"
   },
-  {
-    "id": "141",
-    "name": "Lex Prime"
+  "Destreza": {
+    "id": "3197"
   },
-  {
-    "id": "121",
-    "name": "Cycron"
+  "Kraken": {
+    "id": "3134"
   },
-  {
-    "id": "257",
-    "name": "Orthos Prime"
+  "Cerata": {
+    "id": "3191"
   },
-  {
-    "id": "209",
-    "name": "Ether Daggers"
+  "Dual Ichor": {
+    "id": "3203"
   },
-  {
-    "id": "052",
-    "name": "Paracyst"
+  "Dakra Prime": {
+    "id": "3193"
   },
-  {
-    "id": "082",
-    "name": "Tetra"
+  "Cronus": {
+    "id": "3192"
   },
-  {
-    "id": "170",
-    "name": "Twin Vipers"
+  "Bolto": {
+    "id": "3115"
   },
-  {
-    "id": "120",
-    "name": "Cestra"
+  "Ballistica": {
+    "id": "3114"
   },
-  {
-    "id": "245",
-    "name": "Mire"
+  "Kohm": {
+    "id": "3038"
   },
-  {
-    "id": "244",
-    "name": "Mios"
+  "Lanka": {
+    "id": "3039"
   },
-  {
-    "id": "108",
-    "name": "Akstiletto Prime"
+  "Angstrum": {
+    "id": "3111"
   },
-  {
-    "id": "109",
-    "name": "Akvasto"
+  "Akzani": {
+    "id": "3110"
   },
-  {
-    "id": "241",
-    "name": "Machete"
+  "Azima": {
+    "id": "3113"
   },
-  {
-    "id": "240",
-    "name": "Lesion"
+  "Atomos": {
+    "id": "3112"
   },
-  {
-    "id": "049",
-    "name": "Ogris"
+  "Hind": {
+    "id": "3032"
   },
-  {
-    "id": "048",
-    "name": "Mutalist Quanta"
+  "Ignis": {
+    "id": "3033"
   },
-  {
-    "id": "047",
-    "name": "Mutalist Cernos"
+  "Hek": {
+    "id": "3030"
   },
-  {
-    "id": "046",
-    "name": "MK1-Strun"
+  "Hema": {
+    "id": "3031"
   },
-  {
-    "id": "045",
-    "name": "MK1-Paris"
+  "Karak": {
+    "id": "3036"
   },
-  {
-    "id": "044",
-    "name": "MK1-Braton"
+  "Karak Wraith": {
+    "id": "3037"
   },
-  {
-    "id": "043",
-    "name": "Miter"
+  "Ignis Wraith": {
+    "id": "3034"
   },
-  {
-    "id": "042",
-    "name": "Latron Wraith"
+  "Javlok": {
+    "id": "3035"
   },
-  {
-    "id": "041",
-    "name": "Latron Prime"
+  "Vasto Prime": {
+    "id": "3174"
   },
-  {
-    "id": "040",
-    "name": "Latron"
+  "Lex": {
+    "id": "3140"
   },
-  {
-    "id": "270",
-    "name": "Sancti Magistar"
+  "Opticor": {
+    "id": "3050"
   },
-  {
-    "id": "247",
-    "name": "MK1-Furax"
+  "Lex Prime": {
+    "id": "3141"
   },
-  {
-    "id": "117",
-    "name": "Bronco"
+  "Cycron": {
+    "id": "3121"
   },
-  {
-    "id": "167",
-    "name": "Twin Gremlins"
+  "Orthos Prime": {
+    "id": "3257"
   },
-  {
-    "id": "246",
-    "name": "MK1-Bo"
+  "Ether Daggers": {
+    "id": "3209"
   },
-  {
-    "id": "054",
-    "name": "Paris Prime"
+  "Paracyst": {
+    "id": "3052"
   },
-  {
-    "id": "291",
-    "name": "Venka"
+  "Tetra": {
+    "id": "3082"
   },
-  {
-    "id": "055",
-    "name": "Penta"
+  "Twin Vipers": {
+    "id": "3170"
   },
-  {
-    "id": "252",
-    "name": "Ninkondi"
+  "Cestra": {
+    "id": "3120"
   },
-  {
-    "id": "006",
-    "name": "Boltor Prime"
+  "Mire": {
+    "id": "3245"
   },
-  {
-    "id": "089",
-    "name": "Vectis"
+  "Mios": {
+    "id": "3244"
   },
-  {
-    "id": "076",
-    "name": "Supra Vandal"
+  "Akstiletto Prime": {
+    "id": "3108"
   },
-  {
-    "id": "243",
-    "name": "Magistar"
+  "Akvasto": {
+    "id": "3109"
   },
-  {
-    "id": "077",
-    "name": "Sybaris"
+  "Machete": {
+    "id": "3241"
   },
-  {
-    "id": "242",
-    "name": "Machete Wraith"
+  "Lesion": {
+    "id": "3240"
   },
-  {
-    "id": "176",
-    "name": "Viper"
+  "Ogris": {
+    "id": "3049"
   },
-  {
-    "id": "074",
-    "name": "Strun Wraith"
+  "Mutalist Quanta": {
+    "id": "3048"
   },
-  {
-    "id": "102",
-    "name": "Aklato"
+  "Mutalist Cernos": {
+    "id": "3047"
   },
-  {
-    "id": "258",
-    "name": "Orvius"
+  "MK1-Strun": {
+    "id": "3046"
   },
-  {
-    "id": "259",
-    "name": "Pangolin Sword"
+  "MK1-Paris": {
+    "id": "3045"
   },
-  {
-    "id": "058",
-    "name": "Prisma Grakata"
+  "MK1-Braton": {
+    "id": "3044"
   },
-  {
-    "id": "059",
-    "name": "Prisma Tetra"
+  "Miter": {
+    "id": "3043"
   },
-  {
-    "id": "179",
-    "name": "Anku"
+  "Latron Wraith": {
+    "id": "3042"
   },
-  {
-    "id": "178",
-    "name": "Amphis"
+  "Latron Prime": {
+    "id": "3041"
   },
-  {
-    "id": "177",
-    "name": "Ack & Brunt"
+  "Latron": {
+    "id": "3040"
   },
-  {
-    "id": "253",
-    "name": "Obex"
+  "Sancti Magistar": {
+    "id": "3270"
   },
-  {
-    "id": "250",
-    "name": "Nikana"
+  "MK1-Furax": {
+    "id": "3247"
   },
-  {
-    "id": "251",
-    "name": "Nikana Prime"
+  "Bronco": {
+    "id": "3117"
   },
-  {
-    "id": "173",
-    "name": "Vasto"
+  "Twin Gremlins": {
+    "id": "3167"
   },
-  {
-    "id": "172",
-    "name": "Tysis"
+  "MK1-Bo": {
+    "id": "3246"
   },
-  {
-    "id": "171",
-    "name": "Twin Vipers Wraith"
+  "Paris Prime": {
+    "id": "3054"
   },
-  {
-    "id": "255",
-    "name": "Okina"
+  "Venka": {
+    "id": "3291"
   },
-  {
-    "id": "101",
-    "name": "Akjagara"
+  "Penta": {
+    "id": "3055"
   },
-  {
-    "id": "070",
-    "name": "Soma"
+  "Ninkondi": {
+    "id": "3252"
   },
-  {
-    "id": "106",
-    "name": "Aksomati"
+  "Boltor Prime": {
+    "id": "3006"
   },
-  {
-    "id": "175",
-    "name": "Vaykor Marelok"
+  "Vectis": {
+    "id": "3089"
   },
-  {
-    "id": "071",
-    "name": "Soma Prime"
+  "Supra Vandal": {
+    "id": "3076"
   },
-  {
-    "id": "248",
-    "name": "Nami Skyla"
+  "Magistar": {
+    "id": "3243"
   },
-  {
-    "id": "182",
-    "name": "Arcata"
+  "Sybaris": {
+    "id": "3077"
   },
-  {
-    "id": "183",
-    "name": "Atterax"
+  "Machete Wraith": {
+    "id": "3242"
   },
-  {
-    "id": "180",
-    "name": "Ankyros"
+  "Viper": {
+    "id": "3176"
   },
-  {
-    "id": "181",
-    "name": "Ankyros Prime"
+  "Strun Wraith": {
+    "id": "3074"
   },
-  {
-    "id": "186",
-    "name": "Boltace"
+  "Aklato": {
+    "id": "3102"
   },
-  {
-    "id": "104",
-    "name": "Aklex Prime"
+  "Orvius": {
+    "id": "3258"
   },
-  {
-    "id": "184",
-    "name": "Bo"
+  "Pangolin Sword": {
+    "id": "3259"
   },
-  {
-    "id": "185",
-    "name": "Bo Prime"
+  "Prisma Grakata": {
+    "id": "3058"
   },
-  {
-    "id": "057",
-    "name": "Prisma Gorgon"
+  "Prisma Tetra": {
+    "id": "3059"
   },
-  {
-    "id": "188",
-    "name": "Broken War"
+  "Anku": {
+    "id": "3179"
   },
-  {
-    "id": "105",
-    "name": "Akmagnus"
+  "Amphis": {
+    "id": "3178"
   },
-  {
-    "id": "202",
-    "name": "Dual Heat Swords"
+  "Ack & Brunt": {
+    "id": "3177"
   },
-  {
-    "id": "187",
-    "name": "Broken Scepter"
+  "Obex": {
+    "id": "3253"
   },
-  {
-    "id": "061",
-    "name": "Quanta Vandal"
+  "Nikana": {
+    "id": "3250"
   },
-  {
-    "id": "060",
-    "name": "Quanta"
+  "Nikana Prime": {
+    "id": "3251"
   },
-  {
-    "id": "063",
-    "name": "Rubico"
+  "Vasto": {
+    "id": "3173"
   },
-  {
-    "id": "196",
-    "name": "Dark Sword"
+  "Tysis": {
+    "id": "3172"
   },
-  {
-    "id": "065",
-    "name": "Secura Penta"
+  "Twin Vipers Wraith": {
+    "id": "3171"
   },
-  {
-    "id": "064",
-    "name": "Sancti Tigris"
+  "Okina": {
+    "id": "3255"
   },
-  {
-    "id": "067",
-    "name": "Snipetron"
+  "Akjagara": {
+    "id": "3101"
   },
-  {
-    "id": "066",
-    "name": "Simulor"
+  "Soma": {
+    "id": "3070"
   },
-  {
-    "id": "069",
-    "name": "Sobek"
+  "Aksomati": {
+    "id": "3106"
   },
-  {
-    "id": "068",
-    "name": "Snipetron Vandal"
+  "Vaykor Marelok": {
+    "id": "3175"
   },
-  {
-    "id": "190",
-    "name": "Ceramic Dagger"
+  "Soma Prime": {
+    "id": "3071"
   },
-  {
-    "id": "163",
-    "name": "Synoid Gammacor"
+  "Nami Skyla": {
+    "id": "3248"
   },
-  {
-    "id": "168",
-    "name": "Twin Kohmak"
+  "Arcata": {
+    "id": "3182"
   },
-  {
-    "id": "169",
-    "name": "Twin Rogga"
+  "Atterax": {
+    "id": "3183"
   },
-  {
-    "id": "229",
-    "name": "Hirudo"
+  "Ankyros": {
+    "id": "3180"
   },
-  {
-    "id": "228",
-    "name": "Heliocor"
+  "Ankyros Prime": {
+    "id": "3181"
   },
-  {
-    "id": "227",
-    "name": "Heat Sword"
+  "Boltace": {
+    "id": "3186"
   },
-  {
-    "id": "226",
-    "name": "Heat Dagger"
+  "Aklex Prime": {
+    "id": "3104"
   },
-  {
-    "id": "225",
-    "name": "Hate"
+  "Bo": {
+    "id": "3184"
   },
-  {
-    "id": "224",
-    "name": "Halikar"
+  "Bo Prime": {
+    "id": "3185"
   },
-  {
-    "id": "223",
-    "name": "Gram"
+  "Prisma Gorgon": {
+    "id": "3057"
   },
-  {
-    "id": "222",
-    "name": "Glaive Prime"
+  "Broken War": {
+    "id": "3188"
   },
-  {
-    "id": "221",
-    "name": "Glaive"
+  "Akmagnus": {
+    "id": "3105"
   },
-  {
-    "id": "220",
-    "name": "Gazal Machete"
+  "Dual Heat Swords": {
+    "id": "3202"
   },
-  {
-    "id": "022",
-    "name": "Ferrox"
+  "Broken Scepter": {
+    "id": "3187"
   },
-  {
-    "id": "189",
-    "name": "Caustacyst"
+  "Quanta Vandal": {
+    "id": "3061"
   },
-  {
-    "id": "218",
-    "name": "Galatine"
+  "Quanta": {
+    "id": "3060"
   },
-  {
-    "id": "271",
-    "name": "Sarpa"
+  "Rubico": {
+    "id": "3063"
   },
-  {
-    "id": "143",
-    "name": "Mara Detron"
+  "Dark Sword": {
+    "id": "3196"
   },
-  {
-    "id": "272",
-    "name": "Scindo"
+  "Secura Penta": {
+    "id": "3065"
   },
-  {
-    "id": "273",
-    "name": "Scindo Prime"
+  "Sancti Tigris": {
+    "id": "3064"
   },
-  {
-    "id": "051",
-    "name": "Panthera"
+  "Snipetron": {
+    "id": "3067"
   },
-  {
-    "id": "256",
-    "name": "Orthos"
+  "Simulor": {
+    "id": "3066"
   },
-  {
-    "id": "274",
-    "name": "Scoliac"
+  "Sobek": {
+    "id": "3069"
   },
-  {
-    "id": "103",
-    "name": "Aklex"
+  "Snipetron Vandal": {
+    "id": "3068"
   },
-  {
-    "id": "275",
-    "name": "Secura Lecta"
+  "Ceramic Dagger": {
+    "id": "3190"
   },
-  {
-    "id": "151",
-    "name": "Rakta Ballistica"
+  "Synoid Gammacor": {
+    "id": "3163"
   },
-  {
-    "id": "150",
-    "name": "Pyrana"
+  "Twin Kohmak": {
+    "id": "3168"
   },
-  {
-    "id": "153",
-    "name": "Secura Dual Cestra"
+  "Twin Rogga": {
+    "id": "3169"
   },
-  {
-    "id": "152",
-    "name": "Sancti Castanas"
+  "Hirudo": {
+    "id": "3229"
   },
-  {
-    "id": "116",
-    "name": "Brakk"
+  "Heliocor": {
+    "id": "3228"
   },
-  {
-    "id": "073",
-    "name": "Strun"
+  "Heat Sword": {
+    "id": "3227"
   },
-  {
-    "id": "157",
-    "name": "Sonicor"
+  "Heat Dagger": {
+    "id": "3226"
   },
-  {
-    "id": "156",
-    "name": "Sicarus Prime"
+  "Hate": {
+    "id": "3225"
   },
-  {
-    "id": "159",
-    "name": "Spira"
+  "Halikar": {
+    "id": "3224"
   },
-  {
-    "id": "158",
-    "name": "Spectra"
+  "Gram": {
+    "id": "3223"
   },
-  {
-    "id": "277",
-    "name": "Shaku"
+  "Glaive Prime": {
+    "id": "3222"
   },
-  {
-    "id": "075",
-    "name": "Supra"
+  "Glaive": {
+    "id": "3221"
   },
-  {
-    "id": "078",
-    "name": "Synapse"
+  "Gazal Machete": {
+    "id": "3220"
   },
-  {
-    "id": "079",
-    "name": "Synoid Simulor"
+  "Ferrox": {
+    "id": "3022"
   },
-  {
-    "id": "278",
-    "name": "Sheev"
+  "Caustacyst": {
+    "id": "3189"
   },
-  {
-    "id": "062",
-    "name": "Rakta Cernos"
+  "Galatine": {
+    "id": "3218"
   },
-  {
-    "id": "238",
-    "name": "Lacera"
+  "Sarpa": {
+    "id": "3271"
   },
-  {
-    "id": "239",
-    "name": "Lecta"
+  "Mara Detron": {
+    "id": "3143"
   },
-  {
-    "id": "279",
-    "name": "Sibear"
+  "Scindo": {
+    "id": "3272"
   },
-  {
-    "id": "234",
-    "name": "Kesheg"
+  "Scindo Prime": {
+    "id": "3273"
   },
-  {
-    "id": "235",
-    "name": "Kestrel"
+  "Panthera": {
+    "id": "3051"
   },
-  {
-    "id": "236",
-    "name": "Kogake"
+  "Orthos": {
+    "id": "3256"
   },
-  {
-    "id": "237",
-    "name": "Kronen"
+  "Scoliac": {
+    "id": "3274"
   },
-  {
-    "id": "230",
-    "name": "Jat Kittag"
+  "Aklex": {
+    "id": "3103"
   },
-  {
-    "id": "231",
-    "name": "Jaw Sword"
+  "Secura Lecta": {
+    "id": "3275"
   },
-  {
-    "id": "232",
-    "name": "Kama"
+  "Rakta Ballistica": {
+    "id": "3151"
   },
-  {
-    "id": "233",
-    "name": "Karyst"
+  "Pyrana": {
+    "id": "3150"
   },
-  {
-    "id": "123",
-    "name": "Detron"
+  "Secura Dual Cestra": {
+    "id": "3153"
   },
-  {
-    "id": "165",
-    "name": "Telos Akbolto"
+  "Sancti Castanas": {
+    "id": "3152"
   },
-  {
-    "id": "100",
-    "name": "Akbronco Prime"
+  "Brakk": {
+    "id": "3116"
   },
-  {
-    "id": "088",
-    "name": "Vaykor Hek"
+  "Strun": {
+    "id": "3073"
   },
-  {
-    "id": "119",
-    "name": "Castanas"
+  "Sonicor": {
+    "id": "3157"
   },
-  {
-    "id": "072",
-    "name": "Stradavar"
+  "Sicarus Prime": {
+    "id": "3156"
   },
-  {
-    "id": "118",
-    "name": "Bronco Prime"
+  "Spira": {
+    "id": "3159"
   },
-  {
-    "id": "053",
-    "name": "Paris"
+  "Spectra": {
+    "id": "3158"
   },
-  {
-    "id": "254",
-    "name": "Ohma"
+  "Shaku": {
+    "id": "3277"
   },
-  {
-    "id": "083",
-    "name": "Tiberon"
+  "Supra": {
+    "id": "3075"
   },
-  {
-    "id": "155",
-    "name": "Sicarus"
+  "Synapse": {
+    "id": "3078"
   },
-  {
-    "id": "201",
-    "name": "Dual Ether"
+  "Synoid Simulor": {
+    "id": "3079"
   },
-  {
-    "id": "200",
-    "name": "Dual Cleavers"
+  "Sheev": {
+    "id": "3278"
   },
-  {
-    "id": "144",
-    "name": "Marelok"
+  "Rakta Cernos": {
+    "id": "3062"
   },
-  {
-    "id": "145",
-    "name": "MK1-Furis"
+  "Lacera": {
+    "id": "3238"
   },
-  {
-    "id": "142",
-    "name": "Magnus"
+  "Lecta": {
+    "id": "3239"
   },
-  {
-    "id": "204",
-    "name": "Dual Kamas"
+  "Sibear": {
+    "id": "3279"
   },
-  {
-    "id": "207",
-    "name": "Dual Skana"
+  "Kesheg": {
+    "id": "3234"
   },
-  {
-    "id": "206",
-    "name": "Dual Raza"
+  "Kestrel": {
+    "id": "3235"
   },
-  {
-    "id": "217",
-    "name": "Furax Wraith"
+  "Kogake": {
+    "id": "3236"
   },
-  {
-    "id": "208",
-    "name": "Dual Zoren"
+  "Kronen": {
+    "id": "3237"
   },
-  {
-    "id": "081",
-    "name": "Tenora"
+  "Jat Kittag": {
+    "id": "3230"
   },
-  {
-    "id": "080",
-    "name": "Telos Boltor"
+  "Jaw Sword": {
+    "id": "3231"
   },
-  {
-    "id": "087",
-    "name": "Torid"
+  "Kama": {
+    "id": "3232"
   },
-  {
-    "id": "086",
-    "name": "Tonkor"
+  "Karyst": {
+    "id": "3233"
   },
-  {
-    "id": "148",
-    "name": "Pandero"
+  "Detron": {
+    "id": "3123"
   },
-  {
-    "id": "149",
-    "name": "Pox"
+  "Telos Akbolto": {
+    "id": "3165"
   },
-  {
-    "id": "003",
-    "name": "Boar"
+  "Akbronco Prime": {
+    "id": "3100"
   },
-  {
-    "id": "002",
-    "name": "Attica"
+  "Vaykor Hek": {
+    "id": "3088"
   },
-  {
-    "id": "001",
-    "name": "Amprex"
+  "Castanas": {
+    "id": "3119"
   },
-  {
-    "id": "007",
-    "name": "Braton"
+  "Stradavar": {
+    "id": "3072"
   },
-  {
-    "id": "056",
-    "name": "Phage"
+  "Bronco Prime": {
+    "id": "3118"
   },
-  {
-    "id": "005",
-    "name": "Boltor"
+  "Paris": {
+    "id": "3053"
   },
-  {
-    "id": "004",
-    "name": "Boar Prime"
+  "Ohma": {
+    "id": "3254"
   },
-  {
-    "id": "154",
-    "name": "Seer"
+  "Tiberon": {
+    "id": "3083"
   },
-  {
-    "id": "009",
-    "name": "Braton Vandal"
+  "Sicarus": {
+    "id": "3155"
   },
-  {
-    "id": "008",
-    "name": "Braton Prime"
+  "Dual Ether": {
+    "id": "3201"
   },
-  {
-    "id": "125",
-    "name": "Dual Cestra"
+  "Dual Cleavers": {
+    "id": "3200"
   },
-  {
-    "id": "205",
-    "name": "Dual Kamas Prime"
+  "Marelok": {
+    "id": "3144"
   },
-  {
-    "id": "263",
-    "name": "Prisma Skana"
+  "MK1-Furis": {
+    "id": "3145"
   },
-  {
-    "id": "249",
-    "name": "Nami Solo"
+  "Magnus": {
+    "id": "3142"
   },
-  {
-    "id": "262",
-    "name": "Prisma Obex"
+  "Dual Kamas": {
+    "id": "3204"
   },
-  {
-    "id": "023",
-    "name": "Flux Rifle"
+  "Dual Skana": {
+    "id": "3207"
   },
-  {
-    "id": "261",
-    "name": "Prisma Dual Cleavers"
+  "Dual Raza": {
+    "id": "3206"
   },
-  {
-    "id": "107",
-    "name": "Akstiletto"
+  "Furax Wraith": {
+    "id": "3217"
   },
-  {
-    "id": "260",
-    "name": "Plasma Sword"
+  "Dual Zoren": {
+    "id": "3208"
   },
-  {
-    "id": "276",
-    "name": "Serro"
+  "Tenora": {
+    "id": "3081"
   },
-  {
-    "id": "267",
-    "name": "Reaper Prime"
+  "Telos Boltor": {
+    "id": "3080"
   },
-  {
-    "id": "266",
-    "name": "Rakta Dark Dagger"
+  "Torid": {
+    "id": "3087"
+  },
+  "Tonkor": {
+    "id": "3086"
+  },
+  "Pandero": {
+    "id": "3148"
+  },
+  "Pox": {
+    "id": "3149"
+  },
+  "Boar": {
+    "id": "3003"
+  },
+  "Attica": {
+    "id": "3002"
+  },
+  "Amprex": {
+    "id": "3001"
+  },
+  "Braton": {
+    "id": "3007"
+  },
+  "Phage": {
+    "id": "3056"
+  },
+  "Boltor": {
+    "id": "3005"
+  },
+  "Boar Prime": {
+    "id": "3004"
+  },
+  "Seer": {
+    "id": "3154"
+  },
+  "Braton Vandal": {
+    "id": "3009"
+  },
+  "Braton Prime": {
+    "id": "3008"
+  },
+  "Dual Cestra": {
+    "id": "3125"
+  },
+  "Dual Kamas Prime": {
+    "id": "3205"
+  },
+  "Prisma Skana": {
+    "id": "3263"
+  },
+  "Nami Solo": {
+    "id": "3249"
+  },
+  "Prisma Obex": {
+    "id": "3262"
+  },
+  "Flux Rifle": {
+    "id": "3023"
+  },
+  "Prisma Dual Cleavers": {
+    "id": "3261"
+  },
+  "Akstiletto": {
+    "id": "3107"
+  },
+  "Plasma Sword": {
+    "id": "3260"
+  },
+  "Serro": {
+    "id": "3276"
+  },
+  "Reaper Prime": {
+    "id": "3267"
+  },
+  "Rakta Dark Dagger": {
+    "id": "3266"
   }
-]
+}

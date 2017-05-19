@@ -119,9 +119,10 @@ function loadCodex() {
   $(document).on('contextmenu', '.gilded-img', function(e) {
     e.preventDefault();
     var id = $(this).parent().attr("id");
-    var entry = retrieveEntryByID(id);
+    var name = retrieveNameByID(id);
+    var entry = retrieveEntryByName(name);
 
-    detailsLookupInfo(entry);
+    detailsLookupInfo(name, entry);
   });
 }
 
@@ -151,7 +152,7 @@ function searchLookup() {
   var entry = retrieveEntryByName(val);
 
   if (entry) {
-    searchLookupInfo(entry);
+    searchLookupInfo(val,entry);
 
     $(".search-info").addClass("active");
     $(".search-pane").addClass("slideup");
@@ -219,18 +220,20 @@ function renderLibrary(cat) {
   }
 
   // Sort alphanumerically.
-  var sortArr = fullData[cat].sort(function (a, b) {
-    return a.name.localeCompare(b.name);
+
+  var sortArr = Object.keys(fullData[cat]).sort(function (a, b) {
+    return a.localeCompare(b);
   });
 
   $.each( sortArr, function( i, obj ) {
-    var id = obj.id;
-    var entry = obj.name;
+    var obj2 = fullData[cat][obj];
+    var id = obj2.id;
+    var entry = obj;
     var row = null;
     // Check if new row is needed.
 
     row = $("#" + cat + "Div .row:last-child");
-    var entryDiv = $('<div>', {class: "col-md-2 mb-2 codex-entry", id: cat_id + id}).appendTo(row);
+    var entryDiv = $('<div>', {class: "col-md-2 mb-2 codex-entry", id: id}).appendTo(row);
 
     var entryImg = null;
     var image_url = "rsc/img/items/" + entry.toLowerCase() + ".png";
@@ -325,9 +328,9 @@ function updateData() {
       for (var i in fullData) {
         var catData = fullData[i];
         for (var j in catData) {
-          var innerData = {"id": catName(i) + catData[j].id};
+          var innerData = {"id": catData[j].id};
 
-          dbData[catData[j].name.toLowerCase()] = innerData;
+          dbData[catData[j].toLowerCase()] = innerData;
         }
         // Push changes to DB.
       }
@@ -390,9 +393,8 @@ function updateTotals() {
   $("#total-counter").html(userSum + "/" + totalSum + " Mastered");
 }
 
-function searchLookupInfo(entry) {
+function searchLookupInfo(name, entry) {
   var id = entry.id;
-  var name = entry.name;
 
   // Load id
   $(".search-info-img").attr("src","rsc/img/items/" + name.toLowerCase() + ".png");
@@ -419,9 +421,10 @@ function searchLookupInfo(entry) {
     sourceSpan.html("<strong>Source</strong>: <p class=\"search-info-source-p\">" + entry.source + "</p>");
   }
 }
-function detailsLookupInfo(entry) {
+function detailsLookupInfo(name, entry) {
   var id = entry.id;
-  var name = entry.name;
+  var sourceSpan = $(".details-info-source");
+  sourceSpan.html("");
 
   // Load id
   $(".details-info-img").attr("src","rsc/img/items/" + name.toLowerCase() + ".png");
@@ -431,8 +434,9 @@ function detailsLookupInfo(entry) {
 
   // Load source
   if (entry.source) {
-    var sourceSpan = $(".details-info-source");
     sourceSpan.html("<strong>Source</strong>: <p class=\"info-source-p\">" + entry.source + "</p>");
+  } else {
+    sourceSpan.html("<strong>Source</strong>: <p class=\"info-source-p\">No location information added.</p>");
   }
 
   toggleDetailsModal();
@@ -481,8 +485,8 @@ function commitSearchChanges() {
     var code = catName(key);
     var subData = fullData[key];
     for (key2 in subData) {
-      if (subData[key2].name.toLowerCase() === entry) {
-        var id = code + subData[key2].id;
+      if (subData[key2].toLowerCase() === entry) {
+        var id = subData[key2].id;
         if (masteryArr.indexOf(id) >= 0) {
           retCode = 1;
         } else {
@@ -602,19 +606,6 @@ function categoryFromName(name) {
   }
 }
 
-function searchByID(id) {
-  for (var i in categories) {
-    var cat = categories[i];
-    console.log("Please implement me!");
-  }
-}
-function searchByName(name) {
-  for (var i in categories) {
-    var cat = categories[i];
-    console.log("Please implement me!");
-  }
-}
-
 // Typeahead
 function initTypeahead() {
   var warframesHound = new Bloodhound({
@@ -624,9 +615,9 @@ function initTypeahead() {
       cache: false,
       url: 'data/warframes.json',
       filter: function(list) {
-        return $.map(list, function(item) {
+        return $.map(list, function(obj,item) {
           return {
-            name: item.name
+            name: item
           };
         });
       }
@@ -639,9 +630,9 @@ function initTypeahead() {
       cache: false,
       url: 'data/archwings.json',
       filter: function(list) {
-        return $.map(list, function(item) {
+        return $.map(list, function(obj,item) {
           return {
-            name: item.name
+            name: item
           };
         });
       }
@@ -654,9 +645,9 @@ function initTypeahead() {
       cache: false,
       url: 'data/weapons.json',
       filter: function(list) {
-        return $.map(list, function(item) {
+        return $.map(list, function(obj,item) {
           return {
-            name: item.name
+            name: item
           };
         });
       }
@@ -669,9 +660,9 @@ function initTypeahead() {
       cache: false,
       url: 'data/archwingWeapons.json',
       filter: function(list) {
-        return $.map(list, function(item) {
+        return $.map(list, function(obj,item) {
           return {
-            name: item.name
+            name: item
           };
         });
       }
@@ -684,9 +675,9 @@ function initTypeahead() {
       cache: false,
       url: 'data/companions.json',
       filter: function(list) {
-        return $.map(list, function(item) {
+        return $.map(list, function(obj,item) {
           return {
-            name: item.name
+            name: item
           };
         });
       }
@@ -741,19 +732,19 @@ function retrieveEntryByName(name) {
   for (key in fullData) {
     var catData = fullData[key];
     for (key2 in catData) {
-      if (catData[key2].name.toLowerCase() === name.toLowerCase()) {
+      if (key2.toLowerCase() === name.toLowerCase()) {
         return catData[key2];
       }
     }
   }
 }
-function retrieveEntryByID(id) {
+function retrieveNameByID(id) {
   for (key in fullData) {
     var catData = fullData[key];
     for (key2 in catData) {
-      var fullID = (categories.indexOf(key) + 1) + catData[key2].id;
+      var fullID = catData[key2].id;
       if (fullID === id) {
-        return catData[key2];
+        return key2;
       }
     }
   }

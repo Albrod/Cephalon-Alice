@@ -1,70 +1,53 @@
-[
-  {
-    "id": "001",
-    "name": "Corvas"
+{
+  "Corvas": {
+    "id": "4001"
   },
-  {
-    "id": "002",
-    "name": "Cyngas"
+  "Cyngas": {
+    "id": "4002"
   },
-  {
-    "id": "003",
-    "name": "Dual Decurion"
+  "Dual Decurion": {
+    "id": "4003"
   },
-  {
-    "id": "004",
-    "name": "Fluctus"
+  "Fluctus": {
+    "id": "4004"
   },
-  {
-    "id": "005",
-    "name": "Grattler"
+  "Grattler": {
+    "id": "4005"
   },
-  {
-    "id": "006",
-    "name": "Imperator"
+  "Imperator": {
+    "id": "4006"
   },
-  {
-    "id": "007",
-    "name": "Imperator Vandal"
+  "Imperator Vandal": {
+    "id": "4007"
   },
-  {
-    "id": "008",
-    "name": "Phaedra"
+  "Phaedra": {
+    "id": "4008"
   },
-  {
-    "id": "009",
-    "name": "Velocitus"
+  "Velocitus": {
+    "id": "4009"
   },
-  {
-    "id": "010",
-    "name": "Agkuza"
+  "Agkuza": {
+    "id": "4010"
   },
-  {
-    "id": "011",
-    "name": "Centaur"
+  "Centaur": {
+    "id": "4011"
   },
-  {
-    "id": "012",
-    "name": "Kaszas"
+  "Kaszas": {
+    "id": "4012"
   },
-  {
-    "id": "013",
-    "name": "Knux"
+  "Knux": {
+    "id": "4013"
   },
-  {
-    "id": "014",
-    "name": "Onorix"
+  "Onorix": {
+    "id": "4014"
   },
-  {
-    "id": "015",
-    "name": "Rathbone"
+  "Rathbone": {
+    "id": "4015"
   },
-  {
-    "id": "016",
-    "name": "Veritux"
+  "Veritux": {
+    "id": "4016"
   },
-  {
-    "id": "017",
-    "name": "Prisma Veritux"
+  "Prisma Veritux": {
+    "id": "4017"
   }
-]
+}
