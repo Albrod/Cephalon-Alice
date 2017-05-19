@@ -205,6 +205,16 @@ function loadLibraryPanel() {
   fadeHide($(".search-pane"));
   $(".search-pane").removeClass("active");
 
+  if ($(".search-info").hasClass('active')) {
+    $(".search-info").removeClass("active");
+    $(".search-pane").removeClass("slideup");
+    $(".search-info .table-warning").removeClass('table-warning');
+    $(".search-info .table-success").removeClass('table-success');
+    fadeHide($(".search-info"));
+
+    $(".btn-search-find").html("Search");
+  }
+
   $(".panel-nav li.active").removeClass("active");
   $(".library-sidebar").addClass("active");
   $("#libraryTab").parent().addClass("active");
