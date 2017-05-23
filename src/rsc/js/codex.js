@@ -101,10 +101,6 @@ function loadCodex() {
   $(".search-feedback").click(function(event) {
     fadeHide($(".search-feedback"));
   });
-  $(".btn-details-submit").click(function(event) {
-    submitInfo();
-    $("#searchInput").blur();
-  });
   $(".panel-tabs").click(function(event) {
     if ($(this).attr("id") === "searchTab") {
       loadSearchPanel();
@@ -143,7 +139,7 @@ function verifyUserData() {
     }
     for (entry in newData["codex"]) {
       if (entry.length !== 4) {
-        console.log("Bad Data! User: " + user + "\nData:" + entry);
+        console.log("Bad Data! User: " + userID + "\nData:" + entry);
       }
     }
   });
@@ -500,10 +496,8 @@ function buildDetailsPanel(name, entry, mode) {
   var hook = $("." + mode + "-details-hook");
   hook.html("");
 
-  var id = entry.id;
   // Load image
   $(".details-img").attr("src","rsc/img/items/" + name.toLowerCase() + ".png");
-  $(".btn-details-submit").data('id', id);
 
   var table = $("<table>", {class:"table table-hover table-bordered table-striped"});
   $("." + mode + "-details-hook").append(table);
@@ -521,6 +515,8 @@ function buildDetailsPanel(name, entry, mode) {
   var masteryCell = $("<td>").html('<span class="details-mastery"></span><button class="btn btn-sm btn-primary float-right btn-details-submit" type="submit">Add</button>')
   masteryRow.append(masteryCell);
   tbody.append(masteryRow);
+  var id = entry.id;
+  $(".btn-details-submit").data('id', id);
 
   var masterySpan = $(".details-mastery");
   if (masteryArr.indexOf(id) >= 0) {
@@ -561,6 +557,11 @@ function buildDetailsPanel(name, entry, mode) {
     sourceRow.append(sourceCell);
     tbody.append(sourceRow);
   }
+
+  $(".btn-details-submit").click(function(event) {
+    submitInfo();
+    $("#searchInput").blur();
+  });
 }
 
 
@@ -588,7 +589,7 @@ function commitInfoChanges() {
 
   btn.parent().removeClass('table-warning');
   btn.parent().addClass('table-success');
-  $(".search-info-mastery").html("<strong>Mastered</strong>: Yes");
+  $(".details-mastery").html("<strong>Mastered</strong>: Yes");
 }
 
 function commitSearchChanges() {
