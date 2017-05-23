@@ -1,95 +1,122 @@
 {
-  "Carrier": {
-    "id": "5001"
-  },
-  "Dethcube": {
-    "id": "5002"
-  },
-  "Diriga": {
-    "id": "5003"
-  },
-  "Djinn": {
-    "id": "5004"
-  },
-  "Helios": {
-    "id": "5005"
+  "Raksa Kubrow": {
+    "id": "5015"
   },
   "Shade": {
     "id": "5006"
   },
-  "Taxon": {
-    "id": "5007"
+  "Helminth Charger": {
+    "id": "5013"
   },
-  "Wyrm": {
-    "id": "5008"
+  "Deconstructor Prime": {
+    "slot": "Sentinel",
+    "type": "Thrown Melee",
+    "id": "5032"
   },
   "Carrier Prime": {
     "id": "5009"
   },
-  "Helios Prime": {
-    "id": "5010"
-  },
-  "Prisma Shade": {
-    "id": "5011"
+  "Deth Machine Rifle": {
+    "slot": "Sentinel",
+    "type": "Rifle",
+    "id": "5022"
   },
   "Chesa Kubrow": {
     "id": "5012"
   },
-  "Helminth Charger": {
-    "id": "5013"
+  "Laser Rifle": {
+    "slot": "Sentinel",
+    "type": "Rifle",
+    "id": "5023"
   },
-  "Huras Kubrow": {
-    "id": "5014"
+  "Prisma Burst Laser": {
+    "slot": "Sentinel",
+    "type": "Pistol",
+    "id": "5030"
   },
-  "Raksa Kubrow": {
-    "id": "5015"
+  "Helios": {
+    "id": "5005"
   },
-  "Sahasa Kubrow": {
-    "id": "5016"
+  "Sweeper": {
+    "slot": "Sentinel",
+    "type": "Shotgun",
+    "id": "5026"
+  },
+  "Helios Prime": {
+    "id": "5010"
+  },
+  "Diriga": {
+    "id": "5003"
+  },
+  "Wyrm": {
+    "id": "5008"
+  },
+  "Wyrm Prime": {
+    "id": "5033"
+  },
+  "Vulklok": {
+    "slot": "Sentinel",
+    "type": "Sniper Rifle",
+    "id": "5028"
+  },
+  "Dethcube": {
+    "id": "5002"
+  },
+  "Artax": {
+    "slot": "Sentinel",
+    "type": "Rifle",
+    "id": "5021"
+  },
+  "Prisma Shade": {
+    "id": "5011"
+  },
+  "Taxon": {
+    "id": "5007"
+  },
+  "Burst Laser": {
+    "slot": "Sentinel",
+    "type": "Pistol",
+    "id": "5029"
   },
   "Sunika Kubrow": {
     "id": "5017"
   },
-  "Adarza Kavat": {
-    "id": "5018"
+  "Carrier": {
+    "id": "5001"
+  },
+  "Djinn": {
+    "id": "5004"
+  },
+  "Sahasa Kubrow": {
+    "id": "5016"
+  },
+  "Stinger": {
+    "slot": "Sentinel",
+    "type": "Rifle",
+    "id": "5025"
   },
   "Smeeta Kavat": {
     "id": "5019"
   },
-  "Artax": {
-    "id": "5021"
+  "Adarza Kavat": {
+    "id": "5018"
   },
-  "Deth Machine Rifle": {
-    "id": "5022"
-  },
-  "Laser Rifle": {
-    "id": "5023"
-  },
-  "Prime Laser Rifle": {
-    "id": "5024"
-  },
-  "Stinger": {
-    "id": "5025"
-  },
-  "Sweeper": {
-    "id": "5026"
+  "Huras Kubrow": {
+    "id": "5014"
   },
   "Sweeper Prime": {
+    "slot": "Sentinel",
+    "type": "Shotgun",
     "id": "5027"
   },
-  "Vulklok": {
-    "id": "5028"
-  },
-  "Burst Laser": {
-    "id": "5029"
-  },
-  "Prisma Burst Laser": {
-    "id": "5030"
+  "Prime Laser Rifle": {
+    "slot": "Sentinel",
+    "type": "Rifle",
+    "id": "5024"
   },
   "Deconstructor": {
+    "slot": "Sentinel",
+    "type": "Thrown Melee",
     "id": "5031"
-  },
-  "Deconstructor Prime": {
-    "id": "5032"
   }
 }

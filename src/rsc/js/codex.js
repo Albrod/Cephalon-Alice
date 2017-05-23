@@ -6,7 +6,7 @@ var fullData = {};
 var masteryArr = [];
 
 function loadCodex() {
-  verifyData();
+  verifyUserData();
 
   if (Object.keys(fullData).length > 0) {
     console.log("Sneaky auth loop averted!");
@@ -101,7 +101,7 @@ function loadCodex() {
   $(".search-feedback").click(function(event) {
     fadeHide($(".search-feedback"));
   });
-  $(".btn-search-info-submit").click(function(event) {
+  $(".btn-details-submit").click(function(event) {
     submitInfo();
     $("#searchInput").blur();
   });
@@ -124,24 +124,47 @@ function loadCodex() {
     var name = retrieveNameByID(id);
     var entry = retrieveEntryByName(name);
 
-    detailsLookupInfo(name, entry);
+    buildDetailsPanel(name, entry, "codex");
+    toggleDetailsModal();
   });
 }
 
-function verifyData() {
-var database = firebase.database();
-// Establish listener.
-var codexRef = database.ref('/users/');
-codexRef.once('value').then(function(snapshot) {
-  var newData = snapshot.val();
-  for (user in newData) {
-    for (entry in newData[user]["codex"]) {
+function verifyUserData() {
+  var userID = firebase.auth().currentUser.uid;
+  var database = firebase.database();
+  // Establish listener.
+  var codexRef = database.ref('/users/' + userID);
+  codexRef.once('value').then(function(snapshot) {
+    var newData = snapshot.val();
+    if (!newData["email"]) {
+      var updates = {};
+      updates["/users/" + userID + "/email"] = firebase.auth().currentUser.email;
+      firebase.database().ref().update(updates);
+    }
+    for (entry in newData["codex"]) {
       if (entry.length !== 4) {
         console.log("Bad Data! User: " + user + "\nData:" + entry);
       }
     }
-  }
-});
+  });
+}
+function verifyAllData() {
+  var database = firebase.database();
+  // Establish listener.
+  var codexRef = database.ref('/users/');
+  codexRef.once('value').then(function(snapshot) {
+    var newData = snapshot.val();
+    for (user in newData) {
+      if (!newData[user]["email"]) {
+        console.log("No Email! User: " + user + " hasn't logged in!" );
+      }
+      for (entry in newData[user]["codex"]) {
+        if (entry.length !== 4) {
+          console.log("Bad Data! User: " + user + "\nData:" + entry);
+        }
+      }
+    }
+  });
 }
 
 
@@ -171,7 +194,7 @@ function searchLookup() {
   var entry = retrieveEntryByName(val);
 
   if (entry) {
-    searchLookupInfo(val,entry);
+    buildDetailsPanel(val,entry,"search");
 
     $(".search-info").addClass("active");
     $(".search-pane").addClass("slideup");
@@ -193,7 +216,7 @@ function searchLookup() {
 }
 
 function submitInfo() {
-  fadeHide($(".btn-search-info-submit"));
+  fadeHide($(".btn-details-submit"));
   commitInfoChanges();
 }
 
@@ -280,7 +303,7 @@ function renderLibrary(cat) {
       });
       var size = wordArr[0].length;
       if (size > 12) {
-        $('<h5>', {class: "mt-2", text: entry, style: "font-size: xx-small"}).appendTo(entryDiv);
+        $('<h5>', {class: "mt-2", text: entry, style: "font-size: 8px"}).appendTo(entryDiv);
       } else {
         $('<h5>', {class: "mt-2", text: entry}).appendTo(entryDiv);
       }
@@ -427,7 +450,7 @@ function searchLookupInfo(name, entry) {
 
   // Load id
   $(".search-info-img").attr("src","rsc/img/items/" + name.toLowerCase() + ".png");
-  $(".btn-search-info-submit").data('id', id);
+  $(".btn-details-submit").data('id', id);
 
   // Load name
   $(".search-info-name").html(name);
@@ -437,11 +460,11 @@ function searchLookupInfo(name, entry) {
   if (masteryArr.indexOf(id) >= 0) {
     masterySpan.html("<strong>Mastered</strong>: Yes");
     masterySpan.parent().addClass('table-success');
-    fadeHide($(".btn-search-info-submit"));
+    fadeHide($(".btn-details-submit"));
   } else {
     masterySpan.html("<strong>Mastered</strong>: No");
     masterySpan.parent().addClass('table-warning');
-    fadeShow($(".btn-search-info-submit"));
+    fadeShow($(".btn-details-submit"));
   }
 
   // Load source
@@ -455,7 +478,7 @@ function detailsLookupInfo(name, entry) {
   var sourceSpan = $(".details-info-source");
   sourceSpan.html("");
 
-  // Load id
+  // Load image
   $(".details-info-img").attr("src","rsc/img/items/" + name.toLowerCase() + ".png");
 
   // Load name
@@ -468,8 +491,78 @@ function detailsLookupInfo(name, entry) {
     sourceSpan.html("<strong>Source</strong>: <p class=\"info-source-p\">No location information added.</p>");
   }
 
+
+
   toggleDetailsModal();
 }
+
+function buildDetailsPanel(name, entry, mode) {
+  var hook = $("." + mode + "-details-hook");
+  hook.html("");
+
+  var id = entry.id;
+  // Load image
+  $(".details-img").attr("src","rsc/img/items/" + name.toLowerCase() + ".png");
+  $(".btn-details-submit").data('id', id);
+
+  var table = $("<table>", {class:"table table-hover table-bordered table-striped"});
+  $("." + mode + "-details-hook").append(table);
+
+  // Load name
+  var thead = $("<thead>", {class:"thead-inverse"}).html('<tr><th class="search-info-name"></th></tr>');
+  table.append(thead);
+  $(".search-info-name").html(name);
+
+  var tbody = $("<tbody>");
+  table.append(tbody);
+
+  // Load mastery
+  var masteryRow = $("<tr>");
+  var masteryCell = $("<td>").html('<span class="details-mastery"></span><button class="btn btn-sm btn-primary float-right btn-details-submit" type="submit">Add</button>')
+  masteryRow.append(masteryCell);
+  tbody.append(masteryRow);
+
+  var masterySpan = $(".details-mastery");
+  if (masteryArr.indexOf(id) >= 0) {
+    masterySpan.html("<strong>Mastered</strong>: Yes");
+    masterySpan.parent().addClass('table-success');
+    fadeHide($(".btn-details-submit"));
+  } else {
+    masterySpan.html("<strong>Mastered</strong>: No");
+    masterySpan.parent().addClass('table-warning');
+    fadeShow($(".btn-details-submit"));
+  }
+
+  // Load slot and type
+  if (entry.slot) {
+    var catRow = $("<tr>");
+    var catCell = $("<td>");
+    var catSpan = $("<span>", {class:"details-category"});
+
+    if (entry.type) {
+      catSpan.html("Slot: " + entry.slot + "<br />Type: " + entry.type);
+    } else {
+      catSpan.html("Slot: " + entry.slot);
+    }
+
+    catCell.append(catSpan);
+    catRow.append(catCell);
+    tbody.append(catRow);
+  }
+
+  // Load source
+  if (entry.source) {
+    var sourceRow = $("<tr>");
+    var sourceCell = $("<td>");
+    var sourceSpan = $("<span>", {class:"details-source"});
+    sourceSpan.html("<strong>Source</strong>: <p class=\"details-source-p\">" + entry.source + "</p>");
+
+    sourceCell.append(sourceSpan);
+    sourceRow.append(sourceCell);
+    tbody.append(sourceRow);
+  }
+}
+
 
 function commitLibraryChanges() {
   // Compile changes from library.
@@ -489,7 +582,7 @@ function commitLibraryChanges() {
 
 function commitInfoChanges() {
   // Compile changes from search.
-  var btn = $(".btn-search-info-submit");
+  var btn = $(".btn-details-submit");
   var id = btn.data("id");
   pushToDB([id], []);
 

@@ -53,7 +53,7 @@ body .modal-open {
 
   transition: all .5s;
 }
-.search-info-img, .details-info-img {
+.details-img {
   width: auto;
   height: auto;
   max-width: 200px;
@@ -71,7 +71,7 @@ body .modal-open {
 
   transition: all .5s;
 }
-.info-source-p {
+.details-source-p {
   padding-left: 20px;
 }
 
