@@ -1,1465 +1,1471 @@
 {
-  "Aklato": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3102"
-  },
-  "MK1-Paris": {
-    "slot": "Primary",
-    "type": "Bow",
-    "id": "3045"
-  },
-  "Prova": {
-    "slot": "Melee",
-    "type": "Machete",
-    "id": "3264"
-  },
-  "Dark Dagger": {
-    "slot": "Melee",
-    "type": "Dagger",
-    "id": "3194"
-  },
-  "Fang": {
-    "slot": "Melee",
-    "type": "Dual Daggers",
-    "id": "3212"
-  },
-  "Paris": {
-    "slot": "Primary",
-    "type": "Bow",
-    "id": "3053"
-  },
-  "Phage": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3056"
-  },
-  "Miter": {
-    "slot": "Primary",
-    "type": "Launcher",
-    "id": "3043"
-  },
-  "Prisma Obex": {
-    "slot": "Melee",
-    "type": "Sparring",
-    "id": "3262"
-  },
-  "Galatine": {
-    "slot": "Melee",
-    "type": "Heavy Blade",
-    "id": "3218"
-  },
-  "Vasto Prime": {
-    "slot": "Secondary",
-    "type": "Revolver",
-    "id": "3174"
-  },
-  "Gorgon Wraith": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3026"
-  },
-  "Broken War": {
-    "slot": "Melee",
-    "type": "Sword",
-    "id": "3188"
-  },
-  "Cernos": {
-    "slot": "Primary",
-    "type": "Bow",
-    "id": "3013"
-  },
-  "Stug": {
-    "slot": "Secondary",
-    "type": "Blob Launcher",
-    "id": "3162"
-  },
-  "Scindo Prime": {
-    "slot": "Melee",
-    "type": "Heavy Blade",
-    "id": "3273"
-  },
-  "Supra": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3075"
-  },
-  "Glaive": {
-    "slot": "Melee",
-    "type": "Thrown",
-    "id": "3221"
-  },
-  "Tipedo": {
-    "slot": "Melee",
-    "type": "Staff",
-    "id": "3287"
-  },
-  "Sancti Magistar": {
-    "slot": "Melee",
-    "type": "Hammer",
-    "id": "3270"
-  },
-  "Sheev": {
-    "slot": "Melee",
-    "type": "Dagger",
-    "id": "3278"
-  },
-  "Tysis": {
-    "slot": "Pistol",
-    "id": "3172"
-  },
-  "Kama": {
-    "slot": "Melee",
-    "type": "Machete",
-    "id": "3232"
-  },
-  "Lex Prime": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3141"
-  },
-  "Lesion": {
-    "slot": "Melee",
-    "type": "Polearm",
-    "id": "3240"
-  },
-  "Azima": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3113"
-  },
-  "Fragor Prime": {
-    "slot": "Melee",
-    "type": "Hammer",
-    "id": "3215"
-  },
-  "Karak Wraith": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3037"
-  },
-  "Bo": {
-    "slot": "Melee",
-    "type": "Staff",
-    "id": "3184"
-  },
-  "Vaykor Hek": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3088"
-  },
-  "Penta": {
-    "slot": "Primary",
-    "type": "Launcher",
-    "id": "3055"
-  },
-  "Prisma Tetra": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3059"
-  },
-  "Strun": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3073"
-  },
-  "Sancti Tigris": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3064"
-  },
-  "Sarpa": {
-    "slot": "Melee",
-    "type": "Gunblade",
-    "id": "3271"
-  },
-  "Drakgoon": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3020"
-  },
-  "Snipetron": {
-    "slot": "Primary",
-    "type": "Sniper Rifle",
-    "id": "3067"
-  },
-  "Ignis": {
-    "slot": "Primary",
-    "type": "Flamethrower",
-    "id": "3033"
-  },
-  "Ninkondi": {
-    "slot": "Melee",
-    "type": "Nunchaku",
-    "id": "3252"
-  },
-  "Kronen": {
-    "slot": "Melee",
-    "type": "Tonfa",
-    "id": "3237"
-  },
-  "Kogake": {
-    "slot": "Melee",
-    "type": "Sparring",
-    "id": "3236"
-  },
-  "Spira Prime": {
-    "slot": "Secondary",
-    "type": "Thrown",
-    "id": "3160"
-  },
-  "Kraken": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3134"
-  },
-  "Silva & Aegis": {
-    "slot": "Melee",
-    "type": "Sword & Shield",
-    "id": "3280"
-  },
-  "Cronus": {
-    "slot": "Melee",
-    "type": "Sword",
-    "id": "3192"
-  },
-  "Paracyst": {
-    "slot": "Primary",
-    "type": "Rifle",
-    "id": "3052"
-  },
-  "Cerata": {
-    "slot": "Melee",
-    "type": "Thrown",
-    "id": "3191"
-  },
-  "Vectis": {
-    "slot": "Primary",
-    "type": "Sniper Rifle",
-    "id": "3089"
-  },
-  "Bo Prime": {
-    "slot": "Melee",
-    "type": "Staff",
-    "id": "3185"
-  },
-  "Grinlok": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3028"
-  },
-  "Prova Vandal": {
-    "slot": "Melee",
-    "type": "Machete",
-    "id": "3265"
-  },
-  "Ripkas": {
-    "slot": "Melee",
-    "type": "Claw",
-    "id": "3269"
-  },
-  "Tonkor": {
-    "slot": "Primary",
-    "type": "Launcher",
-    "id": "3086"
-  },
-  "Twin Rogga": {
-    "slot": "Secondary",
-    "type": "Akimbo Pistols",
-    "id": "3169"
-  },
-  "Ack & Brunt": {
-    "slot": "Melee",
-    "type": "Sword & Shield",
-    "id": "3177"
-  },
-  "Skana": {
-    "slot": "Melee",
-    "type": "Sword",
-    "id": "3281"
-  },
-  "Tigris": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3084"
-  },
-  "Dual Kamas": {
-    "slot": "Melee",
-    "type": "Dual Swords",
-    "id": "3204"
-  },
-  "Cycron": {
-    "slot": "Secondary",
-    "id": "3121"
-  },
-  "Akbolto": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3098"
-  },
-  "Hikou": {
-    "slot": "Secondary",
-    "type": "Thrown",
-    "id": "3131"
-  },
-  "Broken Scepter": {
-    "slot": "Melee",
-    "type": "Staff",
-    "id": "3187"
-  },
-  "Synoid Gammacor": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3163"
-  },
-  "Dragon Nikana": {
-    "slot": "Melee",
-    "type": "Nikana",
-    "id": "3199"
-  },
-  "Tigris Prime": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3085"
-  },
-  "Quanta": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3060"
-  },
-  "Vectis Prime": {
-    "slot": "Primary",
-    "type": "Sniper Rifle",
-    "id": "3090"
-  },
-  "Dark Split-Sword": {
-    "slot": "Melee",
-    "type": "Heavy Blade / Dual Swords",
-    "id": "3195"
-  },
-  "Ogris": {
-    "slot": "Primary",
-    "type": "Launcher",
-    "id": "3049"
-  },
-  "Dual Skana": {
-    "slot": "Melee",
-    "type": "Dual Swords",
-    "id": "3207"
-  },
-  "Kulstar": {
-    "slot": "Secondary",
-    "type": "Launcher",
-    "id": "3135"
-  },
-  "Viper": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3176"
-  },
-  "MK1-Braton": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3044"
-  },
-  "Dual Toxocyst": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3126"
-  },
-  "Supra Vandal": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3076"
-  },
-  "Hate": {
-    "slot": "Melee",
-    "type": "Scythe",
-    "id": "3225"
-  },
-  "Boltace": {
-    "slot": "Melee",
-    "type": "Tonfa",
-    "id": "3186"
-  },
-  "Dera": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3017"
-  },
-  "Embolist": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3127"
-  },
-  "Ether Daggers": {
-    "slot": "Melee",
-    "type": "Dual Daggers",
-    "id": "3209"
-  },
-  "Plasma Sword": {
-    "slot": "Melee",
-    "type": "Sword",
-    "id": "3260"
-  },
-  "Furis": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3129"
-  },
-  "Dera Vandal": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3018"
-  },
-  "Prisma Gorgon": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3057"
-  },
-  "Akvasto": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3109"
-  },
-  "Boar": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3003"
-  },
-  "Dual Cleavers": {
-    "slot": "Melee",
-    "type": "Dual Swords",
-    "id": "3200"
-  },
-  "Vulkar Wraith": {
-    "slot": "Primary",
-    "type": "Sniper Rifle",
-    "id": "3092"
-  },
-  "Bronco": {
-    "slot": "Secondary",
-    "type": "Shotgun Sidearm",
-    "id": "3117"
-  },
-  "Paris Prime": {
-    "slot": "Primary",
-    "type": "Bow",
-    "id": "3054"
-  },
-  "Fang Prime": {
-    "slot": "Melee",
-    "type": "Dual Daggers",
-    "id": "3213"
-  },
-  "Latron": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3040"
-  },
-  "Vaykor Marelok": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3175"
-  },
-  "Machete Wraith": {
-    "slot": "Melee",
-    "type": "Machete",
-    "id": "3242"
-  },
-  "Ohma": {
-    "slot": "Melee",
-    "type": "Tonfa",
-    "id": "3254"
-  },
-  "Burston Prime": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3011"
-  },
-  "Latron Wraith": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3042"
-  },
-  "Furax": {
-    "slot": "Melee",
-    "type": "Fist",
-    "id": "3216"
-  },
-  "Afuris": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3097"
-  },
-  "Prisma Grakata": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3058"
-  },
-  "Nami Skyla": {
-    "slot": "Melee",
-    "type": "Dual Swords",
-    "id": "3248"
-  },
-  "Magistar": {
-    "slot": "Melee",
-    "type": "Hammer",
-    "id": "3243"
-  },
-  "Opticor": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3050"
-  },
-  "Dual Cestra": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3125"
-  },
-  "Kunai": {
-    "slot": "Secondary",
-    "type": "Thrown",
-    "id": "3136"
-  },
-  "Stradavar": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3072"
-  },
-  "Atterax": {
-    "slot": "Melee",
-    "type": "Whip",
-    "id": "3183"
-  },
-  "Glaive Prime": {
-    "slot": "Melee",
-    "type": "Thrown",
-    "id": "3222"
-  },
-  "Dread": {
-    "slot": "Primary",
-    "type": "Bow",
-    "id": "3021"
-  },
-  "Harpak": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3029"
-  },
-  "Mutalist Cernos": {
-    "slot": "Primary",
-    "type": "Bow",
-    "id": "3047"
-  },
-  "Gazal Machete": {
-    "slot": "Melee",
-    "type": "Machete",
-    "id": "3220"
-  },
-  "MK1-Furax": {
-    "slot": "Melee",
-    "type": "Fist",
-    "id": "3247"
-  },
-  "Dark Sword": {
-    "slot": "Melee",
-    "type": "Sword",
-    "id": "3196"
-  },
-  "Rakta Cernos": {
-    "slot": "Primary",
-    "type": "Bow",
-    "id": "3062"
-  },
-  "Lex": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3140"
-  },
-  "Bolto": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3115"
-  },
-  "Telos Boltace": {
-    "slot": "Melee",
-    "type": "Tonfa",
-    "id": "3286"
-  },
-  "Heat Dagger": {
-    "slot": "Melee",
-    "type": "Dagger",
-    "id": "3226"
-  },
-  "Sonicor": {
-    "slot": "Secondary",
-    "id": "3157"
-  },
-  "Fragor": {
-    "slot": "Melee",
-    "type": "Hammer",
-    "id": "3214"
-  },
-  "Tiberon": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3083"
-  },
-  "Karak": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3036"
-  },
-  "Vasto": {
-    "slot": "Secondary",
-    "type": "Revolver",
-    "id": "3173"
-  },
-  "Dex Dakra": {
-    "slot": "Melee",
-    "type": "Dual Swords",
-    "id": "3198"
-  },
-  "Akbronco Prime": {
-    "slot": "Secondary",
-    "type": "Shotgun Sidearm",
-    "id": "3100"
-  },
-  "Pyrana": {
-    "slot": "Secondary",
-    "type": "Shotgun Sidearm",
-    "id": "3150"
-  },
-  "Tetra": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3082"
-  },
-  "Gorgon": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3025"
-  },
-  "Zarr": {
-    "slot": "Primary",
-    "type": "Launcher",
-    "id": "3093"
-  },
-  "Kohmak": {
-    "slot": "Secondary",
-    "type": "Shotgun Sidearm",
-    "id": "3133"
-  },
-  "Redeemer": {
-    "slot": "Melee",
-    "type": "Gunblade",
-    "id": "3268"
-  },
-  "Arcata": {
-    "id": "3182"
-  },
-  "Gram": {
-    "slot": "Melee",
-    "type": "Heavy Blade",
-    "id": "3223"
-  },
-  "Atomos": {
-    "slot": "Secondary",
-    "type": "Particle Cannon",
-    "id": "3112"
-  },
-  "Ceramic Dagger": {
-    "slot": "Melee",
-    "type": "Dagger",
-    "id": "3190"
-  },
-  "Cestra": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3120"
-  },
-  "Hirudo": {
-    "slot": "Melee",
-    "type": "Sparring",
-    "id": "3229"
-  },
-  "Heliocor": {
-    "slot": "Melee",
-    "type": "Hammer",
-    "id": "3228"
-  },
-  "Synoid Heliocor": {
-    "slot": "Melee",
-    "type": "Hammer",
-    "id": "3284"
-  },
-  "Sobek": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3069"
-  },
-  "Scoliac": {
-    "slot": "Melee",
-    "type": "Whip",
-    "id": "3274"
-  },
-  "Telos Akbolto": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3165"
-  },
-  "Secura Dual Cestra": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3153"
-  },
-  "Zenith": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3094"
-  },
-  "Gammacor": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3130"
-  },
-  "Flux Rifle": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3023"
-  },
-  "Dex Sybaris": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3019"
-  },
-  "Telos Boltor": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3080"
-  },
-  "Kestrel": {
-    "slot": "Melee",
-    "type": "Thrown",
-    "id": "3235"
-  },
-  "Burston": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3010"
-  },
-  "Galatine Prime": {
-    "slot": "Melee",
-    "type": "Heavy Blade",
-    "id": "3219"
-  },
-  "Sicarus Prime": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3156"
-  },
-  "Aklex": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3103"
-  },
-  "Dual Ichor": {
-    "slot": "Melee",
-    "type": "Dual Swords",
-    "id": "3203"
-  },
-  "Dual Ether": {
-    "slot": "Melee",
-    "type": "Dual Swords",
-    "id": "3201"
-  },
-  "Detron": {
-    "slot": "Secondary",
-    "type": "Shotgun Sidearm",
-    "id": "3123"
-  },
-  "Acrid": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3096"
-  },
-  "Akbronco": {
-    "slot": "Secondary",
-    "type": "Shotgun Sidearm",
-    "id": "3099"
-  },
-  "Spectra": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3158"
-  },
-  "Lato Prime": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3138"
-  },
-  "Jat Kittag": {
-    "slot": "Melee",
-    "type": "Hammer",
-    "id": "3230"
-  },
-  "Braton Vandal": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3009"
-  },
-  "Amphis": {
-    "slot": "Melee",
-    "type": "Staff",
-    "id": "3178"
-  },
-  "Magnus": {
-    "slot": "Secondary",
-    "type": "Revolver",
-    "id": "3142"
-  },
-  "Karyst": {
-    "slot": "Melee",
-    "type": "Dagger",
-    "id": "3233"
-  },
-  "Mutalist Quanta": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3048"
-  },
-  "Dual Heat Swords": {
-    "slot": "Melee",
-    "type": "Dual Swords",
-    "id": "3202"
-  },
-  "Ether Reaper": {
-    "slot": "Melee",
-    "type": "Scythe",
-    "id": "3210"
-  },
-  "Lacera": {
-    "slot": "Melee",
-    "type": "Blade and Whip",
-    "id": "3238"
-  },
-  "Venka Prime": {
-    "slot": "Melee",
-    "type": "Claws",
-    "id": "3292"
-  },
-  "Lato Vandal": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3139"
-  },
-  "Sancti Castanas": {
-    "slot": "Secondary",
-    "type": "Thrown",
-    "id": "3152"
-  },
-  "Akjagara": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3101"
-  },
-  "War": {
-    "slot": "Melee",
-    "type": "Heavy Blade",
-    "id": "3293"
-  },
-  "Hek": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3030"
-  },
-  "Ferrox": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3022"
-  },
-  "Sydon": {
-    "slot": "Melee",
-    "type": "Polearm",
-    "id": "3283"
-  },
-  "Destreza": {
-    "slot": "Melee",
-    "type": "Rapier",
-    "id": "3197"
-  },
-  "Simulor": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3066"
-  },
-  "Vulkar": {
-    "slot": "Primary",
-    "type": "Sniper Rifle",
-    "id": "3091"
-  },
-  "Furax Wraith": {
-    "slot": "Melee",
-    "type": "Fist",
-    "id": "3217"
-  },
-  "Serro": {
-    "slot": "Melee",
-    "type": "Polearm",
-    "id": "3276"
-  },
-  "Latron Prime": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3041"
-  },
-  "Grakata": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3027"
-  },
-  "Kesheg": {
-    "slot": "Melee",
-    "type": "Polearm",
-    "id": "3234"
-  },
-  "Ether Sword": {
-    "slot": "Melee",
-    "type": "Sword",
-    "id": "3211"
-  },
-  "Dual Raza": {
-    "slot": "Melee",
-    "type": "Dual Swords",
-    "id": "3206"
-  },
-  "Anku": {
-    "slot": "Melee",
-    "type": "Scythe",
-    "id": "3179"
-  },
-  "Zhuge": {
-    "slot": "Primary",
-    "type": "Crossbow",
-    "id": "3095"
-  },
-  "Twin Grakatas": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3166"
-  },
-  "Rakta Dark Dagger": {
-    "slot": "Melee",
-    "type": "Dagger",
-    "id": "3266"
-  },
-  "Akzani": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3110"
-  },
-  "Obex": {
-    "slot": "Melee",
-    "type": "Sparring",
-    "id": "3253"
-  },
-  "Boltor": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3005"
-  },
-  "Sybaris": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3077"
-  },
-  "Snipetron Vandal": {
-    "slot": "Primary",
-    "type": "Sniper Rifle",
-    "id": "3068"
-  },
-  "MK1-Furis": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3145"
-  },
-  "Mara Detron": {
-    "slot": "Secondary",
-    "type": "Shotgun Sidearm",
-    "id": "3143"
-  },
-  "Buzlok": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3012"
-  },
-  "Skana Prime": {
-    "slot": "Melee",
-    "type": "Sword",
-    "id": "3282"
-  },
-  "Akstiletto Prime": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3108"
-  },
-  "Caustacyst": {
-    "slot": "Melee",
-    "type": "Scythe",
-    "id": "3189"
-  },
-  "Aksomati": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3106"
-  },
-  "Bronco Prime": {
-    "slot": "Secondary",
-    "type": "Shotgun Sidearm",
-    "id": "3118"
-  },
-  "Braton Prime": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3008"
-  },
-  "Seer": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3154"
-  },
-  "MK1-Strun": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3046"
-  },
-  "Panthera": {
-    "slot": "Primary",
-    "type": "Launcher",
-    "id": "3051"
-  },
-  "Shaku": {
-    "slot": "Melee",
-    "type": "Nunchaku",
-    "id": "3277"
-  },
-  "Orvius": {
-    "slot": "Melee",
-    "type": "Thrown",
-    "id": "3258"
-  },
-  "Ankyros Prime": {
-    "slot": "Melee",
-    "type": "Fist",
-    "id": "3181"
-  },
-  "Vaykor Sydon": {
-    "slot": "Melee",
-    "type": "Polearm",
-    "id": "3290"
-  },
-  "Zenistar": {
-    "slot": "Melee",
-    "type": "Heavy Blade",
-    "id": "3294"
-  },
-  "Convectrix": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3015"
-  },
-  "Orthos": {
-    "slot": "Melee",
-    "type": "Polearm",
-    "id": "3256"
-  },
-  "Orthos Prime": {
-    "slot": "Melee",
-    "type": "Polearm",
-    "id": "3257"
-  },
-  "Okina": {
-    "slot": "Melee",
-    "type": "Dual Dagger",
-    "id": "3255"
-  },
-  "Brakk": {
-    "slot": "Secondary",
-    "type": "Shotgun Sidearm",
-    "id": "3116"
-  },
-  "Soma Prime": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3071"
-  },
-  "Secura Lecta": {
-    "slot": "Melee",
-    "type": "Whip",
-    "id": "3275"
-  },
-  "Ignis Wraith": {
-    "slot": "Primary",
-    "type": "Flamethrower",
-    "id": "3034"
-  },
-  "Prisma Skana": {
-    "slot": "Melee",
-    "type": "Sword",
-    "id": "3263"
-  },
-  "Boar Prime": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3004"
-  },
-  "Braton": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3007"
-  },
-  "Nikana": {
-    "slot": "Melee",
-    "type": "Nikana",
-    "id": "3250"
-  },
-  "Halikar": {
-    "slot": "Melee",
-    "type": "Thrown",
-    "id": "3224"
-  },
-  "Spira": {
-    "slot": "Secondary",
-    "type": "Thrown",
-    "id": "3159"
-  },
-  "Aklex Prime": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3104"
-  },
-  "Venka": {
-    "slot": "Melee",
-    "type": "Claw",
-    "id": "3291"
-  },
-  "Boltor Prime": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3006"
-  },
-  "Castanas": {
-    "slot": "Secondary",
-    "type": "Thrown",
-    "id": "3119"
-  },
-  "Synapse": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3078"
-  },
-  "Twin Gremlins": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3167"
-  },
-  "Secura Penta": {
-    "slot": "Primary",
-    "type": "Launcher",
-    "id": "3065"
-  },
-  "Nukor": {
-    "slot": "Secondary",
-    "id": "3147"
-  },
-  "Staticor": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3161"
-  },
-  "Twin Vipers": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3170"
-  },
-  "Glaxion": {
-    "slot": "Primary",
-    "id": "3024"
-  },
-  "Ankyros": {
-    "slot": "Melee",
-    "type": "Fist",
-    "id": "3180"
-  },
-  "MK1-Bo": {
-    "slot": "Melee",
-    "type": "Staff",
-    "id": "3246"
-  },
-  "Hind": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3032"
-  },
-  "Lato": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3137"
-  },
-  "Rakta Ballistica": {
-    "slot": "Secondary",
-    "type": "Crossbow",
-    "id": "3151"
-  },
-  "Prisma Dual Cleavers": {
-    "slot": "Melee",
-    "type": "Dual Swords",
-    "id": "3261"
-  },
-  "Tonbo": {
-    "slot": "Melee",
-    "type": "Polearm",
-    "id": "3288"
-  },
-  "Euphona Prime": {
-    "slot": "Secondary",
-    "type": "Shotgun",
-    "id": "3128"
-  },
-  "Tenora": {
-    "slot": "Primary",
-    "type": "Rifle",
-    "id": "3081"
-  },
-  "Sicarus": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3155"
-  },
-  "Talons": {
-    "slot": "Secondary",
-    "type": "Thrown",
-    "id": "3164"
-  },
-  "Hema": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3031"
-  },
-  "Cernos Prime": {
-    "slot": "Primary",
-    "type": "Bow",
-    "id": "3014"
-  },
-  "Strun Wraith": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3074"
-  },
-  "Twin Vipers Wraith": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3171"
-  },
-  "Attica": {
-    "slot": "Primary",
-    "type": "Crossbow",
-    "id": "3002"
-  },
-  "Mios": {
-    "slot": "Melee",
-    "type": "Blade and Whip",
-    "id": "3244"
-  },
-  "Nikana Prime": {
-    "slot": "Melee",
-    "type": "Nikana",
-    "id": "3251"
-  },
-  "Machete": {
-    "slot": "Melee",
-    "type": "Machete",
-    "id": "3241"
-  },
-  "Angstrum": {
-    "slot": "Secondary",
-    "type": "Launcher",
-    "id": "3111"
-  },
-  "Lanka": {
-    "slot": "Primary",
-    "type": "Sniper Rifle",
-    "id": "3039"
-  },
-  "Daikyu": {
-    "slot": "Primary",
-    "type": "Bow",
-    "id": "3016"
-  },
-  "Marelok": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3144"
-  },
-  "Twin Basolk": {
-    "slot": "Melee",
-    "type": "Dual Swords",
-    "id": "3289"
-  },
-  "Akmagnus": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3105"
-  },
-  "MK1-Kunai": {
-    "slot": "Secondary",
-    "type": "Thrown",
-    "id": "3146"
-  },
-  "Quanta Vandal": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3061"
-  },
-  "Nami Solo": {
-    "slot": "Melee",
-    "type": "Machete",
-    "id": "3249"
-  },
-  "Dual Kamas Prime": {
-    "slot": "Melee",
-    "type": "Dual Swords",
-    "id": "3205"
-  },
-  "Tekko": {
-    "slot": "Melee",
-    "type": "Fist",
-    "id": "3285"
-  },
-  "Twin Kohmak": {
-    "slot": "Secondary",
-    "type": "Shotgun Sidearm",
-    "id": "3168"
-  },
-  "Akstiletto": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3107"
-  },
-  "Despair": {
-    "slot": "Secondary",
-    "type": "Thrown",
-    "id": "3122"
-  },
-  "Jaw Sword": {
-    "slot": "Melee",
-    "type": "Sword",
-    "id": "3231"
-  },
-  "Hikou Prime": {
-    "slot": "Secondary",
-    "type": "Thrown",
-    "id": "3132"
-  },
-  "Torid": {
-    "slot": "Primary",
-    "type": "Launcher",
-    "id": "3087"
-  },
-  "Lecta": {
-    "slot": "Melee",
-    "type": "Whip",
-    "id": "3239"
-  },
-  "Dakra Prime": {
-    "slot": "Melee",
-    "type": "Sword",
-    "id": "3193"
-  },
-  "Pangolin Sword": {
-    "slot": "Melee",
-    "type": "Sword",
-    "id": "3259"
-  },
-  "Reaper Prime": {
-    "slot": "Melee",
-    "type": "Scythe",
-    "id": "3267"
-  },
-  "Dex Furis": {
-    "slot": "Secondary",
-    "type": "Dual Sidearms",
-    "id": "3124"
-  },
-  "Pox": {
-    "slot": "Secondary",
-    "type": "Thrown",
-    "id": "3149"
-  },
-  "Soma": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3070"
-  },
-  "Sibear": {
-    "slot": "Melee",
-    "type": "Hammer",
-    "id": "3279"
-  },
-  "Heat Sword": {
-    "slot": "Melee",
-    "type": "Sword",
-    "id": "3227"
-  },
-  "Amprex": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3001"
-  },
-  "Kohm": {
-    "slot": "Primary",
-    "type": "Shotgun",
-    "id": "3038"
-  },
-  "Javlok": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3035"
-  },
-  "Scindo": {
-    "slot": "Melee",
-    "type": "Heavy Blade",
-    "id": "3272"
-  },
-  "Mire": {
-    "slot": "Melee",
-    "type": "Sword",
-    "id": "3245"
-  },
-  "Rubico": {
-    "slot": "Primary",
-    "type": "Sniper Rifle",
-    "id": "3063"
-  },
-  "Dual Zoren": {
-    "slot": "Melee",
-    "type": "Dual Swords",
-    "id": "3208"
-  },
-  "Pandero": {
-    "slot": "Secondary",
-    "type": "Pistol",
-    "id": "3148"
-  },
-  "Ballistica": {
-    "slot": "Secondary",
-    "type": "Crossbow",
-    "id": "3114"
-  },
-  "Synoid Simulor": {
-    "slot": "Primary",
-    "type": "Assault Rifle",
-    "id": "3079"
-  }
+    "Ack & Brunt": {
+        "id": "3177",
+        "slot": "Melee",
+        "type": "Sword & Shield"
+    },
+    "Acrid": {
+        "id": "3096",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Afuris": {
+        "id": "3097",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Akbolto": {
+        "id": "3098",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Akbronco": {
+        "id": "3099",
+        "slot": "Secondary",
+        "type": "Shotgun Sidearm"
+    },
+    "Akbronco Prime": {
+        "id": "3100",
+        "slot": "Secondary",
+        "type": "Shotgun Sidearm"
+    },
+    "Akjagara": {
+        "id": "3101",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Aklato": {
+        "id": "3102",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Aklex": {
+        "id": "3103",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Aklex Prime": {
+        "id": "3104",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Akmagnus": {
+        "id": "3105",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Aksomati": {
+        "id": "3106",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Akstiletto": {
+        "id": "3107",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Akstiletto Prime": {
+        "id": "3108",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Akvasto": {
+        "id": "3109",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Akzani": {
+        "id": "3110",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Amphis": {
+        "id": "3178",
+        "slot": "Melee",
+        "type": "Staff"
+    },
+    "Amprex": {
+        "id": "3001",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Angstrum": {
+        "id": "3111",
+        "slot": "Secondary",
+        "type": "Launcher"
+    },
+    "Anku": {
+        "id": "3179",
+        "slot": "Melee",
+        "type": "Scythe"
+    },
+    "Ankyros": {
+        "id": "3180",
+        "slot": "Melee",
+        "type": "Fist"
+    },
+    "Ankyros Prime": {
+        "id": "3181",
+        "slot": "Melee",
+        "type": "Fist"
+    },
+    "Arcata": {
+        "id": "3182"
+    },
+    "Atomos": {
+        "id": "3112",
+        "slot": "Secondary",
+        "type": "Particle Cannon"
+    },
+    "Atterax": {
+        "id": "3183",
+        "slot": "Melee",
+        "type": "Whip"
+    },
+    "Attica": {
+        "id": "3002",
+        "slot": "Primary",
+        "type": "Crossbow"
+    },
+    "Azima": {
+        "id": "3113",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Ballistica": {
+        "id": "3114",
+        "slot": "Secondary",
+        "type": "Crossbow"
+    },
+    "Bo": {
+        "id": "3184",
+        "slot": "Melee",
+        "type": "Staff"
+    },
+    "Bo Prime": {
+        "id": "3185",
+        "slot": "Melee",
+        "type": "Staff"
+    },
+    "Boar": {
+        "id": "3003",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Boar Prime": {
+        "id": "3004",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Boltace": {
+        "id": "3186",
+        "slot": "Melee",
+        "type": "Tonfa"
+    },
+    "Bolto": {
+        "id": "3115",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Boltor": {
+        "id": "3005",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Boltor Prime": {
+        "id": "3006",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Brakk": {
+        "id": "3116",
+        "slot": "Secondary",
+        "type": "Shotgun Sidearm"
+    },
+    "Braton": {
+        "id": "3007",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Braton Prime": {
+        "id": "3008",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Braton Vandal": {
+        "id": "3009",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Broken Scepter": {
+        "id": "3187",
+        "slot": "Melee",
+        "type": "Staff"
+    },
+    "Broken War": {
+        "id": "3188",
+        "slot": "Melee",
+        "type": "Sword"
+    },
+    "Bronco": {
+        "id": "3117",
+        "slot": "Secondary",
+        "type": "Shotgun Sidearm"
+    },
+    "Bronco Prime": {
+        "id": "3118",
+        "slot": "Secondary",
+        "type": "Shotgun Sidearm"
+    },
+    "Burston": {
+        "id": "3010",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Burston Prime": {
+        "id": "3011",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Buzlok": {
+        "id": "3012",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Castanas": {
+        "id": "3119",
+        "slot": "Secondary",
+        "type": "Thrown"
+    },
+    "Caustacyst": {
+        "id": "3189",
+        "slot": "Melee",
+        "type": "Scythe"
+    },
+    "Ceramic Dagger": {
+        "id": "3190",
+        "slot": "Melee",
+        "type": "Dagger"
+    },
+    "Cerata": {
+        "id": "3191",
+        "slot": "Melee",
+        "type": "Thrown"
+    },
+    "Cernos": {
+        "id": "3013",
+        "slot": "Primary",
+        "type": "Bow"
+    },
+    "Cernos Prime": {
+        "id": "3014",
+        "slot": "Primary",
+        "type": "Bow"
+    },
+    "Cestra": {
+        "id": "3120",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Convectrix": {
+        "id": "3015",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Cronus": {
+        "id": "3192",
+        "slot": "Melee",
+        "type": "Sword"
+    },
+    "Cycron": {
+        "id": "3121",
+        "slot": "Secondary"
+    },
+    "Daikyu": {
+        "id": "3016",
+        "slot": "Primary",
+        "type": "Bow"
+    },
+    "Dakra Prime": {
+        "id": "3193",
+        "slot": "Melee",
+        "type": "Sword"
+    },
+    "Dark Dagger": {
+        "id": "3194",
+        "slot": "Melee",
+        "type": "Dagger"
+    },
+    "Dark Split-Sword": {
+        "id": "3195",
+        "slot": "Melee",
+        "type": "Heavy Blade / Dual Swords"
+    },
+    "Dark Sword": {
+        "id": "3196",
+        "slot": "Melee",
+        "type": "Sword"
+    },
+    "Dera": {
+        "id": "3017",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Dera Vandal": {
+        "id": "3018",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Despair": {
+        "id": "3122",
+        "slot": "Secondary",
+        "type": "Thrown"
+    },
+    "Destreza": {
+        "id": "3197",
+        "slot": "Melee",
+        "type": "Rapier"
+    },
+    "Detron": {
+        "id": "3123",
+        "slot": "Secondary",
+        "type": "Shotgun Sidearm"
+    },
+    "Dex Dakra": {
+        "id": "3198",
+        "slot": "Melee",
+        "type": "Dual Swords"
+    },
+    "Dex Furis": {
+        "id": "3124",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Dex Sybaris": {
+        "id": "3019",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Dragon Nikana": {
+        "id": "3199",
+        "slot": "Melee",
+        "type": "Nikana"
+    },
+    "Drakgoon": {
+        "id": "3020",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Dread": {
+        "id": "3021",
+        "slot": "Primary",
+        "type": "Bow"
+    },
+    "Dual Cestra": {
+        "id": "3125",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Dual Cleavers": {
+        "id": "3200",
+        "slot": "Melee",
+        "type": "Dual Swords"
+    },
+    "Dual Ether": {
+        "id": "3201",
+        "slot": "Melee",
+        "type": "Dual Swords"
+    },
+    "Dual Heat Swords": {
+        "id": "3202",
+        "slot": "Melee",
+        "type": "Dual Swords"
+    },
+    "Dual Ichor": {
+        "id": "3203",
+        "slot": "Melee",
+        "type": "Dual Swords"
+    },
+    "Dual Kamas": {
+        "id": "3204",
+        "slot": "Melee",
+        "type": "Dual Swords"
+    },
+    "Dual Kamas Prime": {
+        "id": "3205",
+        "slot": "Melee",
+        "type": "Dual Swords"
+    },
+    "Dual Raza": {
+        "id": "3206",
+        "slot": "Melee",
+        "type": "Dual Swords"
+    },
+    "Dual Skana": {
+        "id": "3207",
+        "slot": "Melee",
+        "type": "Dual Swords"
+    },
+    "Dual Toxocyst": {
+        "id": "3126",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Dual Zoren": {
+        "id": "3208",
+        "slot": "Melee",
+        "type": "Dual Swords"
+    },
+    "Embolist": {
+        "id": "3127",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Endura": {
+        "id": "3295",
+        "slot": "Melee",
+        "source": "Tenno Lab",
+        "type": "Rapier"
+    },
+    "Ether Daggers": {
+        "id": "3209",
+        "slot": "Melee",
+        "type": "Dual Daggers"
+    },
+    "Ether Reaper": {
+        "id": "3210",
+        "slot": "Melee",
+        "type": "Scythe"
+    },
+    "Ether Sword": {
+        "id": "3211",
+        "slot": "Melee",
+        "type": "Sword"
+    },
+    "Euphona Prime": {
+        "id": "3128",
+        "slot": "Secondary",
+        "type": "Shotgun"
+    },
+    "Fang": {
+        "id": "3212",
+        "slot": "Melee",
+        "type": "Dual Daggers"
+    },
+    "Fang Prime": {
+        "id": "3213",
+        "slot": "Melee",
+        "type": "Dual Daggers"
+    },
+    "Ferrox": {
+        "id": "3022",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Flux Rifle": {
+        "id": "3023",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Fragor": {
+        "id": "3214",
+        "slot": "Melee",
+        "type": "Hammer"
+    },
+    "Fragor Prime": {
+        "id": "3215",
+        "slot": "Melee",
+        "type": "Hammer"
+    },
+    "Furax": {
+        "id": "3216",
+        "slot": "Melee",
+        "type": "Fist"
+    },
+    "Furax Wraith": {
+        "id": "3217",
+        "slot": "Melee",
+        "type": "Fist"
+    },
+    "Furis": {
+        "id": "3129",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Galatine": {
+        "id": "3218",
+        "slot": "Melee",
+        "type": "Heavy Blade"
+    },
+    "Galatine Prime": {
+        "id": "3219",
+        "slot": "Melee",
+        "type": "Heavy Blade"
+    },
+    "Gammacor": {
+        "id": "3130",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Gazal Machete": {
+        "id": "3220",
+        "slot": "Melee",
+        "type": "Machete"
+    },
+    "Glaive": {
+        "id": "3221",
+        "slot": "Melee",
+        "type": "Thrown"
+    },
+    "Glaive Prime": {
+        "id": "3222",
+        "slot": "Melee",
+        "type": "Thrown"
+    },
+    "Glaxion": {
+        "id": "3024",
+        "slot": "Primary"
+    },
+    "Gorgon": {
+        "id": "3025",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Gorgon Wraith": {
+        "id": "3026",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Grakata": {
+        "id": "3027",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Gram": {
+        "id": "3223",
+        "slot": "Melee",
+        "type": "Heavy Blade"
+    },
+    "Grinlok": {
+        "id": "3028",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Halikar": {
+        "id": "3224",
+        "slot": "Melee",
+        "type": "Thrown"
+    },
+    "Harpak": {
+        "id": "3029",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Hate": {
+        "id": "3225",
+        "slot": "Melee",
+        "type": "Scythe"
+    },
+    "Heat Dagger": {
+        "id": "3226",
+        "slot": "Melee",
+        "type": "Dagger"
+    },
+    "Heat Sword": {
+        "id": "3227",
+        "slot": "Melee",
+        "type": "Sword"
+    },
+    "Hek": {
+        "id": "3030",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Heliocor": {
+        "id": "3228",
+        "slot": "Melee",
+        "type": "Hammer"
+    },
+    "Hema": {
+        "id": "3031",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Hikou": {
+        "id": "3131",
+        "slot": "Secondary",
+        "type": "Thrown"
+    },
+    "Hikou Prime": {
+        "id": "3132",
+        "slot": "Secondary",
+        "type": "Thrown"
+    },
+    "Hind": {
+        "id": "3032",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Hirudo": {
+        "id": "3229",
+        "slot": "Melee",
+        "type": "Sparring"
+    },
+    "Ignis": {
+        "id": "3033",
+        "slot": "Primary",
+        "type": "Flamethrower"
+    },
+    "Ignis Wraith": {
+        "id": "3034",
+        "slot": "Primary",
+        "type": "Flamethrower"
+    },
+    "Jat Kittag": {
+        "id": "3230",
+        "slot": "Melee",
+        "type": "Hammer"
+    },
+    "Javlok": {
+        "id": "3035",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Jaw Sword": {
+        "id": "3231",
+        "slot": "Melee",
+        "type": "Sword"
+    },
+    "Kama": {
+        "id": "3232",
+        "slot": "Melee",
+        "type": "Machete"
+    },
+    "Karak": {
+        "id": "3036",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Karak Wraith": {
+        "id": "3037",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Karyst": {
+        "id": "3233",
+        "slot": "Melee",
+        "type": "Dagger"
+    },
+    "Kesheg": {
+        "id": "3234",
+        "slot": "Melee",
+        "type": "Polearm"
+    },
+    "Kestrel": {
+        "id": "3235",
+        "slot": "Melee",
+        "type": "Thrown"
+    },
+    "Kogake": {
+        "id": "3236",
+        "slot": "Melee",
+        "type": "Sparring"
+    },
+    "Kohm": {
+        "id": "3038",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Kohmak": {
+        "id": "3133",
+        "slot": "Secondary",
+        "type": "Shotgun Sidearm"
+    },
+    "Kraken": {
+        "id": "3134",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Kronen": {
+        "id": "3237",
+        "slot": "Melee",
+        "type": "Tonfa"
+    },
+    "Kulstar": {
+        "id": "3135",
+        "slot": "Secondary",
+        "type": "Launcher"
+    },
+    "Kunai": {
+        "id": "3136",
+        "slot": "Secondary",
+        "type": "Thrown"
+    },
+    "Lacera": {
+        "id": "3238",
+        "slot": "Melee",
+        "type": "Blade and Whip"
+    },
+    "Lanka": {
+        "id": "3039",
+        "slot": "Primary",
+        "type": "Sniper Rifle"
+    },
+    "Lato": {
+        "id": "3137",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Lato Prime": {
+        "id": "3138",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Lato Vandal": {
+        "id": "3139",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Latron": {
+        "id": "3040",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Latron Prime": {
+        "id": "3041",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Latron Wraith": {
+        "id": "3042",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Lecta": {
+        "id": "3239",
+        "slot": "Melee",
+        "type": "Whip"
+    },
+    "Lesion": {
+        "id": "3240",
+        "slot": "Melee",
+        "type": "Polearm"
+    },
+    "Lex": {
+        "id": "3140",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Lex Prime": {
+        "id": "3141",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "MK1-Bo": {
+        "id": "3246",
+        "slot": "Melee",
+        "type": "Staff"
+    },
+    "MK1-Braton": {
+        "id": "3044",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "MK1-Furax": {
+        "id": "3247",
+        "slot": "Melee",
+        "type": "Fist"
+    },
+    "MK1-Furis": {
+        "id": "3145",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "MK1-Kunai": {
+        "id": "3146",
+        "slot": "Secondary",
+        "type": "Thrown"
+    },
+    "MK1-Paris": {
+        "id": "3045",
+        "slot": "Primary",
+        "type": "Bow"
+    },
+    "MK1-Strun": {
+        "id": "3046",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Machete": {
+        "id": "3241",
+        "slot": "Melee",
+        "type": "Machete"
+    },
+    "Machete Wraith": {
+        "id": "3242",
+        "slot": "Melee",
+        "type": "Machete"
+    },
+    "Magistar": {
+        "id": "3243",
+        "slot": "Melee",
+        "type": "Hammer"
+    },
+    "Magnus": {
+        "id": "3142",
+        "slot": "Secondary",
+        "type": "Revolver"
+    },
+    "Mara Detron": {
+        "id": "3143",
+        "slot": "Secondary",
+        "type": "Shotgun Sidearm"
+    },
+    "Marelok": {
+        "id": "3144",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Mios": {
+        "id": "3244",
+        "slot": "Melee",
+        "type": "Blade and Whip"
+    },
+    "Mire": {
+        "id": "3245",
+        "slot": "Melee",
+        "type": "Sword"
+    },
+    "Miter": {
+        "id": "3043",
+        "slot": "Primary",
+        "type": "Launcher"
+    },
+    "Mutalist Cernos": {
+        "id": "3047",
+        "slot": "Primary",
+        "type": "Bow"
+    },
+    "Mutalist Quanta": {
+        "id": "3048",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Nami Skyla": {
+        "id": "3248",
+        "slot": "Melee",
+        "type": "Dual Swords"
+    },
+    "Nami Solo": {
+        "id": "3249",
+        "slot": "Melee",
+        "type": "Machete"
+    },
+    "Nikana": {
+        "id": "3250",
+        "slot": "Melee",
+        "type": "Nikana"
+    },
+    "Nikana Prime": {
+        "id": "3251",
+        "slot": "Melee",
+        "type": "Nikana"
+    },
+    "Ninkondi": {
+        "id": "3252",
+        "slot": "Melee",
+        "type": "Nunchaku"
+    },
+    "Nukor": {
+        "id": "3147",
+        "slot": "Secondary"
+    },
+    "Obex": {
+        "id": "3253",
+        "slot": "Melee",
+        "type": "Sparring"
+    },
+    "Ogris": {
+        "id": "3049",
+        "slot": "Primary",
+        "type": "Launcher"
+    },
+    "Ohma": {
+        "id": "3254",
+        "slot": "Melee",
+        "type": "Tonfa"
+    },
+    "Okina": {
+        "id": "3255",
+        "slot": "Melee",
+        "type": "Dual Dagger"
+    },
+    "Opticor": {
+        "id": "3050",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Orthos": {
+        "id": "3256",
+        "slot": "Melee",
+        "type": "Polearm"
+    },
+    "Orthos Prime": {
+        "id": "3257",
+        "slot": "Melee",
+        "type": "Polearm"
+    },
+    "Orvius": {
+        "id": "3258",
+        "slot": "Melee",
+        "type": "Thrown"
+    },
+    "Pandero": {
+        "id": "3148",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Pangolin Sword": {
+        "id": "3259",
+        "slot": "Melee",
+        "type": "Sword"
+    },
+    "Panthera": {
+        "id": "3051",
+        "slot": "Primary",
+        "type": "Launcher"
+    },
+    "Paracyst": {
+        "id": "3052",
+        "slot": "Primary",
+        "type": "Rifle"
+    },
+    "Paris": {
+        "id": "3053",
+        "slot": "Primary",
+        "type": "Bow"
+    },
+    "Paris Prime": {
+        "id": "3054",
+        "slot": "Primary",
+        "type": "Bow"
+    },
+    "Penta": {
+        "id": "3055",
+        "slot": "Primary",
+        "type": "Launcher"
+    },
+    "Phage": {
+        "id": "3056",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Plasma Sword": {
+        "id": "3260",
+        "slot": "Melee",
+        "type": "Sword"
+    },
+    "Pox": {
+        "id": "3149",
+        "slot": "Secondary",
+        "type": "Thrown"
+    },
+    "Prisma Dual Cleavers": {
+        "id": "3261",
+        "slot": "Melee",
+        "type": "Dual Swords"
+    },
+    "Prisma Gorgon": {
+        "id": "3057",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Prisma Grakata": {
+        "id": "3058",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Prisma Obex": {
+        "id": "3262",
+        "slot": "Melee",
+        "type": "Sparring"
+    },
+    "Prisma Skana": {
+        "id": "3263",
+        "slot": "Melee",
+        "type": "Sword"
+    },
+    "Prisma Tetra": {
+        "id": "3059",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Prova": {
+        "id": "3264",
+        "slot": "Melee",
+        "type": "Machete"
+    },
+    "Prova Vandal": {
+        "id": "3265",
+        "slot": "Melee",
+        "type": "Machete"
+    },
+    "Pyrana": {
+        "id": "3150",
+        "slot": "Secondary",
+        "type": "Shotgun Sidearm"
+    },
+    "Quanta": {
+        "id": "3060",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Quanta Vandal": {
+        "id": "3061",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Rakta Ballistica": {
+        "id": "3151",
+        "slot": "Secondary",
+        "type": "Crossbow"
+    },
+    "Rakta Cernos": {
+        "id": "3062",
+        "slot": "Primary",
+        "type": "Bow"
+    },
+    "Rakta Dark Dagger": {
+        "id": "3266",
+        "slot": "Melee",
+        "type": "Dagger"
+    },
+    "Reaper Prime": {
+        "id": "3267",
+        "slot": "Melee",
+        "type": "Scythe"
+    },
+    "Redeemer": {
+        "id": "3268",
+        "slot": "Melee",
+        "type": "Gunblade"
+    },
+    "Ripkas": {
+        "id": "3269",
+        "slot": "Melee",
+        "type": "Claw"
+    },
+    "Rubico": {
+        "id": "3063",
+        "slot": "Primary",
+        "type": "Sniper Rifle"
+    },
+    "Sancti Castanas": {
+        "id": "3152",
+        "slot": "Secondary",
+        "type": "Thrown"
+    },
+    "Sancti Magistar": {
+        "id": "3270",
+        "slot": "Melee",
+        "type": "Hammer"
+    },
+    "Sancti Tigris": {
+        "id": "3064",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Sarpa": {
+        "id": "3271",
+        "slot": "Melee",
+        "type": "Gunblade"
+    },
+    "Scindo": {
+        "id": "3272",
+        "slot": "Melee",
+        "type": "Heavy Blade"
+    },
+    "Scindo Prime": {
+        "id": "3273",
+        "slot": "Melee",
+        "type": "Heavy Blade"
+    },
+    "Scoliac": {
+        "id": "3274",
+        "slot": "Melee",
+        "type": "Whip"
+    },
+    "Secura Dual Cestra": {
+        "id": "3153",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Secura Lecta": {
+        "id": "3275",
+        "slot": "Melee",
+        "type": "Whip"
+    },
+    "Secura Penta": {
+        "id": "3065",
+        "slot": "Primary",
+        "type": "Launcher"
+    },
+    "Seer": {
+        "id": "3154",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Serro": {
+        "id": "3276",
+        "slot": "Melee",
+        "type": "Polearm"
+    },
+    "Shaku": {
+        "id": "3277",
+        "slot": "Melee",
+        "type": "Nunchaku"
+    },
+    "Sheev": {
+        "id": "3278",
+        "slot": "Melee",
+        "type": "Dagger"
+    },
+    "Sibear": {
+        "id": "3279",
+        "slot": "Melee",
+        "type": "Hammer"
+    },
+    "Sicarus": {
+        "id": "3155",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Sicarus Prime": {
+        "id": "3156",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Silva & Aegis": {
+        "id": "3280",
+        "slot": "Melee",
+        "type": "Sword & Shield"
+    },
+    "Simulor": {
+        "id": "3066",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Skana": {
+        "id": "3281",
+        "slot": "Melee",
+        "type": "Sword"
+    },
+    "Skana Prime": {
+        "id": "3282",
+        "slot": "Melee",
+        "type": "Sword"
+    },
+    "Snipetron": {
+        "id": "3067",
+        "slot": "Primary",
+        "type": "Sniper Rifle"
+    },
+    "Snipetron Vandal": {
+        "id": "3068",
+        "slot": "Primary",
+        "type": "Sniper Rifle"
+    },
+    "Sobek": {
+        "id": "3069",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Soma": {
+        "id": "3070",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Soma Prime": {
+        "id": "3071",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Sonicor": {
+        "id": "3157",
+        "slot": "Secondary"
+    },
+    "Spectra": {
+        "id": "3158",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Spira": {
+        "id": "3159",
+        "slot": "Secondary",
+        "type": "Thrown"
+    },
+    "Spira Prime": {
+        "id": "3160",
+        "slot": "Secondary",
+        "type": "Thrown"
+    },
+    "Staticor": {
+        "id": "3161",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Stradavar": {
+        "id": "3072",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Strun": {
+        "id": "3073",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Strun Wraith": {
+        "id": "3074",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Stug": {
+        "id": "3162",
+        "slot": "Secondary",
+        "type": "Blob Launcher"
+    },
+    "Supra": {
+        "id": "3075",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Supra Vandal": {
+        "id": "3076",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Sybaris": {
+        "id": "3077",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Sydon": {
+        "id": "3283",
+        "slot": "Melee",
+        "type": "Polearm"
+    },
+    "Synapse": {
+        "id": "3078",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Synoid Gammacor": {
+        "id": "3163",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Synoid Heliocor": {
+        "id": "3284",
+        "slot": "Melee",
+        "type": "Hammer"
+    },
+    "Synoid Simulor": {
+        "id": "3079",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Talons": {
+        "id": "3164",
+        "slot": "Secondary",
+        "type": "Thrown"
+    },
+    "Tekko": {
+        "id": "3285",
+        "slot": "Melee",
+        "type": "Fist"
+    },
+    "Telos Akbolto": {
+        "id": "3165",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Telos Boltace": {
+        "id": "3286",
+        "slot": "Melee",
+        "type": "Tonfa"
+    },
+    "Telos Boltor": {
+        "id": "3080",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Tenora": {
+        "id": "3081",
+        "slot": "Primary",
+        "type": "Rifle"
+    },
+    "Tetra": {
+        "id": "3082",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Tiberon": {
+        "id": "3083",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Tigris": {
+        "id": "3084",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Tigris Prime": {
+        "id": "3085",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Tipedo": {
+        "id": "3287",
+        "slot": "Melee",
+        "type": "Staff"
+    },
+    "Tonbo": {
+        "id": "3288",
+        "slot": "Melee",
+        "type": "Polearm"
+    },
+    "Tonkor": {
+        "id": "3086",
+        "slot": "Primary",
+        "type": "Launcher"
+    },
+    "Torid": {
+        "id": "3087",
+        "slot": "Primary",
+        "type": "Launcher"
+    },
+    "Twin Basolk": {
+        "id": "3289",
+        "slot": "Melee",
+        "type": "Dual Swords"
+    },
+    "Twin Grakatas": {
+        "id": "3166",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Twin Gremlins": {
+        "id": "3167",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Twin Kohmak": {
+        "id": "3168",
+        "slot": "Secondary",
+        "type": "Shotgun Sidearm"
+    },
+    "Twin Rogga": {
+        "id": "3169",
+        "slot": "Secondary",
+        "type": "Akimbo Pistols"
+    },
+    "Twin Vipers": {
+        "id": "3170",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Twin Vipers Wraith": {
+        "id": "3171",
+        "slot": "Secondary",
+        "type": "Dual Sidearms"
+    },
+    "Tysis": {
+        "id": "3172",
+        "slot": "Pistol"
+    },
+    "Vasto": {
+        "id": "3173",
+        "slot": "Secondary",
+        "type": "Revolver"
+    },
+    "Vasto Prime": {
+        "id": "3174",
+        "slot": "Secondary",
+        "type": "Revolver"
+    },
+    "Vaykor Hek": {
+        "id": "3088",
+        "slot": "Primary",
+        "type": "Shotgun"
+    },
+    "Vaykor Marelok": {
+        "id": "3175",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Vaykor Sydon": {
+        "id": "3290",
+        "slot": "Melee",
+        "type": "Polearm"
+    },
+    "Vectis": {
+        "id": "3089",
+        "slot": "Primary",
+        "type": "Sniper Rifle"
+    },
+    "Vectis Prime": {
+        "id": "3090",
+        "slot": "Primary",
+        "type": "Sniper Rifle"
+    },
+    "Venka": {
+        "id": "3291",
+        "slot": "Melee",
+        "type": "Claw"
+    },
+    "Venka Prime": {
+        "id": "3292",
+        "slot": "Melee",
+        "type": "Claws"
+    },
+    "Viper": {
+        "id": "3176",
+        "slot": "Secondary",
+        "type": "Pistol"
+    },
+    "Vulkar": {
+        "id": "3091",
+        "slot": "Primary",
+        "type": "Sniper Rifle"
+    },
+    "Vulkar Wraith": {
+        "id": "3092",
+        "slot": "Primary",
+        "type": "Sniper Rifle"
+    },
+    "War": {
+        "id": "3293",
+        "slot": "Melee",
+        "type": "Heavy Blade"
+    },
+    "Zarr": {
+        "id": "3093",
+        "slot": "Primary",
+        "type": "Launcher"
+    },
+    "Zenistar": {
+        "id": "3294",
+        "slot": "Melee",
+        "type": "Heavy Blade"
+    },
+    "Zenith": {
+        "id": "3094",
+        "slot": "Primary",
+        "type": "Assault Rifle"
+    },
+    "Zhuge": {
+        "id": "3095",
+        "slot": "Primary",
+        "type": "Crossbow"
+    }
 }

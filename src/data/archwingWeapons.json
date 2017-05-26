@@ -1,71 +1,75 @@
 {
-  "Veritux": {
-    "slot": "Arch-Melee",
-    "id": "4016"
-  },
-  "Imperator": {
-    "slot": "Arch-Gun",
-    "id": "4006"
-  },
-  "Prisma Veritux": {
-    "slot": "Arch-Melee",
-    "id": "4017"
-  },
-  "Kaszas": {
-    "slot": "Arch-Melee",
-    "id": "4012"
-  },
-  "Imperator Vandal": {
-    "slot": "Arch-Gun",
-    "id": "4007"
-  },
-  "Rathbone": {
-    "slot": "Arch-Melee",
-    "id": "4015"
-  },
-  "Agkuza": {
-    "slot": "Arch-Melee",
-    "id": "4010"
-  },
-  "Grattler": {
-    "slot": "Arch-Gun",
-    "id": "4005"
-  },
-  "Velocitus": {
-    "slot": "Arch-Gun",
-    "id": "4009"
-  },
-  "Centaur": {
-    "slot": "Arch-Melee",
-    "id": "4011"
-  },
-  "Dual Decurion": {
-    "slot": "Arch-Gun",
-    "id": "4003"
-  },
-  "Knux": {
-    "slot": "Arch-Melee",
-    "id": "4013"
-  },
-  "Cyngas": {
-    "slot": "Arch-Gun",
-    "id": "4002"
-  },
-  "Fluctus": {
-    "slot": "Arch-Gun",
-    "id": "4004"
-  },
-  "Corvas": {
-    "slot": "Arch-Gun",
-    "type": "Shotgun",
-    "id": "4001"
-  },
-  "Phaedra": {
-    "slot": "Arch-Gun",
-    "id": "4008"
-  },
-  "Onorix": {
-    "slot": "Arch-Melee",
-    "id": "4014"
-  }
+    "Agkuza": {
+        "id": "4010",
+        "slot": "Arch-Melee"
+    },
+    "Centaur": {
+        "id": "4011",
+        "slot": "Arch-Melee"
+    },
+    "Corvas": {
+        "id": "4001",
+        "slot": "Arch-Gun",
+        "type": "Shotgun"
+    },
+    "Cyngas": {
+        "id": "4002",
+        "slot": "Arch-Gun"
+    },
+    "Dual Decurion": {
+        "id": "4003",
+        "slot": "Arch-Gun"
+    },
+    "Fluctus": {
+        "id": "4004",
+        "slot": "Arch-Gun",
+        "source": "Tenno Lab"
+    },
+    "Grattler": {
+        "id": "4005",
+        "slot": "Arch-Gun",
+        "source": "Chem Lab"
+    },
+    "Imperator": {
+        "id": "4006",
+        "slot": "Arch-Gun"
+    },
+    "Imperator Vandal": {
+        "id": "4007",
+        "slot": "Arch-Gun"
+    },
+    "Kaszas": {
+        "id": "4012",
+        "slot": "Arch-Melee"
+    },
+    "Knux": {
+        "id": "4013",
+        "slot": "Arch-Melee",
+        "source": "Chem Lab"
+    },
+    "Onorix": {
+        "id": "4014",
+        "slot": "Arch-Melee"
+    },
+    "Phaedra": {
+        "id": "4008",
+        "slot": "Arch-Gun"
+    },
+    "Prisma Veritux": {
+        "id": "4017",
+        "slot": "Arch-Melee"
+    },
+    "Rathbone": {
+        "id": "4015",
+        "slot": "Arch-Melee"
+    },
+    "Velocitus": {
+        "id": "4009",
+        "slot": "Arch-Gun",
+        "source": "Tenno Lab"
+    },
+    "Veritux": {
+        "id": "4016",
+        "slot": "Arch-Melee"
+    }
 }

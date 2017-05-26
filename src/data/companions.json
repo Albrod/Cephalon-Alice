@@ -1,122 +1,124 @@
 {
-  "Raksa Kubrow": {
-    "id": "5015"
-  },
-  "Shade": {
-    "id": "5006"
-  },
-  "Helminth Charger": {
-    "id": "5013"
-  },
-  "Deconstructor Prime": {
-    "slot": "Sentinel",
-    "type": "Thrown Melee",
-    "id": "5032"
-  },
-  "Carrier Prime": {
-    "id": "5009"
-  },
-  "Deth Machine Rifle": {
-    "slot": "Sentinel",
-    "type": "Rifle",
-    "id": "5022"
-  },
-  "Chesa Kubrow": {
-    "id": "5012"
-  },
-  "Laser Rifle": {
-    "slot": "Sentinel",
-    "type": "Rifle",
-    "id": "5023"
-  },
-  "Prisma Burst Laser": {
-    "slot": "Sentinel",
-    "type": "Pistol",
-    "id": "5030"
-  },
-  "Helios": {
-    "id": "5005"
-  },
-  "Sweeper": {
-    "slot": "Sentinel",
-    "type": "Shotgun",
-    "id": "5026"
-  },
-  "Helios Prime": {
-    "id": "5010"
-  },
-  "Diriga": {
-    "id": "5003"
-  },
-  "Wyrm": {
-    "id": "5008"
-  },
-  "Wyrm Prime": {
-    "id": "5033"
-  },
-  "Vulklok": {
-    "slot": "Sentinel",
-    "type": "Sniper Rifle",
-    "id": "5028"
-  },
-  "Dethcube": {
-    "id": "5002"
-  },
-  "Artax": {
-    "slot": "Sentinel",
-    "type": "Rifle",
-    "id": "5021"
-  },
-  "Prisma Shade": {
-    "id": "5011"
-  },
-  "Taxon": {
-    "id": "5007"
-  },
-  "Burst Laser": {
-    "slot": "Sentinel",
-    "type": "Pistol",
-    "id": "5029"
-  },
-  "Sunika Kubrow": {
-    "id": "5017"
-  },
-  "Carrier": {
-    "id": "5001"
-  },
-  "Djinn": {
-    "id": "5004"
-  },
-  "Sahasa Kubrow": {
-    "id": "5016"
-  },
-  "Stinger": {
-    "slot": "Sentinel",
-    "type": "Rifle",
-    "id": "5025"
-  },
-  "Smeeta Kavat": {
-    "id": "5019"
-  },
-  "Adarza Kavat": {
-    "id": "5018"
-  },
-  "Huras Kubrow": {
-    "id": "5014"
-  },
-  "Sweeper Prime": {
-    "slot": "Sentinel",
-    "type": "Shotgun",
-    "id": "5027"
-  },
-  "Prime Laser Rifle": {
-    "slot": "Sentinel",
-    "type": "Rifle",
-    "id": "5024"
-  },
-  "Deconstructor": {
-    "slot": "Sentinel",
-    "type": "Thrown Melee",
-    "id": "5031"
-  }
+    "Adarza Kavat": {
+        "id": "5018"
+    },
+    "Artax": {
+        "id": "5021",
+        "slot": "Sentinel",
+        "type": "Rifle"
+    },
+    "Burst Laser": {
+        "id": "5029",
+        "slot": "Sentinel",
+        "type": "Pistol"
+    },
+    "Carrier": {
+        "id": "5001"
+    },
+    "Carrier Prime": {
+        "id": "5009"
+    },
+    "Chesa Kubrow": {
+        "id": "5012"
+    },
+    "Deconstructor": {
+        "id": "5031",
+        "slot": "Sentinel",
+        "type": "Thrown Melee"
+    },
+    "Deconstructor Prime": {
+        "id": "5032",
+        "slot": "Sentinel",
+        "type": "Thrown Melee"
+    },
+    "Deth Machine Rifle": {
+        "id": "5022",
+        "slot": "Sentinel",
+        "type": "Rifle"
+    },
+    "Dethcube": {
+        "id": "5002"
+    },
+    "Diriga": {
+        "id": "5003"
+    },
+    "Djinn": {
+        "id": "5004",
+        "source": "Bio Lab"
+    },
+    "Helios": {
+        "id": "5005",
+        "source": "Energy Lab"
+    },
+    "Helios Prime": {
+        "id": "5010"
+    },
+    "Helminth Charger": {
+        "id": "5013"
+    },
+    "Huras Kubrow": {
+        "id": "5014"
+    },
+    "Laser Rifle": {
+        "id": "5023",
+        "slot": "Sentinel",
+        "type": "Rifle"
+    },
+    "Prime Laser Rifle": {
+        "id": "5024",
+        "slot": "Sentinel",
+        "type": "Rifle"
+    },
+    "Prisma Burst Laser": {
+        "id": "5030",
+        "slot": "Sentinel",
+        "type": "Pistol"
+    },
+    "Prisma Shade": {
+        "id": "5011"
+    },
+    "Raksa Kubrow": {
+        "id": "5015"
+    },
+    "Sahasa Kubrow": {
+        "id": "5016"
+    },
+    "Shade": {
+        "id": "5006"
+    },
+    "Smeeta Kavat": {
+        "id": "5019"
+    },
+    "Stinger": {
+        "id": "5025",
+        "slot": "Sentinel",
+        "type": "Rifle"
+    },
+    "Sunika Kubrow": {
+        "id": "5017"
+    },
+    "Sweeper": {
+        "id": "5026",
+        "slot": "Sentinel",
+        "type": "Shotgun"
+    },
+    "Sweeper Prime": {
+        "id": "5027",
+        "slot": "Sentinel",
+        "type": "Shotgun"
+    },
+    "Taxon": {
+        "id": "5007"
+    },
+    "Vulklok": {
+        "id": "5028",
+        "slot": "Sentinel",
+        "type": "Sniper Rifle"
+    },
+    "Wyrm": {
+        "id": "5008"
+    },
+    "Wyrm Prime": {
+        "id": "5033"
+    }
 }

@@ -1,17 +1,20 @@
 {
-  "Amesha": {
-    "id": "2001"
-  },
-  "Elytron": {
-    "id": "2002"
-  },
-  "Itzal": {
-    "id": "2003"
-  },
-  "Odonata": {
-    "id": "2004"
-  },
-  "Odonata Prime": {
-    "id": "2005"
-  }
+    "Amesha": {
+        "id": "2001",
+        "source": "Tenno Lab"
+    },
+    "Elytron": {
+        "id": "2002",
+        "source": "Tenno Lab"
+    },
+    "Itzal": {
+        "id": "2003",
+        "source": "Tenno Lab"
+    },
+    "Odonata": {
+        "id": "2004"
+    },
+    "Odonata Prime": {
+        "id": "2005"
+    }
 }
