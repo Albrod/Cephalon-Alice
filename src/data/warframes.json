@@ -4,7 +4,30 @@
         "source": "Grineer Manics Drops"
     },
     "Ash Prime": {
-        "id": "1002"
+        "id": "1002",
+        "source": {
+            "Blueprint\n": [
+                "Lith S3 Uncommon*",
+                "Meso C1 Uncommon*",
+                "Meso S3 Uncommon"
+            ],
+            "Chassis\n": [
+                "Axi B1 Common",
+                "Meso V2 Common*",
+                "Neo N4 Common"
+            ],
+            "Neuroptics\n": [
+                "Axi N2 Uncommon",
+                "Meso N2 Uncommon*",
+                "Meso V4 Uncommon",
+                "Neo N3 Uncommon*",
+                "Neo V4 Uncommon"
+            ],
+            "Systems\n": [
+                "Axi N1 Rare*",
+                "Neo N5 Uncommon"
+            ]
+        }
     },
     "Atlas": {
         "id": "1003",
@@ -15,7 +38,21 @@
         "source": "Tenno Lab"
     },
     "Banshee Prime": {
-        "id": "1005"
+        "id": "1005",
+        "source": {
+            "Blueprint\n": [
+                "Neo T1 Uncommon"
+            ],
+            "Chassis\n": [
+                "Neo B1 Rare"
+            ],
+            "Neuroptics\n": [
+                "Meso S4 Common"
+            ],
+            "Systems\n": [
+                "Axi B1 Rare"
+            ]
+        }
     },
     "Chroma": {
         "id": "1006",
@@ -26,7 +63,21 @@
         "source": "General Sargas Ruk (Saturn)"
     },
     "Ember Prime": {
-        "id": "1008"
+        "id": "1008",
+        "source": {
+            "Blueprint\n": [
+                "Axi E1 Rare*"
+            ],
+            "Chassis\n": [
+                "Meso F2 Common*"
+            ],
+            "Neuroptics\n": [
+                "Neo S5 Common"
+            ],
+            "Systems\n": [
+                "Lith G1 Uncommon*"
+            ]
+        }
     },
     "Equinox": {
         "id": "1009",
@@ -44,7 +95,21 @@
         "source": "Lieutenant Lech Kril (Mars)"
     },
     "Frost Prime": {
-        "id": "1012"
+        "id": "1012",
+        "source": {
+            "Blueprint\n": [
+                "Meso F2 Rare*"
+            ],
+            "Chassis\n": [
+                "Lith G1 Common*"
+            ],
+            "Neuroptics\n": [
+                "Axi E1 Common*"
+            ],
+            "Systems\n": [
+                "Neo S5 Uncommon"
+            ]
+        }
     },
     "Hydroid": {
         "id": "1048",
@@ -74,7 +139,21 @@
         "source": "The Sergeant (Phobos)"
     },
     "Mag Prime": {
-        "id": "1019"
+        "id": "1019",
+        "source": {
+            "Blueprint\n": [
+                "Lith M1 Rare*"
+            ],
+            "Chassis\n": [
+                "Meso B1 Uncommon*"
+            ],
+            "Neuroptics\n": [
+                "Axi V2 Common*"
+            ],
+            "Systems\n": [
+                "Neo D1 Common*"
+            ]
+        }
     },
     "Mesa": {
         "id": "1020",
@@ -89,7 +168,25 @@
         "source": "Orokin Derelict Assassination"
     },
     "Nekros Prime": {
-        "id": "1023"
+        "id": "1023",
+        "source": {
+            "Blueprint\n": [
+                "Axi N3 Rare*",
+                "Meso N3 Rare"
+            ],
+            "Chassis\n": [
+                "Axi G1 Common",
+                "Lith N1 Common*",
+                "Meso S3 Common"
+            ],
+            "Neuroptics\n": [
+                "Meso F1 Uncommon"
+            ],
+            "Systems\n": [
+                "Lith N2 Rare",
+                "Neo N3 Rare*"
+            ]
+        }
     },
     "Nezha": {
         "id": "1024",
@@ -104,14 +201,47 @@
         "source": "Raptors (Europa)"
     },
     "Nova Prime": {
-        "id": "1027"
+        "id": "1027",
+        "source": {
+            "Blueprint\n": [
+                "Neo N2 Uncommon*"
+            ],
+            "Chassis\n": [
+                "Lith N1 Rare*",
+                "Neo V1 Rare*"
+            ],
+            "Neuroptics\n": [
+                "Lith C1 Common*",
+                "Meso C1 Common*"
+            ],
+            "Systems\n": [
+                "Lith C1 Common*",
+                "Meso S1 Common*",
+                "Neo S2 Common*"
+            ]
+        }
     },
     "Nyx": {
         "id": "1028",
         "source": "Phorid (Infested Invasion)"
     },
     "Nyx Prime": {
-        "id": "1029"
+        "id": "1029",
+        "source": {
+            "Blueprint\n": [
+                "Lith S2 Common*",
+                "Neo V1 Common*"
+            ],
+            "Chassis\n": [
+                "Neo N1 Rare*"
+            ],
+            "Neuroptics\n": [
+                "Meso N1 Rare*"
+            ],
+            "Systems\n": [
+                "Neo S2 Uncommon*"
+            ]
+        }
     },
     "Oberon": {
         "id": "1030",
@@ -133,7 +263,29 @@
         "source": "Kela De Thaym (Sedna)"
     },
     "Saryn Prime": {
-        "id": "1035"
+        "id": "1035",
+        "source": {
+            "Blueprint\n": [
+                "Lith S4 Rare",
+                "Meso S4 Rare",
+                "Neo S1 Rare*"
+            ],
+            "Chassis\n": [
+                "Meso S2 Rare",
+                "Neo S2 Rare*"
+            ],
+            "Neuroptics\n": [
+                "Lith A1 Uncommon*",
+                "Neo V4 Uncommon"
+            ],
+            "Systems\n": [
+                "Axi G1 Common",
+                "Axi T1 Common*",
+                "Meso C1 Common*",
+                "Meso F1 Common",
+                "Neo N5 Common"
+            ]
+        }
     },
     "Titania": {
         "id": "1036",
@@ -144,28 +296,102 @@
         "source": "Captain Vor and Lieutenant Lech Kril (Ceres)"
     },
     "Trinity Prime": {
-        "id": "1038"
+        "id": "1038",
+        "source": {
+            "Blueprint\n": [
+                "Axi S1 Uncommon*",
+                "Lith K1 Uncommon*",
+                "Meso S4 Uncommon"
+            ],
+            "Chassis\n": [
+                "Axi H1 Uncommon",
+                "Lith S4 Uncommon",
+                "Neo S1 Uncommon*"
+            ],
+            "Neuroptics\n": [
+                "Axi C1 Common",
+                "Axi V3 Common*",
+                "Neo D1 Uncommon*"
+            ],
+            "Systems\n": [
+                "Axi A1 Common",
+                "Axi V2 Common*",
+                "Axi V3 Common*",
+                "Axi V4 Common*",
+                "Neo B1 Common"
+            ]
+        }
     },
     "Valkyr": {
         "id": "1039",
         "source": "Alad V (Jupiter)"
     },
     "Valkyr Prime": {
-        "id": "1040"
+        "id": "1040",
+        "source": {
+            "Blueprint\n": [
+                "Meso S3 Common"
+            ],
+            "Chassis\n": [
+                "Axi V5 Rare"
+            ],
+            "Neuroptics\n": [
+                "Meso C2 Uncommon*",
+                "Meso V4 Uncommon"
+            ],
+            "Systems\n": [
+                "Lith V3 Rare",
+                "Meso V3 Rare*"
+            ]
+        }
     },
     "Vauban": {
         "id": "1041",
         "source": "Alert Missions"
     },
     "Vauban Prime": {
-        "id": "1042"
+        "id": "1042",
+        "source": {
+            "Blueprint\n": [
+                "Lith F2 Rare*",
+                "Neo V2 Rare"
+            ],
+            "Chassis\n": [
+                "Axi V1 Rare*",
+                "Meso V4 Rare"
+            ],
+            "Neuroptics\n": [
+                "Meso N2 Rare*",
+                "Neo V3 Rare"
+            ],
+            "Systems\n": [
+                "Lith V2 Rare",
+                "Neo N2 Rare*"
+            ]
+        }
     },
     "Volt": {
         "id": "1043",
         "source": "Tenno Lab"
     },
     "Volt Prime": {
-        "id": "1044"
+        "id": "1044",
+        "source": {
+            "Blueprint\n": [
+                "Axi N3 Uncommon*",
+                "Neo V1 Uncommon*"
+            ],
+            "Chassis\n": [
+                "Meso V2 Uncommon*",
+                "Meso V3 Uncommon*"
+            ],
+            "Neuroptics\n": [
+                "Axi V1 Uncommon*"
+            ],
+            "Systems\n": [
+                "Lith V1 Uncommon*"
+            ]
+        }
     },
     "Wukong": {
         "id": "1045",

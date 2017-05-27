@@ -1,24 +1,50 @@
 {
     "Agkuza": {
         "id": "4010",
-        "slot": "Arch-Melee"
+        "slot": "Arch-Melee",
+        "source": {
+            "Blade": "New Loka",
+            "Guard": "Steel Meridian",
+            "Handle": "Red Veil"
+        }
     },
     "Centaur": {
         "id": "4011",
-        "slot": "Arch-Melee"
+        "slot": "Arch-Melee",
+        "source": {
+            "Blueprint": [
+                "Market"
+            ]
+        }
     },
     "Corvas": {
         "id": "4001",
         "slot": "Arch-Gun",
+        "source": {
+            "Barrel": "Arbiters of Hexis",
+            "Blueprint": "Market",
+            "Receiver": "Cephalon Suda",
+            "Stock": "Steel Meridian"
+        },
         "type": "Shotgun"
     },
     "Cyngas": {
         "id": "4002",
-        "slot": "Arch-Gun"
+        "slot": "Arch-Gun",
+        "source": {
+            "Barrel": "Arbiters of Hexis",
+            "Receiver": "Cephalon Suda",
+            "Stock": "The Perrin Sequence"
+        }
     },
     "Dual Decurion": {
         "id": "4003",
-        "slot": "Arch-Gun"
+        "slot": "Arch-Gun",
+        "source": {
+            "Barrel": "Arbiters of Hexis",
+            "Blueprint": "Market",
+            "Receiver": "Cephalon Suda"
+        }
     },
     "Fluctus": {
         "id": "4004",
@@ -36,11 +62,21 @@
     },
     "Imperator Vandal": {
         "id": "4007",
-        "slot": "Arch-Gun"
+        "slot": "Arch-Gun",
+        "source": {
+            "Barrel": "Fomorian Sabotage",
+            "Blueprint": "Fomorian Sabotage",
+            "Receiver": "Fomorian Sabotage"
+        }
     },
     "Kaszas": {
         "id": "4012",
-        "slot": "Arch-Melee"
+        "slot": "Arch-Melee",
+        "source": {
+            "Blueprint": [
+                "Market"
+            ]
+        }
     },
     "Knux": {
         "id": "4013",
@@ -49,11 +85,21 @@
     },
     "Onorix": {
         "id": "4014",
-        "slot": "Arch-Melee"
+        "slot": "Arch-Melee",
+        "source": {
+            "Blueprint": [
+                "Market"
+            ]
+        }
     },
     "Phaedra": {
         "id": "4008",
-        "slot": "Arch-Gun"
+        "slot": "Arch-Gun",
+        "source": {
+            "Blueprint": [
+                "Market"
+            ]
+        }
     },
     "Prisma Veritux": {
         "id": "4017",
@@ -61,7 +107,12 @@
     },
     "Rathbone": {
         "id": "4015",
-        "slot": "Arch-Melee"
+        "slot": "Arch-Melee",
+        "source": {
+            "Blueprint": [
+                "Market"
+            ]
+        }
     },
     "Velocitus": {
         "id": "4009",

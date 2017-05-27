@@ -12,9 +12,31 @@
         "source": "Tenno Lab"
     },
     "Odonata": {
-        "id": "2004"
+        "id": "2004",
+        "source": "The Archwing (Quest)"
     },
     "Odonata Prime": {
-        "id": "2005"
+        "id": "2005",
+        "source": {
+            "Blueprint\n": [
+                "Lith F1 Uncommon*",
+                "Meso C2 Uncommon*",
+                "Meso S1 Uncommon*"
+            ],
+            "Harness\n": [
+                "Axi K1 Common*",
+                "Axi T1 Common*",
+                "Axi V4 Common*",
+                "Lith K1 Common*"
+            ],
+            "Systems\n": [
+                "Axi V1 Common*",
+                "Lith F2 Common*",
+                "Neo N3 Common*"
+            ],
+            "Wings\n": [
+                "Axi N1 Uncommon*"
+            ]
+        }
     }
 }

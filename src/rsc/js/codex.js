@@ -5,6 +5,69 @@ var counters;
 var fullData = {};
 var masteryArr = [];
 
+var config = {
+  apiKey: "AIzaSyAOfePZ6ZL_QAc7Pa77owUMXcatvIYjk8s",
+  authDomain: "cephalon-4092a.firebaseapp.com",
+  databaseURL: "https://cephalon-4092a.firebaseio.com",
+  projectId: "cephalon-4092a",
+  storageBucket: "cephalon-4092a.appspot.com",
+  messagingSenderId: "443121088884"
+};
+var firebase;
+
+$(function() {
+  // Initialize Firebase
+  firebase.initializeApp(config);
+
+  $(".btn-logout").click(function( e ) {
+    e.preventDefault();
+    firebase.auth().signOut().then(function() {
+      window.location.href = "login.html";
+    }).catch(function(error) {
+      console.log(errorCode + " | " + errorMessage );
+    });
+  });
+
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (!user) {
+      // Redirect to login if not logged in.
+      window.location.href = "login.html";
+    }
+
+    loadCodex();
+  });
+
+  $(document).on('click', 'a.anchor', function(event){
+    event.preventDefault();
+
+    $('html, body').animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+  });
+});
+
+function fadeHide(ele) {
+  ele.css("opacity", "0");
+  setTimeout(function(){
+    ele.css("display", "none");
+  }, 250);
+}
+function fadeShow(ele) {
+  setTimeout(function(){
+    ele.css("display", "");
+    setTimeout(function(){
+      ele.css("opacity", "");
+    }, 250);
+  }, 250);
+}
+function getURLParameter(name) {
+  return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+}
+
+
+
+
+
 function loadCodex() {
   verifyUserData();
 
@@ -378,7 +441,7 @@ function updateData() {
         for (var j in catData) {
           var innerData = {"id": catData[j].id};
 
-          dbData[catData[j].toLowerCase()] = innerData;
+          dbData[j.toLowerCase()] = innerData;
         }
         // Push changes to DB.
       }
@@ -441,57 +504,6 @@ function updateTotals() {
   $("#total-counter").html(userSum + "/" + totalSum + " Mastered");
 }
 
-function searchLookupInfo(name, entry) {
-  var id = entry.id;
-
-  // Load id
-  $(".search-info-img").attr("src","rsc/img/items/" + name.toLowerCase() + ".png");
-  $(".btn-details-submit").data('id', id);
-
-  // Load name
-  $(".search-info-name").html(name);
-
-  // Load mastery
-  var masterySpan = $(".search-info-mastery");
-  if (masteryArr.indexOf(id) >= 0) {
-    masterySpan.html("<strong>Mastered</strong>: Yes");
-    masterySpan.parent().addClass('table-success');
-    fadeHide($(".btn-details-submit"));
-  } else {
-    masterySpan.html("<strong>Mastered</strong>: No");
-    masterySpan.parent().addClass('table-warning');
-    fadeShow($(".btn-details-submit"));
-  }
-
-  // Load source
-  if (entry.source) {
-    var sourceSpan = $(".search-info-source");
-    sourceSpan.html("<strong>Source</strong>: <p class=\"search-info-source-p\">" + entry.source + "</p>");
-  }
-}
-function detailsLookupInfo(name, entry) {
-  var id = entry.id;
-  var sourceSpan = $(".details-info-source");
-  sourceSpan.html("");
-
-  // Load image
-  $(".details-info-img").attr("src","rsc/img/items/" + name.toLowerCase() + ".png");
-
-  // Load name
-  $(".details-info-name").html(name);
-
-  // Load source
-  if (entry.source) {
-    sourceSpan.html("<strong>Source</strong>: <p class=\"info-source-p\">" + entry.source + "</p>");
-  } else {
-    sourceSpan.html("<strong>Source</strong>: <p class=\"info-source-p\">No location information added.</p>");
-  }
-
-
-
-  toggleDetailsModal();
-}
-
 function buildDetailsPanel(name, entry, mode) {
   var hook = $("." + mode + "-details-hook");
   hook.html("");
@@ -551,7 +563,21 @@ function buildDetailsPanel(name, entry, mode) {
     var sourceRow = $("<tr>");
     var sourceCell = $("<td>");
     var sourceSpan = $("<span>", {class:"details-source"});
-    sourceSpan.html("<strong>Source</strong>: <p class=\"details-source-p\">" + entry.source + "</p>");
+    var source = "";
+
+    if ((typeof entry.source) == "object") {
+      $.each(entry.source, function(key, val) {
+        source += "<div class=\"details-source-div\">" + key + "<p class=\"details-source-p\">";
+        $.each(val, function() {
+          source += this + "<br/>";
+        });
+        source += "</p></div>"
+      });
+      source += "<br /><small>Asterisks denote vaulted relics.</small>"
+    } else {
+      source = entry.source;
+    }
+    sourceSpan.html("<strong>Source</strong>: <p class=\"details-source-p\">" + source + "</p>");
 
     sourceCell.append(sourceSpan);
     sourceRow.append(sourceCell);
@@ -871,4 +897,18 @@ function retrieveNameByID(id) {
       }
     }
   }
+}
+
+function onScroll(event){
+  var scrollPos = $(document).scrollTop() + 50;
+  $('.library-sidebar img').each(function () {
+    var refElement = $("#" + $(this).data("anchor") + "Div");
+    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+      $('.library-sidebar img').removeClass("active");
+      $(this).addClass("active");
+    }
+    else{
+      $(this).removeClass("active");
+    }
+  });
 }

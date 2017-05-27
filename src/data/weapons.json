@@ -2,11 +2,13 @@
     "Ack & Brunt": {
         "id": "3177",
         "slot": "Melee",
+        "source": "Chem Lab",
         "type": "Sword & Shield"
     },
     "Acrid": {
         "id": "3096",
         "slot": "Secondary",
+        "source": "Bio Lab",
         "type": "Pistol"
     },
     "Afuris": {
@@ -27,6 +29,18 @@
     "Akbronco Prime": {
         "id": "3100",
         "slot": "Secondary",
+        "source": {
+            "Blueprint": [
+                "Lith S2 Common*",
+                "Lith S3 Common*",
+                "Meso S3 Common"
+            ],
+            "Link": [
+                "Axi S1 Uncommon*",
+                "Lith N1 Uncommon*",
+                "Lith S5 Uncommon"
+            ]
+        },
         "type": "Shotgun Sidearm"
     },
     "Akjagara": {
@@ -47,6 +61,14 @@
     "Aklex Prime": {
         "id": "3104",
         "slot": "Secondary",
+        "source": {
+            "Blueprint": [
+                "Axi A2 Uncommon"
+            ],
+            "Link": [
+                "Axi A2 Rare"
+            ]
+        },
         "type": "Dual Sidearms"
     },
     "Akmagnus": {
@@ -62,11 +84,30 @@
     "Akstiletto": {
         "id": "3107",
         "slot": "Secondary",
+        "source": "Tenno Lab",
         "type": "Dual Sidearms"
     },
     "Akstiletto Prime": {
         "id": "3108",
         "slot": "Secondary",
+        "source": {
+            "Barrel": [
+                "Axi A1 Uncommon"
+            ],
+            "Blueprint": [
+                "Lith A1 Rare*",
+                "Neo A1 Rare"
+            ],
+            "Link": [
+                "Axi N1 Uncommon*",
+                "Neo N5 Uncommon"
+            ],
+            "Receiver": [
+                "Axi H1 Uncommon",
+                "Axi K1 Uncommon*",
+                "Axi T1 Uncommon*"
+            ]
+        },
         "type": "Dual Sidearms"
     },
     "Akvasto": {
@@ -87,6 +128,7 @@
     "Amprex": {
         "id": "3001",
         "slot": "Primary",
+        "source": "Energy Lab",
         "type": "Assault Rifle"
     },
     "Angstrum": {
@@ -97,6 +139,7 @@
     "Anku": {
         "id": "3179",
         "slot": "Melee",
+        "source": "Tenno Lab",
         "type": "Scythe"
     },
     "Ankyros": {
@@ -125,6 +168,7 @@
     "Attica": {
         "id": "3002",
         "slot": "Primary",
+        "source": "Tenno Lab",
         "type": "Crossbow"
     },
     "Azima": {
@@ -155,6 +199,20 @@
     "Boar Prime": {
         "id": "3004",
         "slot": "Primary",
+        "source": {
+            "Barrel": [
+                "Axi V2 Uncommon*"
+            ],
+            "Blueprint": [
+                "Neo D1 Common*"
+            ],
+            "Receiver": [
+                "Lith M1 Common*"
+            ],
+            "Stock": [
+                "Meso B1 Rare*"
+            ]
+        },
         "type": "Shotgun"
     },
     "Boltace": {
@@ -190,6 +248,30 @@
     "Braton Prime": {
         "id": "3008",
         "slot": "Primary",
+        "source": {
+            "Barrel": [
+                "Lith A1 Common*",
+                "Meso N3 Common",
+                "Neo A1 Common"
+            ],
+            "Blueprint": [
+                "Axi N1 Common*",
+                "Lith V3 Common",
+                "Meso V1 Uncommon"
+            ],
+            "Receiver": [
+                "Axi V2 Uncommon*",
+                "Axi V3 Uncommon*",
+                "Axi V5 Uncommon"
+            ],
+            "Stock": [
+                "Axi A1 Common",
+                "Axi E2 Common",
+                "Meso N1 Common*",
+                "Neo N4 Common",
+                "Neo V2 Common"
+            ]
+        },
         "type": "Assault Rifle"
     },
     "Braton Vandal": {
@@ -215,6 +297,29 @@
     "Bronco Prime": {
         "id": "3118",
         "slot": "Secondary",
+        "source": {
+            "Barrel": [
+                "Axi E2 Uncommon",
+                "Axi N3 Uncommon*",
+                "Neo V1 Uncommon*"
+            ],
+            "Blueprint": [
+                "Axi N2 Common",
+                "Axi S1 Common*",
+                "Lith N1 Common*",
+                "Lith S1 Common*",
+                "Meso C2 Common*",
+                "Meso N2 Common*",
+                "Meso N3 Common",
+                "Meso S2 Common"
+            ],
+            "Receiver": [
+                "Axi S1 Common*",
+                "Meso F1 Common",
+                "Neo B1 Common",
+                "Neo V4 Common"
+            ]
+        },
         "type": "Shotgun Sidearm"
     },
     "Burston": {
@@ -225,21 +330,45 @@
     "Burston Prime": {
         "id": "3011",
         "slot": "Primary",
+        "source": {
+            "Barrel": [
+                "Axi T1 Uncommon*",
+                "Lith F2 Uncommon*",
+                "Neo B1 Uncommon"
+            ],
+            "Blueprint": [
+                "Meso V1 Common",
+                "Neo T1 Common"
+            ],
+            "Receiver": [
+                "Lith S5 Common",
+                "Neo S3 Common*"
+            ],
+            "Stock": [
+                "Lith K1 Common*",
+                "Lith V1 Common*",
+                "Meso N3 Common",
+                "Neo S2 Common*"
+            ]
+        },
         "type": "Assault Rifle"
     },
     "Buzlok": {
         "id": "3012",
         "slot": "Primary",
+        "source": "Chem Lab",
         "type": "Assault Rifle"
     },
     "Castanas": {
         "id": "3119",
         "slot": "Secondary",
+        "source": "Tenno Lab",
         "type": "Thrown"
     },
     "Caustacyst": {
         "id": "3189",
         "slot": "Melee",
+        "source": "Bio Lab",
         "type": "Scythe"
     },
     "Ceramic Dagger": {
@@ -250,6 +379,7 @@
     "Cerata": {
         "id": "3191",
         "slot": "Melee",
+        "source": "Bio Lab",
         "type": "Thrown"
     },
     "Cernos": {
@@ -260,6 +390,25 @@
     "Cernos Prime": {
         "id": "3014",
         "slot": "Primary",
+        "source": {
+            "Blueprint": [
+                "Axi B1 Uncommon",
+                "Axi V4 Uncommon*"
+            ],
+            "Grip": [
+                "Neo V4 Common"
+            ],
+            "Lower Limb": [
+                "Axi C1 Rare"
+            ],
+            "String": [
+                "Neo A1 Uncommon"
+            ],
+            "Upper Limb": [
+                "Lith V3 Common",
+                "Meso C2 Common*"
+            ]
+        },
         "type": "Bow"
     },
     "Cestra": {
@@ -270,6 +419,7 @@
     "Convectrix": {
         "id": "3015",
         "slot": "Primary",
+        "source": "Energy Lab",
         "type": "Shotgun"
     },
     "Cronus": {
@@ -279,16 +429,29 @@
     },
     "Cycron": {
         "id": "3121",
-        "slot": "Secondary"
+        "slot": "Secondary",
+        "source": "Energy Lab"
     },
     "Daikyu": {
         "id": "3016",
         "slot": "Primary",
+        "source": "Tenno Lab",
         "type": "Bow"
     },
     "Dakra Prime": {
         "id": "3193",
         "slot": "Melee",
+        "source": {
+            "Blade": [
+                "Neo D1 Rare*"
+            ],
+            "Blueprint": [
+                "Lith M1 Uncommon*"
+            ],
+            "Handle": [
+                "Meso B1 Common*"
+            ]
+        },
         "type": "Sword"
     },
     "Dark Dagger": {
@@ -299,6 +462,7 @@
     "Dark Split-Sword": {
         "id": "3195",
         "slot": "Melee",
+        "source": "Tenno Lab",
         "type": "Heavy Blade / Dual Swords"
     },
     "Dark Sword": {
@@ -309,11 +473,23 @@
     "Dera": {
         "id": "3017",
         "slot": "Primary",
+        "source": "Energy Lab",
         "type": "Assault Rifle"
     },
     "Dera Vandal": {
         "id": "3018",
         "slot": "Primary",
+        "source": {
+            "Barrel": [
+                "Invasions"
+            ],
+            "Receiver": [
+                "Invasions"
+            ],
+            "Stock": [
+                "Invasions"
+            ]
+        },
         "type": "Assault Rifle"
     },
     "Despair": {
@@ -364,6 +540,7 @@
     "Dual Cestra": {
         "id": "3125",
         "slot": "Secondary",
+        "source": "Energy Lab",
         "type": "Dual Sidearms"
     },
     "Dual Cleavers": {
@@ -384,6 +561,7 @@
     "Dual Ichor": {
         "id": "3203",
         "slot": "Melee",
+        "source": "Bio Lab",
         "type": "Dual Swords"
     },
     "Dual Kamas": {
@@ -394,11 +572,29 @@
     "Dual Kamas Prime": {
         "id": "3205",
         "slot": "Melee",
+        "source": {
+            "Blade": [
+                "Meso D1 Rare"
+            ],
+            "Blueprint": [
+                "Axi N3 Common*",
+                "Axi V1 Common*",
+                "Axi V5 Common",
+                "Neo T1 Common",
+                "Neo V1 Common*"
+            ],
+            "Handle": [
+                "Axi A1 Uncommon",
+                "Meso F1 Uncommon",
+                "Meso N1 Uncommon*"
+            ]
+        },
         "type": "Dual Swords"
     },
     "Dual Raza": {
         "id": "3206",
         "slot": "Melee",
+        "source": "Tenno Lab",
         "type": "Dual Swords"
     },
     "Dual Skana": {
@@ -409,6 +605,7 @@
     "Dual Toxocyst": {
         "id": "3126",
         "slot": "Secondary",
+        "source": "Bio Lab",
         "type": "Dual Sidearms"
     },
     "Dual Zoren": {
@@ -419,6 +616,7 @@
     "Embolist": {
         "id": "3127",
         "slot": "Secondary",
+        "source": "Bio Lab",
         "type": "Pistol"
     },
     "Endura": {
@@ -445,6 +643,17 @@
     "Euphona Prime": {
         "id": "3128",
         "slot": "Secondary",
+        "source": {
+            "Barrel": [
+                "Meso N3 Uncommon"
+            ],
+            "Blueprint": [
+                "Axi B1 Common"
+            ],
+            "Receiver": [
+                "Axi E2 Rare"
+            ]
+        },
         "type": "Shotgun"
     },
     "Fang": {
@@ -455,16 +664,43 @@
     "Fang Prime": {
         "id": "3213",
         "slot": "Melee",
+        "source": {
+            "Blade": [
+                "Axi B1 Common",
+                "Axi N1 Common*",
+                "Lith C1 Common*",
+                "Lith F1 Common*",
+                "Lith N1 Common*",
+                "Lith S5 Common"
+            ],
+            "Blueprint": [
+                "Lith K1 Common*",
+                "Lith V2 Common",
+                "Meso N1 Common*",
+                "Meso S4 Common",
+                "Neo N2 Common*"
+            ],
+            "Handle": [
+                "Lith F2 Uncommon*",
+                "Meso N1 Common*",
+                "Meso N2 Common*",
+                "Meso S4 Uncommon",
+                "Neo N3 Uncommon*",
+                "Neo V2 Common"
+            ]
+        },
         "type": "Dual Daggers"
     },
     "Ferrox": {
         "id": "3022",
         "slot": "Primary",
+        "source": "Energy Lab",
         "type": "Assault Rifle"
     },
     "Flux Rifle": {
         "id": "3023",
         "slot": "Primary",
+        "source": "Energy Lab",
         "type": "Assault Rifle"
     },
     "Fragor": {
@@ -475,6 +711,20 @@
     "Fragor Prime": {
         "id": "3215",
         "slot": "Melee",
+        "source": {
+            "Blueprint": [
+                "Lith F1 Rare*",
+                "Meso F1 Rare"
+            ],
+            "Handle": [
+                "Lith V1 Rare*",
+                "Neo T1 Uncommon"
+            ],
+            "Head": [
+                "Axi A1 Common",
+                "Axi H1 Common"
+            ]
+        },
         "type": "Hammer"
     },
     "Furax": {
@@ -500,6 +750,22 @@
     "Galatine Prime": {
         "id": "3219",
         "slot": "Melee",
+        "source": {
+            "Blade": [
+                "Meso C2 Common*",
+                "Meso S2 Common",
+                "Meso S4 Common",
+                "Neo V2 Common",
+                "Neo V3 Common"
+            ],
+            "Blueprint": [
+                "Axi G1 Rare"
+            ],
+            "Handle": [
+                "Lith S5 Uncommon",
+                "Neo V2 Uncommon"
+            ]
+        },
         "type": "Heavy Blade"
     },
     "Gammacor": {
@@ -510,6 +776,7 @@
     "Gazal Machete": {
         "id": "3220",
         "slot": "Melee",
+        "source": "Tenno Lab",
         "type": "Machete"
     },
     "Glaive": {
@@ -520,11 +787,23 @@
     "Glaive Prime": {
         "id": "3222",
         "slot": "Melee",
+        "source": {
+            "Blade": [
+                "Axi E1 Uncommon*"
+            ],
+            "Blueprint": [
+                "Lith G1 Rare*"
+            ],
+            "Disc": [
+                "Neo S5 Uncommon"
+            ]
+        },
         "type": "Thrown"
     },
     "Glaxion": {
         "id": "3024",
-        "slot": "Primary"
+        "slot": "Primary",
+        "source": "Energy Lab"
     },
     "Gorgon": {
         "id": "3025",
@@ -549,6 +828,7 @@
     "Grinlok": {
         "id": "3028",
         "slot": "Primary",
+        "source": "Chem Lab",
         "type": "Assault Rifle"
     },
     "Halikar": {
@@ -589,6 +869,7 @@
     "Hema": {
         "id": "3031",
         "slot": "Primary",
+        "source": "Bio Lab",
         "type": "Assault Rifle"
     },
     "Hikou": {
@@ -599,11 +880,26 @@
     "Hikou Prime": {
         "id": "3132",
         "slot": "Secondary",
+        "source": {
+            "Blueprint": [
+                "Lith S1 Common*",
+                "Meso N2 Common*"
+            ],
+            "Pouch": [
+                "Axi K1 Common*",
+                "Axi V2 Common*"
+            ],
+            "Star": [
+                "Lith F2 Common*",
+                "Neo N1 Common*"
+            ]
+        },
         "type": "Thrown"
     },
     "Hind": {
         "id": "3032",
         "slot": "Primary",
+        "source": "Chemical Lab",
         "type": "Assault Rifle"
     },
     "Hirudo": {
@@ -614,21 +910,25 @@
     "Ignis": {
         "id": "3033",
         "slot": "Primary",
+        "source": "Chem Lab",
         "type": "Flamethrower"
     },
     "Ignis Wraith": {
         "id": "3034",
         "slot": "Primary",
+        "source": "Chem Lab",
         "type": "Flamethrower"
     },
     "Jat Kittag": {
         "id": "3230",
         "slot": "Melee",
+        "source": "Chem Lab",
         "type": "Hammer"
     },
     "Javlok": {
         "id": "3035",
         "slot": "Primary",
+        "source": "Chem Lab",
         "type": "Assault Rifle"
     },
     "Jaw Sword": {
@@ -649,6 +949,17 @@
     "Karak Wraith": {
         "id": "3037",
         "slot": "Primary",
+        "source": {
+            "Barrel": [
+                "Invasions"
+            ],
+            "Receiver": [
+                "Invasions"
+            ],
+            "Stock": [
+                "Invasions"
+            ]
+        },
         "type": "Assault Rifle"
     },
     "Karyst": {
@@ -659,6 +970,7 @@
     "Kesheg": {
         "id": "3234",
         "slot": "Melee",
+        "source": "Chem Lab",
         "type": "Polearm"
     },
     "Kestrel": {
@@ -679,6 +991,7 @@
     "Kohmak": {
         "id": "3133",
         "slot": "Secondary",
+        "source": "Chem Lab",
         "type": "Shotgun Sidearm"
     },
     "Kraken": {
@@ -704,11 +1017,13 @@
     "Lacera": {
         "id": "3238",
         "slot": "Melee",
+        "source": "Tenno Lab",
         "type": "Blade and Whip"
     },
     "Lanka": {
         "id": "3039",
         "slot": "Primary",
+        "source": "Energy Lab",
         "type": "Sniper Rifle"
     },
     "Lato": {
@@ -734,11 +1049,36 @@
     "Latron Prime": {
         "id": "3041",
         "slot": "Primary",
+        "source": {
+            "Barrel": [
+                "Axi E1 Common*"
+            ],
+            "Blueprint": [
+                "Lith G1 Common*"
+            ],
+            "Receiver": [
+                "Neo S5 Common"
+            ],
+            "Stock": [
+                "Meso F2 Common*"
+            ]
+        },
         "type": "Assault Rifle"
     },
     "Latron Wraith": {
         "id": "3042",
         "slot": "Primary",
+        "source": {
+            "Barrel": [
+                "Invasions"
+            ],
+            "Receiver": [
+                "Invasions"
+            ],
+            "Stock": [
+                "Invasions"
+            ]
+        },
         "type": "Assault Rifle"
     },
     "Lecta": {
@@ -759,6 +1099,29 @@
     "Lex Prime": {
         "id": "3141",
         "slot": "Secondary",
+        "source": {
+            "Barrel": [
+                "Axi A2 Common",
+                "Axi K1 Common*",
+                "Lith V2 Common",
+                "Meso V4 Common",
+                "Neo N3 Common*",
+                "Neo S1 Common*"
+            ],
+            "Blueprint": [
+                "Axi A2 Uncommon",
+                "Lith S4 Common",
+                "Meso D1 Common",
+                "Neo N2 Common*"
+            ],
+            "Receiver": [
+                "Axi A2 Common",
+                "Axi C1 Common",
+                "Axi E2 Common",
+                "Axi N2 Common",
+                "Lith M1 Common*"
+            ]
+        },
         "type": "Pistol"
     },
     "MK1-Bo": {
@@ -824,11 +1187,13 @@
     "Marelok": {
         "id": "3144",
         "slot": "Secondary",
+        "source": "Chem Lab",
         "type": "Pistol"
     },
     "Mios": {
         "id": "3244",
         "slot": "Melee",
+        "source": "Bio Lab",
         "type": "Blade and Whip"
     },
     "Mire": {
@@ -849,11 +1214,13 @@
     "Mutalist Quanta": {
         "id": "3048",
         "slot": "Primary",
+        "source": "Bio Lab",
         "type": "Assault Rifle"
     },
     "Nami Skyla": {
         "id": "3248",
         "slot": "Melee",
+        "source": "Tenno Lab",
         "type": "Dual Swords"
     },
     "Nami Solo": {
@@ -864,11 +1231,25 @@
     "Nikana": {
         "id": "3250",
         "slot": "Melee",
+        "source": "Tenno Lab",
         "type": "Nikana"
     },
     "Nikana Prime": {
         "id": "3251",
         "slot": "Melee",
+        "source": {
+            "Blade": [
+                "Meso V2 Rare*",
+                "Neo N4 Rare"
+            ],
+            "Blueprint": [
+                "Axi A1 Rare",
+                "Neo N5 Rare"
+            ],
+            "Hilt": [
+                "Axi N2 Rare*"
+            ]
+        },
         "type": "Nikana"
     },
     "Ninkondi": {
@@ -878,7 +1259,8 @@
     },
     "Nukor": {
         "id": "3147",
-        "slot": "Secondary"
+        "slot": "Secondary",
+        "source": "Chemical Lab"
     },
     "Obex": {
         "id": "3253",
@@ -888,6 +1270,7 @@
     "Ogris": {
         "id": "3049",
         "slot": "Primary",
+        "source": "Chem Lab",
         "type": "Launcher"
     },
     "Ohma": {
@@ -898,11 +1281,13 @@
     "Okina": {
         "id": "3255",
         "slot": "Melee",
+        "source": "Tenno Lab",
         "type": "Dual Dagger"
     },
     "Opticor": {
         "id": "3050",
         "slot": "Primary",
+        "source": "Energy Lab",
         "type": "Assault Rifle"
     },
     "Orthos": {
@@ -913,6 +1298,20 @@
     "Orthos Prime": {
         "id": "3257",
         "slot": "Melee",
+        "source": {
+            "Blade": [
+                "Meso D1 Uncommon"
+            ],
+            "Blueprint": [
+                "Axi C1 Uncommon",
+                "Axi V3 Uncommon*",
+                "Meso B1 Uncommon*"
+            ],
+            "Handle": [
+                "Meso B1 Common*",
+                "Meso D1 Common"
+            ]
+        },
         "type": "Polearm"
     },
     "Orvius": {
@@ -938,6 +1337,7 @@
     "Paracyst": {
         "id": "3052",
         "slot": "Primary",
+        "source": "Bio Lab",
         "type": "Rifle"
     },
     "Paris": {
@@ -948,6 +1348,46 @@
     "Paris Prime": {
         "id": "3054",
         "slot": "Primary",
+        "source": {
+            "Blueprint": [
+                "Axi E2 Common",
+                "Axi G1 Common",
+                "Axi V4 Common*",
+                "Lith F1 Common*",
+                "Lith S4 Common",
+                "Meso S1 Common*",
+                "Meso V2 Common*"
+            ],
+            "Grip": [
+                "Lith S1 Uncommon*",
+                "Meso S2 Uncommon"
+            ],
+            "Lower Limb": [
+                "Lith V1 Common*",
+                "Lith V2 Common",
+                "Lith V3 Common",
+                "Meso F1 Common",
+                "Neo S2 Common*"
+            ],
+            "String": [
+                "Lith S1 Common*",
+                "Lith S3 Common*",
+                "Meso S2 Common",
+                "Neo B1 Common",
+                "Neo N3 Common*",
+                "Neo N4 Common",
+                "Neo V3 Common"
+            ],
+            "Upper Limb": [
+                "Axi N3 Common*",
+                "Lith F2 Common*",
+                "Lith N2 Common",
+                "Lith V1 Common*",
+                "Lith V2 Uncommon",
+                "Meso S1 Uncommon*",
+                "Neo S2 Uncommon*"
+            ]
+        },
         "type": "Bow"
     },
     "Penta": {
@@ -958,6 +1398,7 @@
     "Phage": {
         "id": "3056",
         "slot": "Primary",
+        "source": "Bio Lab",
         "type": "Shotgun"
     },
     "Plasma Sword": {
@@ -968,6 +1409,7 @@
     "Pox": {
         "id": "3149",
         "slot": "Secondary",
+        "source": "Bio Lab",
         "type": "Thrown"
     },
     "Prisma Dual Cleavers": {
@@ -1003,6 +1445,7 @@
     "Prova": {
         "id": "3264",
         "slot": "Melee",
+        "source": "Energy Lab",
         "type": "Machete"
     },
     "Prova Vandal": {
@@ -1013,11 +1456,13 @@
     "Pyrana": {
         "id": "3150",
         "slot": "Secondary",
+        "source": "Tenno Lab",
         "type": "Shotgun Sidearm"
     },
     "Quanta": {
         "id": "3060",
         "slot": "Primary",
+        "source": "Energy Lab",
         "type": "Assault Rifle"
     },
     "Quanta Vandal": {
@@ -1043,6 +1488,17 @@
     "Reaper Prime": {
         "id": "3267",
         "slot": "Melee",
+        "source": {
+            "Blade": [
+                "Meso F2 Uncommon*"
+            ],
+            "Blueprint": [
+                "Neo S5 Common"
+            ],
+            "Handle": [
+                "Lith G1 Common*"
+            ]
+        },
         "type": "Scythe"
     },
     "Redeemer": {
@@ -1088,11 +1544,23 @@
     "Scindo Prime": {
         "id": "3273",
         "slot": "Melee",
+        "source": {
+            "Blade": [
+                "Axi S1 Rare*"
+            ],
+            "Blueprint": [
+                "Lith F1 Uncommon*"
+            ],
+            "Handle": [
+                "Meso C1 Uncommon*"
+            ]
+        },
         "type": "Heavy Blade"
     },
     "Scoliac": {
         "id": "3274",
         "slot": "Melee",
+        "source": "Bio Lab",
         "type": "Whip"
     },
     "Secura Dual Cestra": {
@@ -1118,11 +1586,13 @@
     "Serro": {
         "id": "3276",
         "slot": "Melee",
+        "source": "Energy Lab",
         "type": "Polearm"
     },
     "Shaku": {
         "id": "3277",
         "slot": "Melee",
+        "source": "Tenno Lab",
         "type": "Nunchaku"
     },
     "Sheev": {
@@ -1143,11 +1613,23 @@
     "Sicarus Prime": {
         "id": "3156",
         "slot": "Secondary",
+        "source": {
+            "Barrel": [
+                "Meso F2 Common*"
+            ],
+            "Blueprint": [
+                "Axi E1 Common*"
+            ],
+            "Receiver": [
+                "Neo S5 Rare"
+            ]
+        },
         "type": "Pistol"
     },
     "Silva & Aegis": {
         "id": "3280",
         "slot": "Melee",
+        "source": "Tenno Lab",
         "type": "Sword & Shield"
     },
     "Simulor": {
@@ -1188,6 +1670,23 @@
     "Soma Prime": {
         "id": "3071",
         "slot": "Primary",
+        "source": {
+            "Barrel": [
+                "Neo S3 Common*"
+            ],
+            "Blueprint": [
+                "Lith M1 Uncommon*",
+                "Neo S1 Common*"
+            ],
+            "Receiver": [
+                "Lith S3 Uncommon*",
+                "Neo N1 Uncommon*"
+            ],
+            "Stock": [
+                "Lith S2 Rare*",
+                "Meso S1 Rare*"
+            ]
+        },
         "type": "Assault Rifle"
     },
     "Sonicor": {
@@ -1197,6 +1696,7 @@
     "Spectra": {
         "id": "3158",
         "slot": "Secondary",
+        "source": "Energy Lab",
         "type": "Pistol"
     },
     "Spira": {
@@ -1207,11 +1707,28 @@
     "Spira Prime": {
         "id": "3160",
         "slot": "Secondary",
+        "source": {
+            "Blade": [
+                "Lith S5 Rare",
+                "Neo S3 Rare*"
+            ],
+            "Blueprint": [
+                "Lith N2 Common",
+                "Meso V1 Common",
+                "Meso V3 Common*"
+            ],
+            "Pouch": [
+                "Lith S1 Rare*",
+                "Lith S3 Rare*",
+                "Meso S3 Rare"
+            ]
+        },
         "type": "Thrown"
     },
     "Staticor": {
         "id": "3161",
         "slot": "Secondary",
+        "source": "Energy Lab",
         "type": "Dual Sidearms"
     },
     "Stradavar": {
@@ -1237,6 +1754,7 @@
     "Supra": {
         "id": "3075",
         "slot": "Primary",
+        "source": "Energy Lab",
         "type": "Assault Rifle"
     },
     "Supra Vandal": {
@@ -1247,16 +1765,19 @@
     "Sybaris": {
         "id": "3077",
         "slot": "Primary",
+        "source": "Tenno Lab",
         "type": "Assault Rifle"
     },
     "Sydon": {
         "id": "3283",
         "slot": "Melee",
+        "source": "Chem Lab",
         "type": "Polearm"
     },
     "Synapse": {
         "id": "3078",
         "slot": "Primary",
+        "source": "Bio Lab",
         "type": "Assault Rifle"
     },
     "Synoid Gammacor": {
@@ -1277,6 +1798,7 @@
     "Talons": {
         "id": "3164",
         "slot": "Secondary",
+        "source": "Tenno Lab",
         "type": "Thrown"
     },
     "Tekko": {
@@ -1302,6 +1824,7 @@
     "Tenora": {
         "id": "3081",
         "slot": "Primary",
+        "source": "Tenno Lab",
         "type": "Rifle"
     },
     "Tetra": {
@@ -1322,6 +1845,24 @@
     "Tigris Prime": {
         "id": "3085",
         "slot": "Primary",
+        "source": {
+            "Barrel": [
+                "Lith K1 Uncommon*",
+                "Lith V3 Uncommon"
+            ],
+            "Blueprint": [
+                "Axi T1 Rare*",
+                "Neo T1 Rare"
+            ],
+            "Receiver": [
+                "Axi V5 Uncommon",
+                "Neo V3 Uncommon"
+            ],
+            "Stock": [
+                "Meso S1 Common*",
+                "Neo V4 Common"
+            ]
+        },
         "type": "Shotgun"
     },
     "Tipedo": {
@@ -1332,6 +1873,7 @@
     "Tonbo": {
         "id": "3288",
         "slot": "Melee",
+        "source": "Tenno Lab",
         "type": "Polearm"
     },
     "Tonkor": {
@@ -1342,6 +1884,7 @@
     "Torid": {
         "id": "3087",
         "slot": "Primary",
+        "source": "Bio Lab",
         "type": "Launcher"
     },
     "Twin Basolk": {
@@ -1391,6 +1934,20 @@
     "Vasto Prime": {
         "id": "3174",
         "slot": "Secondary",
+        "source": {
+            "Barrel": [
+                "Axi V3 Common*",
+                "Neo D1 Common*",
+                "Neo N2 Common*"
+            ],
+            "Blueprint": [
+                "Neo S3 Uncommon*"
+            ],
+            "Receiver": [
+                "Lith A1 Common*",
+                "Meso V2 Common*"
+            ]
+        },
         "type": "Revolver"
     },
     "Vaykor Hek": {
@@ -1416,16 +1973,49 @@
     "Vectis Prime": {
         "id": "3090",
         "slot": "Primary",
+        "source": {
+            "Barrel": [
+                "Axi C1 Common",
+                "Axi H1 Common",
+                "Axi T1 Common*",
+                "Neo N1 Common*"
+            ],
+            "Blueprint": [
+                "Lith A1 Uncommon*",
+                "Neo A1 Uncommon"
+            ],
+            "Receiver": [
+                "Meso V1 Rare"
+            ],
+            "Stock": [
+                "Axi V2 Rare*",
+                "Axi V3 Rare*",
+                "Axi V4 Rare*",
+                "Neo B1 Uncommon"
+            ]
+        },
         "type": "Sniper Rifle"
     },
     "Venka": {
         "id": "3291",
         "slot": "Melee",
+        "source": "Tenno Lab",
         "type": "Claw"
     },
     "Venka Prime": {
         "id": "3292",
         "slot": "Melee",
+        "source": {
+            "Blade": [
+                "Axi V5 Common"
+            ],
+            "Blueprint": [
+                "Neo N4 Uncommon"
+            ],
+            "Gauntlet": [
+                "Neo V4 Rare"
+            ]
+        },
         "type": "Claws"
     },
     "Viper": {

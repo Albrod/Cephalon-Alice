@@ -16,7 +16,34 @@
         "id": "5001"
     },
     "Carrier Prime": {
-        "id": "5009"
+        "id": "5009",
+        "source": {
+            "Blueprint": [
+                "Meso V1 Common",
+                "Meso V3 Common*",
+                "Meso V4 Common",
+                "Neo S3 Common*"
+            ],
+            "Carapace": [
+                "Axi N2 Common",
+                "Lith S5 Common",
+                "Neo S1 Common*"
+            ],
+            "Cerebrum": [
+                "Lith C1 Rare*",
+                "Meso C1 Rare*",
+                "Meso C2 Rare*",
+                "Meso N3 Uncommon"
+            ],
+            "Systems": [
+                "Axi V1 Common*",
+                "Lith N2 Common",
+                "Lith S2 Common*",
+                "Lith S3 Common*",
+                "Neo A1 Common",
+                "Neo V3 Common"
+            ]
+        }
     },
     "Chesa Kubrow": {
         "id": "5012"
@@ -51,7 +78,21 @@
         "source": "Energy Lab"
     },
     "Helios Prime": {
-        "id": "5010"
+        "id": "5010",
+        "source": {
+            "Blueprint": [
+                "Lith N2 Uncommon"
+            ],
+            "Carapace": [
+                "Neo N5 Common"
+            ],
+            "Cerebrum": [
+                "Axi H1 Rare"
+            ],
+            "Systems": [
+                "Lith V3 Uncommon"
+            ]
+        }
     },
     "Helminth Charger": {
         "id": "5013"
