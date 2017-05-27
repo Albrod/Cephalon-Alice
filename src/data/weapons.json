@@ -14,16 +14,19 @@
     "Afuris": {
         "id": "3097",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Dual Sidearms"
     },
     "Akbolto": {
         "id": "3098",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Dual Sidearms"
     },
     "Akbronco": {
         "id": "3099",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Shotgun Sidearm"
     },
     "Akbronco Prime": {
@@ -46,16 +49,19 @@
     "Akjagara": {
         "id": "3101",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Dual Sidearms"
     },
     "Aklato": {
         "id": "3102",
         "slot": "Secondary",
-        "type": "Dual Sidearms"
+        "type": "Dual Sidearms",
+        "source": "Market"
     },
     "Aklex": {
         "id": "3103",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Dual Sidearms"
     },
     "Aklex Prime": {
@@ -74,11 +80,13 @@
     "Akmagnus": {
         "id": "3105",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Dual Sidearms"
     },
     "Aksomati": {
         "id": "3106",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Dual Sidearms"
     },
     "Akstiletto": {
@@ -113,16 +121,19 @@
     "Akvasto": {
         "id": "3109",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Dual Sidearms"
     },
     "Akzani": {
         "id": "3110",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Dual Sidearms"
     },
     "Amphis": {
         "id": "3178",
         "slot": "Melee",
+        "source": "Market",
         "type": "Staff"
     },
     "Amprex": {
@@ -134,6 +145,7 @@
     "Angstrum": {
         "id": "3111",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Launcher"
     },
     "Anku": {
@@ -145,6 +157,7 @@
     "Ankyros": {
         "id": "3180",
         "slot": "Melee",
+        "source": "Market",
         "type": "Fist"
     },
     "Ankyros Prime": {
@@ -158,11 +171,13 @@
     "Atomos": {
         "id": "3112",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Particle Cannon"
     },
     "Atterax": {
         "id": "3183",
         "slot": "Melee",
+        "source": "Market",
         "type": "Whip"
     },
     "Attica": {
@@ -179,11 +194,13 @@
     "Ballistica": {
         "id": "3114",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Crossbow"
     },
     "Bo": {
         "id": "3184",
         "slot": "Melee",
+        "source": "Market",
         "type": "Staff"
     },
     "Bo Prime": {
@@ -218,16 +235,19 @@
     "Boltace": {
         "id": "3186",
         "slot": "Melee",
+        "source": "Market",
         "type": "Tonfa"
     },
     "Bolto": {
         "id": "3115",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Pistol"
     },
     "Boltor": {
         "id": "3005",
         "slot": "Primary",
+        "source": "Market",
         "type": "Assault Rifle"
     },
     "Boltor Prime": {
@@ -243,7 +263,8 @@
     "Braton": {
         "id": "3007",
         "slot": "Primary",
-        "type": "Assault Rifle"
+        "type": "Assault Rifle",
+        "source": "Market"
     },
     "Braton Prime": {
         "id": "3008",
@@ -292,6 +313,7 @@
     "Bronco": {
         "id": "3117",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Shotgun Sidearm"
     },
     "Bronco Prime": {
@@ -325,6 +347,7 @@
     "Burston": {
         "id": "3010",
         "slot": "Primary",
+        "source": "Market",
         "type": "Assault Rifle"
     },
     "Burston Prime": {
@@ -385,6 +408,7 @@
     "Cernos": {
         "id": "3013",
         "slot": "Primary",
+        "source": "Market",
         "type": "Bow"
     },
     "Cernos Prime": {
@@ -414,6 +438,7 @@
     "Cestra": {
         "id": "3120",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Pistol"
     },
     "Convectrix": {
@@ -500,6 +525,7 @@
     "Destreza": {
         "id": "3197",
         "slot": "Melee",
+        "source": "Market",
         "type": "Rapier"
     },
     "Detron": {
@@ -525,11 +551,13 @@
     "Dragon Nikana": {
         "id": "3199",
         "slot": "Melee",
+        "source": "Market",
         "type": "Nikana"
     },
     "Drakgoon": {
         "id": "3020",
         "slot": "Primary",
+        "source": "Market",
         "type": "Shotgun"
     },
     "Dread": {
@@ -546,16 +574,19 @@
     "Dual Cleavers": {
         "id": "3200",
         "slot": "Melee",
+        "source": "Market",
         "type": "Dual Swords"
     },
     "Dual Ether": {
         "id": "3201",
         "slot": "Melee",
+        "source": "Market",
         "type": "Dual Swords"
     },
     "Dual Heat Swords": {
         "id": "3202",
         "slot": "Melee",
+        "source": "Market",
         "type": "Dual Swords"
     },
     "Dual Ichor": {
@@ -567,6 +598,7 @@
     "Dual Kamas": {
         "id": "3204",
         "slot": "Melee",
+        "source": "Market",
         "type": "Dual Swords"
     },
     "Dual Kamas Prime": {
@@ -600,6 +632,7 @@
     "Dual Skana": {
         "id": "3207",
         "slot": "Melee",
+        "source": "Market",
         "type": "Dual Swords"
     },
     "Dual Toxocyst": {
@@ -611,6 +644,7 @@
     "Dual Zoren": {
         "id": "3208",
         "slot": "Melee",
+        "source": "Market",
         "type": "Dual Swords"
     },
     "Embolist": {
@@ -633,11 +667,13 @@
     "Ether Reaper": {
         "id": "3210",
         "slot": "Melee",
+        "source": "Market",
         "type": "Scythe"
     },
     "Ether Sword": {
         "id": "3211",
         "slot": "Melee",
+        "source": "Market",
         "type": "Sword"
     },
     "Euphona Prime": {
@@ -659,6 +695,7 @@
     "Fang": {
         "id": "3212",
         "slot": "Melee",
+        "source": "Market",
         "type": "Dual Daggers"
     },
     "Fang Prime": {
@@ -706,6 +743,7 @@
     "Fragor": {
         "id": "3214",
         "slot": "Melee",
+        "source": "Market",
         "type": "Hammer"
     },
     "Fragor Prime": {
@@ -730,6 +768,7 @@
     "Furax": {
         "id": "3216",
         "slot": "Melee",
+        "source": "Market",
         "type": "Fist"
     },
     "Furax Wraith": {
@@ -740,11 +779,13 @@
     "Furis": {
         "id": "3129",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Pistol"
     },
     "Galatine": {
         "id": "3218",
         "slot": "Melee",
+        "source": "Market",
         "type": "Heavy Blade"
     },
     "Galatine Prime": {
@@ -771,6 +812,7 @@
     "Gammacor": {
         "id": "3130",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Pistol"
     },
     "Gazal Machete": {
@@ -818,11 +860,13 @@
     "Grakata": {
         "id": "3027",
         "slot": "Primary",
+        "source": "Market",
         "type": "Assault Rifle"
     },
     "Gram": {
         "id": "3223",
         "slot": "Melee",
+        "source": "Market",
         "type": "Heavy Blade"
     },
     "Grinlok": {
@@ -834,11 +878,13 @@
     "Halikar": {
         "id": "3224",
         "slot": "Melee",
+        "source": "Market",
         "type": "Thrown"
     },
     "Harpak": {
         "id": "3029",
         "slot": "Primary",
+        "source": "Market",
         "type": "Assault Rifle"
     },
     "Hate": {
@@ -859,6 +905,7 @@
     "Hek": {
         "id": "3030",
         "slot": "Primary",
+        "source": "Market",
         "type": "Shotgun"
     },
     "Heliocor": {
@@ -875,6 +922,7 @@
     "Hikou": {
         "id": "3131",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Thrown"
     },
     "Hikou Prime": {
@@ -905,6 +953,7 @@
     "Hirudo": {
         "id": "3229",
         "slot": "Melee",
+        "source": "Market",
         "type": "Sparring"
     },
     "Ignis": {
@@ -939,11 +988,13 @@
     "Kama": {
         "id": "3232",
         "slot": "Melee",
+        "source": "Market",
         "type": "Machete"
     },
     "Karak": {
         "id": "3036",
         "slot": "Primary",
+        "source": "Market",
         "type": "Assault Rifle"
     },
     "Karak Wraith": {
@@ -965,6 +1016,7 @@
     "Karyst": {
         "id": "3233",
         "slot": "Melee",
+        "source": "Market",
         "type": "Dagger"
     },
     "Kesheg": {
@@ -976,16 +1028,19 @@
     "Kestrel": {
         "id": "3235",
         "slot": "Melee",
+        "source": "Market",
         "type": "Thrown"
     },
     "Kogake": {
         "id": "3236",
         "slot": "Melee",
+        "source": "Market",
         "type": "Sparring"
     },
     "Kohm": {
         "id": "3038",
         "slot": "Primary",
+        "source": "Market",
         "type": "Shotgun"
     },
     "Kohmak": {
@@ -997,21 +1052,25 @@
     "Kraken": {
         "id": "3134",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Pistol"
     },
     "Kronen": {
         "id": "3237",
         "slot": "Melee",
+        "source": "Market",
         "type": "Tonfa"
     },
     "Kulstar": {
         "id": "3135",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Launcher"
     },
     "Kunai": {
         "id": "3136",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Thrown"
     },
     "Lacera": {
@@ -1029,7 +1088,8 @@
     "Lato": {
         "id": "3137",
         "slot": "Secondary",
-        "type": "Pistol"
+        "type": "Pistol",
+        "source": "Market"
     },
     "Lato Prime": {
         "id": "3138",
@@ -1044,6 +1104,7 @@
     "Latron": {
         "id": "3040",
         "slot": "Primary",
+        "source": "Market",
         "type": "Assault Rifle"
     },
     "Latron Prime": {
@@ -1084,11 +1145,13 @@
     "Lecta": {
         "id": "3239",
         "slot": "Melee",
+        "source": "Market",
         "type": "Whip"
     },
     "Lesion": {
         "id": "3240",
         "slot": "Melee",
+        "source": "Market",
         "type": "Polearm"
     },
     "Lex": {
@@ -1127,22 +1190,26 @@
     "MK1-Bo": {
         "id": "3246",
         "slot": "Melee",
-        "type": "Staff"
+        "type": "Staff",
+        "source": "Market"
     },
     "MK1-Braton": {
         "id": "3044",
         "slot": "Primary",
-        "type": "Assault Rifle"
+        "type": "Assault Rifle",
+        "source": "Market"
     },
     "MK1-Furax": {
         "id": "3247",
         "slot": "Melee",
-        "type": "Fist"
+        "type": "Fist",
+        "source": "Market"
     },
     "MK1-Furis": {
         "id": "3145",
         "slot": "Secondary",
-        "type": "Pistol"
+        "type": "Pistol",
+        "source": "Market"
     },
     "MK1-Kunai": {
         "id": "3146",
@@ -1152,12 +1219,14 @@
     "MK1-Paris": {
         "id": "3045",
         "slot": "Primary",
-        "type": "Bow"
+        "type": "Bow",
+        "source": "Market"
     },
     "MK1-Strun": {
         "id": "3046",
         "slot": "Primary",
-        "type": "Shotgun"
+        "type": "Shotgun",
+        "source": "Market"
     },
     "Machete": {
         "id": "3241",
@@ -1172,11 +1241,13 @@
     "Magistar": {
         "id": "3243",
         "slot": "Melee",
+        "source": "Market",
         "type": "Hammer"
     },
     "Magnus": {
         "id": "3142",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Revolver"
     },
     "Mara Detron": {
@@ -1199,6 +1270,7 @@
     "Mire": {
         "id": "3245",
         "slot": "Melee",
+        "source": "Market",
         "type": "Sword"
     },
     "Miter": {
@@ -1209,6 +1281,7 @@
     "Mutalist Cernos": {
         "id": "3047",
         "slot": "Primary",
+        "source": "Market",
         "type": "Bow"
     },
     "Mutalist Quanta": {
@@ -1226,6 +1299,7 @@
     "Nami Solo": {
         "id": "3249",
         "slot": "Melee",
+        "source": "Market",
         "type": "Machete"
     },
     "Nikana": {
@@ -1255,6 +1329,7 @@
     "Ninkondi": {
         "id": "3252",
         "slot": "Melee",
+        "source": "Market",
         "type": "Nunchaku"
     },
     "Nukor": {
@@ -1265,6 +1340,7 @@
     "Obex": {
         "id": "3253",
         "slot": "Melee",
+        "source": "Market",
         "type": "Sparring"
     },
     "Ogris": {
@@ -1276,6 +1352,7 @@
     "Ohma": {
         "id": "3254",
         "slot": "Melee",
+        "source": "Market",
         "type": "Tonfa"
     },
     "Okina": {
@@ -1293,6 +1370,7 @@
     "Orthos": {
         "id": "3256",
         "slot": "Melee",
+        "source": "Market",
         "type": "Polearm"
     },
     "Orthos Prime": {
@@ -1322,6 +1400,7 @@
     "Pandero": {
         "id": "3148",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Pistol"
     },
     "Pangolin Sword": {
@@ -1332,6 +1411,7 @@
     "Panthera": {
         "id": "3051",
         "slot": "Primary",
+        "source": "Market",
         "type": "Launcher"
     },
     "Paracyst": {
@@ -1343,6 +1423,7 @@
     "Paris": {
         "id": "3053",
         "slot": "Primary",
+        "source": "Market",
         "type": "Bow"
     },
     "Paris Prime": {
@@ -1393,6 +1474,7 @@
     "Penta": {
         "id": "3055",
         "slot": "Primary",
+        "source": "Market",
         "type": "Launcher"
     },
     "Phage": {
@@ -1504,16 +1586,19 @@
     "Redeemer": {
         "id": "3268",
         "slot": "Melee",
+        "source": "Market",
         "type": "Gunblade"
     },
     "Ripkas": {
         "id": "3269",
         "slot": "Melee",
+        "source": "Market",
         "type": "Claw"
     },
     "Rubico": {
         "id": "3063",
         "slot": "Primary",
+        "source": "Market",
         "type": "Sniper Rifle"
     },
     "Sancti Castanas": {
@@ -1534,11 +1619,13 @@
     "Sarpa": {
         "id": "3271",
         "slot": "Melee",
+        "source": "Market",
         "type": "Gunblade"
     },
     "Scindo": {
         "id": "3272",
         "slot": "Melee",
+        "source": "Market",
         "type": "Heavy Blade"
     },
     "Scindo Prime": {
@@ -1603,12 +1690,14 @@
     "Sibear": {
         "id": "3279",
         "slot": "Melee",
+        "source": "Market",
         "type": "Hammer"
     },
     "Sicarus": {
         "id": "3155",
         "slot": "Secondary",
-        "type": "Pistol"
+        "type": "Pistol",
+        "source": "Market"
     },
     "Sicarus Prime": {
         "id": "3156",
@@ -1640,6 +1729,7 @@
     "Skana": {
         "id": "3281",
         "slot": "Melee",
+        "source": "Market",
         "type": "Sword"
     },
     "Skana Prime": {
@@ -1660,11 +1750,13 @@
     "Sobek": {
         "id": "3069",
         "slot": "Primary",
+        "source": "Market",
         "type": "Shotgun"
     },
     "Soma": {
         "id": "3070",
         "slot": "Primary",
+        "source": "Market",
         "type": "Assault Rifle"
     },
     "Soma Prime": {
@@ -1691,7 +1783,8 @@
     },
     "Sonicor": {
         "id": "3157",
-        "slot": "Secondary"
+        "slot": "Secondary",
+        "source": "Market"
     },
     "Spectra": {
         "id": "3158",
@@ -1702,6 +1795,7 @@
     "Spira": {
         "id": "3159",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Thrown"
     },
     "Spira Prime": {
@@ -1734,6 +1828,7 @@
     "Stradavar": {
         "id": "3072",
         "slot": "Primary",
+        "source": "Market",
         "type": "Assault Rifle"
     },
     "Strun": {
@@ -1749,6 +1844,7 @@
     "Stug": {
         "id": "3162",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Blob Launcher"
     },
     "Supra": {
@@ -1804,6 +1900,7 @@
     "Tekko": {
         "id": "3285",
         "slot": "Melee",
+        "source": "Market",
         "type": "Fist"
     },
     "Telos Akbolto": {
@@ -1830,16 +1927,19 @@
     "Tetra": {
         "id": "3082",
         "slot": "Primary",
+        "source": "Market",
         "type": "Assault Rifle"
     },
     "Tiberon": {
         "id": "3083",
         "slot": "Primary",
+        "source": "Market",
         "type": "Assault Rifle"
     },
     "Tigris": {
         "id": "3084",
         "slot": "Primary",
+        "source": "Market",
         "type": "Shotgun"
     },
     "Tigris Prime": {
@@ -1868,6 +1968,7 @@
     "Tipedo": {
         "id": "3287",
         "slot": "Melee",
+        "source": "Market",
         "type": "Staff"
     },
     "Tonbo": {
@@ -1879,6 +1980,7 @@
     "Tonkor": {
         "id": "3086",
         "slot": "Primary",
+        "source": "Market",
         "type": "Launcher"
     },
     "Torid": {
@@ -1890,11 +1992,13 @@
     "Twin Basolk": {
         "id": "3289",
         "slot": "Melee",
+        "source": "Market",
         "type": "Dual Swords"
     },
     "Twin Grakatas": {
         "id": "3166",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Dual Sidearms"
     },
     "Twin Gremlins": {
@@ -1910,11 +2014,13 @@
     "Twin Rogga": {
         "id": "3169",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Akimbo Pistols"
     },
     "Twin Vipers": {
         "id": "3170",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Dual Sidearms"
     },
     "Twin Vipers Wraith": {
@@ -1924,11 +2030,13 @@
     },
     "Tysis": {
         "id": "3172",
-        "slot": "Pistol"
+        "slot": "Pistol",
+        "source": "Market"
     },
     "Vasto": {
         "id": "3173",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Revolver"
     },
     "Vasto Prime": {
@@ -1968,6 +2076,7 @@
     "Vectis": {
         "id": "3089",
         "slot": "Primary",
+        "source": "Market",
         "type": "Sniper Rifle"
     },
     "Vectis Prime": {
@@ -2021,11 +2130,13 @@
     "Viper": {
         "id": "3176",
         "slot": "Secondary",
+        "source": "Market",
         "type": "Pistol"
     },
     "Vulkar": {
         "id": "3091",
         "slot": "Primary",
+        "source": "Market",
         "type": "Sniper Rifle"
     },
     "Vulkar Wraith": {
@@ -2041,6 +2152,7 @@
     "Zarr": {
         "id": "3093",
         "slot": "Primary",
+        "source": "Market",
         "type": "Launcher"
     },
     "Zenistar": {
@@ -2056,6 +2168,7 @@
     "Zhuge": {
         "id": "3095",
         "slot": "Primary",
+        "source": "Market",
         "type": "Crossbow"
     }
 }

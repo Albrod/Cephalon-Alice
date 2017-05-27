@@ -13,7 +13,8 @@
         "type": "Pistol"
     },
     "Carrier": {
-        "id": "5001"
+        "id": "5001",
+        "source": "Market"
     },
     "Carrier Prime": {
         "id": "5009",
@@ -64,10 +65,12 @@
         "type": "Rifle"
     },
     "Dethcube": {
-        "id": "5002"
+        "id": "5002",
+        "source": "Market"
     },
     "Diriga": {
-        "id": "5003"
+        "id": "5003",
+        "source": "Market"
     },
     "Djinn": {
         "id": "5004",
@@ -125,7 +128,8 @@
         "id": "5016"
     },
     "Shade": {
-        "id": "5006"
+        "id": "5006",
+        "source": "Market"
     },
     "Smeeta Kavat": {
         "id": "5019"
@@ -157,7 +161,8 @@
         "type": "Sniper Rifle"
     },
     "Wyrm": {
-        "id": "5008"
+        "id": "5008",
+        "source": "Market"
     },
     "Wyrm Prime": {
         "id": "5033"

@@ -33,5 +33,41 @@ while (res_table):
     res_table = nextTable.contents[3]
     print (key)
 
-# with open(path, 'w') as fp:
-#     json.dump(data, fp)
+# Find secondary weapon table
+res_table = soup.find("span", string=" Afuris  Blueprint").parent.parent
+key = "Afuris"
+while (res_table):
+    if (res_table.contents[0].name == None):
+        key = res_table.contents[1]["title"]
+        weapon_data[key]["source"] = "Market"
+    else:
+        key = res_table.contents[2]["title"]
+        archwing_weapon_data[key]["source"] = "Market"
+
+    nextTable = res_table.parent.next_sibling.next_sibling
+    if (not nextTable):
+        break
+    res_table = nextTable.contents[3]
+    print (key)
+
+# Find melee weapon table
+res_table = soup.find("span", string=" Amphis  Blueprint").parent.parent
+key = "Amphis"
+while (res_table):
+    if (res_table.contents[0].name == None):
+        key = res_table.contents[1]["title"]
+        weapon_data[key]["source"] = "Market"
+    else:
+        key = res_table.contents[2]["title"]
+        archwing_weapon_data[key]["source"] = "Market"
+
+    nextTable = res_table.parent.next_sibling.next_sibling
+    if (not nextTable):
+        break
+    res_table = nextTable.contents[3]
+    print (key)
+
+with open(path1, 'w') as fp:
+    json.dump(weapon_data, fp)
+with open(path2, 'w') as fp:
+    json.dump(archwing_weapon_data, fp)
