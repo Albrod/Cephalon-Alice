@@ -1721,6 +1721,25 @@
         "source": "Tenno Lab",
         "type": "Sword & Shield"
     },
+    "Silva & Aegis Prime": {
+        "id": "3296",
+        "slot": "Melee",
+        "source": {
+            "Blade": [
+                "Axi C2 Uncommon"
+            ],
+            "Blueprint": [
+                "Meso V5 Uncommon"
+            ],
+            "Hilt": [
+                "Neo V5 Common"
+            ],
+            "Guard": [
+                "Neo S6 Rare"
+            ]
+        },
+        "type": "Sword & Shield"
+    },
     "Simulor": {
         "id": "3066",
         "slot": "Primary",
@@ -1862,6 +1881,25 @@
         "id": "3077",
         "slot": "Primary",
         "source": "Tenno Lab",
+        "type": "Assault Rifle"
+    },
+    "Sybaris Prime": {
+        "id": "3297",
+        "slot": "Primary",
+        "source": {
+            "Barrel": [
+                "Meso S5 Rare"
+            ],
+            "Blueprint": [
+                "Axi B2 Common"
+            ],
+            "Receiver": [
+                "Neo N6 Uncommon"
+            ],
+            "Stock": [
+                "Lith N3 Common"
+            ]
+        },
         "type": "Assault Rifle"
     },
     "Sydon": {

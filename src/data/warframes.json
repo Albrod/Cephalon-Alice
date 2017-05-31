@@ -196,7 +196,15 @@
     },
     "Nidus": {
         "id": "1025",
-        "source": "Blueprint: The Glast Gambit (Quest)<br/>Components: Infested Salvage (Eris) - Rotation C"
+        "source":
+        {
+          "Blueprint": [
+              "The Glast Gambit (Quest)"
+          ],
+          "Components": [
+              "Infested Salvage (Eris) - Rotation C"
+          ]
+        }
     },
     "Nova": {
         "id": "1026",
@@ -249,9 +257,39 @@
         "id": "1030",
         "source": "Eximus Drops"
     },
+    "Oberon Prime": {
+        "id": "1049",
+        "source": {
+            "Blueprint\n": [
+                "Meso N4 Uncommon"
+            ],
+            "Chassis\n": [
+                "Axi H2 Common"
+            ],
+            "Neuroptics\n": [
+                "Meso O1 Rare"
+            ],
+            "Systems\n": [
+                "Axi O1 Rare"
+            ]
+        }
+    },
     "Octavia": {
         "id": "1031",
-        "source": "Blueprint: Octavia's Anthem (Quest)<br/>Chassis: Music Note Puzzle (Lua)<br/>Systems: Crossfire Exterminate Caches (Lua)<br/>Neuroptics: Orokin Derelict Survival - Rotation C"
+        "source": {
+            "Blueprint\n": [
+                "Octavia's Anthem (Quest)"
+            ],
+            "Chassis\n": [
+                "Music Note Puzzle (Lua)"
+            ],
+            "Neuroptics\n": [
+                "Orokin Derelict Survival - Rotation C"
+            ],
+            "Systems\n": [
+                "Crossfire Exterminate Caches (Lua)"
+            ]
+        }
     },
     "Rhino": {
         "id": "1032",

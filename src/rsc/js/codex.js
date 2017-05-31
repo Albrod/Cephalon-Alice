@@ -1,6 +1,7 @@
 var mastered = [0,0,0,0,0];
 var totals = [0,0,0,0,0];
 var categories = ["warframes", "archwings", "weapons", "archwingWeapons", "companions"];
+var filters = {"type": new Set(), "slot": new Set()}
 var counters;
 var fullData = {};
 var masteryArr = [];
@@ -325,13 +326,9 @@ function renderLibrary(cat) {
     case 'companions':
     cat_id = 5;
     break;
-    case 'sentinelWeapons':
-    cat_id = 6;
-    break;
   }
 
   // Sort alphanumerically.
-
   var sortArr = Object.keys(fullData[cat]).sort(function (a, b) {
     return a.localeCompare(b);
   });
@@ -341,8 +338,8 @@ function renderLibrary(cat) {
     var id = obj2.id;
     var entry = obj;
     var row = null;
-    // Check if new row is needed.
 
+    // Check if new row is needed.
     row = $("#" + cat + "Div .row:last-child");
     var entryDiv = $('<div>', {class: "col-md-2 mb-2 codex-entry", id: id}).appendTo(row);
 
@@ -362,9 +359,9 @@ function renderLibrary(cat) {
       });
       var size = wordArr[0].length;
       if (size > 12) {
-        $('<h5>', {class: "mt-2", text: entry, style: "font-size: 8px"}).appendTo(entryDiv);
+        var entryHeader = $('<h5>', {class: "mt-2", text: entry, style: "font-size: 8px"}).appendTo(entryDiv);
       } else {
-        $('<h5>', {class: "mt-2", text: entry}).appendTo(entryDiv);
+        var entryHeader = $('<h5>', {class: "mt-2", text: entry}).appendTo(entryDiv);
       }
       var gildedImg = $('<img>', {class: "gilded-img"}).appendTo(entryDiv);
       gildedImg.click(function( e ) {
@@ -384,7 +381,7 @@ function renderLibrary(cat) {
       });
       var size = wordArr[0].length;
       if (size > 12) {
-        $('<h5>', {class: "mt-2", text: entry, style: "font-size: x-small"}).appendTo(entryDiv);
+        $('<h5>', {class: "mt-2", text: entry, style: "font-size: 8px"}).appendTo(entryDiv);
       } else {
         $('<h5>', {class: "mt-2", text: entry}).appendTo(entryDiv);
       }
@@ -393,6 +390,18 @@ function renderLibrary(cat) {
         dirtyEntry($(this).parent());
       });
     })
+
+    // Check for filters
+    var slot = obj2["slot"];
+    if (slot) {
+      entryDiv.attr("data-slot", slot);
+      filters["slot"].add(slot);
+    }
+    var type = obj2["type"];
+    if (type) {
+      entryDiv.attr("data-type", type);
+      filters["type"].add(type);
+    }
 
     count++;
   });
