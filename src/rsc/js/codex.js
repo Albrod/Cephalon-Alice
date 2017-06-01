@@ -1,7 +1,11 @@
 var mastered = [0,0,0,0,0];
 var totals = [0,0,0,0,0];
 var categories = ["warframes", "archwings", "weapons", "archwingWeapons", "companions"];
-var filters = {"type": new Set(), "slot": new Set()}
+var filters = {
+  "type": new Set(),
+  "slot": new Set(),
+  "source": new Set()
+}
 var counters;
 var fullData = {};
 var masteryArr = [];
@@ -402,6 +406,18 @@ function renderLibrary(cat) {
       entryDiv.attr("data-type", type);
       filters["type"].add(type);
     }
+    var source = obj2["source"];
+    if (source) {
+      if (typeof source === "string") {
+        console.log(source);
+      }
+      else {
+        console.log(source);
+      }
+
+      entryDiv.attr("data-source", source);
+      filters["source"].add(source);
+    }
 
     count++;
   });
@@ -576,11 +592,17 @@ function buildDetailsPanel(name, entry, mode) {
 
     if ((typeof entry.source) == "object") {
       $.each(entry.source, function(key, val) {
-        source += "<div class=\"details-source-div\">" + key + "<p class=\"details-source-p\">";
-        $.each(val, function() {
-          source += this + "<br/>";
-        });
-        source += "</p></div>"
+        if (key !== "type") {
+          source += "<div class=\"details-source-div\">" + key + "<p class=\"details-source-p\">";
+          if (typeof val === "object") {
+            $.each(val, function() {
+              source += this + "<br/>";
+            });
+          } else {
+            source += this;
+          }
+          source += "</p></div>"
+        }
       });
       source += "<br /><small>Asterisks denote vaulted relics.</small>"
     } else {

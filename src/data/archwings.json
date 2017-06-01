@@ -1,19 +1,31 @@
 {
     "Amesha": {
         "id": "2001",
-        "source": "Tenno Lab"
+        "source": {
+            "Blueprint": "Tenno Lab",
+            "type": "Lab"
+        }
     },
     "Elytron": {
         "id": "2002",
-        "source": "Tenno Lab"
+        "source": {
+            "Blueprint": "Tenno Lab",
+            "type": "Lab"
+        }
     },
     "Itzal": {
         "id": "2003",
-        "source": "Tenno Lab"
+        "source": {
+            "Blueprint": "Tenno Lab",
+            "type": "Lab"
+        }
     },
     "Odonata": {
         "id": "2004",
-        "source": "The Archwing (Quest)"
+        "source": {
+            "Built": "The Archwing (Quest)",
+            "type": "Quest"
+        }
     },
     "Odonata Prime": {
         "id": "2005",
@@ -36,7 +48,8 @@
             ],
             "Wings\n": [
                 "Axi N1 Uncommon*"
-            ]
+            ],
+            "type": "Void Relic"
         }
     }
 }

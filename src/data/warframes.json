@@ -9,58 +9,78 @@
             "Blueprint\n": [
                 "Lith S3 Uncommon*",
                 "Meso C1 Uncommon*",
-                "Meso S3 Uncommon"
+                "Meso S3 Uncommon*"
             ],
             "Chassis\n": [
-                "Axi B1 Common",
+                "Axi B1 Common*",
                 "Meso V2 Common*",
-                "Neo N4 Common"
+                "Neo N4 Common*"
             ],
             "Neuroptics\n": [
-                "Axi N2 Uncommon",
+                "Axi N2 Uncommon*",
                 "Meso N2 Uncommon*",
-                "Meso V4 Uncommon",
+                "Meso V4 Uncommon*",
                 "Neo N3 Uncommon*",
-                "Neo V4 Uncommon"
+                "Neo V4 Uncommon*"
             ],
             "Systems\n": [
                 "Axi N1 Rare*",
-                "Neo N5 Uncommon"
-            ]
+                "Neo N5 Uncommon*"
+            ],
+            "type": "Void Relic"
         }
     },
     "Atlas": {
         "id": "1003",
-        "source": "The Jordas Precept (Quest)"
+        "source": {
+            "Blueprint": "The Jordas Precept (Quest)",
+            "Components": "Jordas Golem Archwing Assassination",
+            "type": "Quest"
+        }
     },
     "Banshee": {
         "id": "1004",
-        "source": "Tenno Lab"
+        "source": {
+            "Blueprint": "Tenno Lab",
+            "type": "Lab"
+        }
     },
     "Banshee Prime": {
         "id": "1005",
         "source": {
             "Blueprint\n": [
+                "Neo N7 Uncommon",
                 "Neo T1 Uncommon"
             ],
             "Chassis\n": [
-                "Neo B1 Rare"
+                "Neo B1 Rare",
+                "Neo B2 Rare"
             ],
             "Neuroptics\n": [
                 "Meso S4 Common"
             ],
             "Systems\n": [
-                "Axi B1 Rare"
-            ]
+                "Axi B1 Rare",
+                "Axi B2 Rare"
+            ],
+            "type": "Void Relic"
         }
     },
     "Chroma": {
         "id": "1006",
-        "source": "The New Strange (Quest) / Junctions"
+        "source": {
+            "Chassis\n": "Neptune",
+            "Neuroptics\n": "Uranus",
+            "Systems\n": "Pluto",
+            "type": "Quest"
+        }
     },
     "Ember": {
         "id": "1007",
-        "source": "General Sargas Ruk (Saturn)"
+        "source": {
+            "Components": "General Sargas Ruk (Saturn)",
+            "type": "Boss"
+        }
     },
     "Ember Prime": {
         "id": "1008",
@@ -72,20 +92,27 @@
                 "Meso F2 Common*"
             ],
             "Neuroptics\n": [
-                "Neo S5 Common"
+                "Neo S5 Common*"
             ],
             "Systems\n": [
                 "Lith G1 Uncommon*"
-            ]
+            ],
+            "type": "Void Relic"
         }
     },
     "Equinox": {
         "id": "1009",
-        "source": "Tyl Regor (Uranus)"
+        "source": {
+            "Components": "Tyl Regor (Uranus)",
+            "type": "Boss"
+        }
     },
     "Excalibur": {
         "id": "1010",
-        "source": "Ambulas (Pluto)"
+        "source": {
+            "Components": "Ambulas (Pluto)",
+            "type": "Boss"
+        }
     },
     "Excalibur Prime": {
         "id": "1047",
@@ -93,7 +120,10 @@
     },
     "Frost": {
         "id": "1011",
-        "source": "Lieutenant Lech Kril (Mars)"
+        "source": {
+            "Components": "Lieutenant Lech Kril (Mars)",
+            "type": "Boss"
+        }
     },
     "Frost Prime": {
         "id": "1012",
@@ -108,17 +138,26 @@
                 "Axi E1 Common*"
             ],
             "Systems\n": [
-                "Neo S5 Uncommon"
-            ]
+                "Neo S5 Uncommon*"
+            ],
+            "type": "Void Relic"
         }
     },
     "Hydroid": {
         "id": "1048",
-        "source": "Councilor Vay Hek (Earth)"
+        "source": {
+            "Components": "Councilor Vay Hek (Earth)",
+            "type": "Boss"
+        }
     },
     "Inaros": {
         "id": "1013",
-        "source": "Sands of Inaros (Quest)"
+        "source": {
+            "Components": [
+                "The Sands of Inaros (Quest)"
+            ],
+            "type": "Quest"
+        }
     },
     "Ivara": {
         "id": "1014",
@@ -126,11 +165,20 @@
     },
     "Limbo": {
         "id": "1015",
-        "source": "The Limbo Theorem (Quest)"
+        "source": {
+            "Blueprint": "Market",
+            "Components": [
+                "The Limbo Theorem (Quest)"
+            ],
+            "type": "Quest"
+        }
     },
     "Loki": {
         "id": "1016",
-        "source": "Hyena Pack (Neptune)"
+        "source": {
+            "Components": "Hyena Pack (Neptune)",
+            "type": "Boss"
+        }
     },
     "Loki Prime": {
         "id": "1017",
@@ -138,7 +186,10 @@
     },
     "Mag": {
         "id": "1018",
-        "source": "The Sergeant (Phobos)"
+        "source": {
+            "Components": "The Sergeant (Phobos)",
+            "type": "Boss"
+        }
     },
     "Mag Prime": {
         "id": "1019",
@@ -154,31 +205,46 @@
             ],
             "Systems\n": [
                 "Neo D1 Common*"
-            ]
+            ],
+            "type": "Void Relic"
         }
     },
     "Mesa": {
         "id": "1020",
-        "source": "Mutalist Alad V (Eris)"
+        "source": {
+            "Components": "Mutalist Alad V (Eris)",
+            "type": "Boss"
+        }
     },
     "Mirage": {
         "id": "1021",
-        "source": "Hidden Messages (Quest)"
+        "source": {
+            "Blueprint": "Market",
+            "Components": [
+                "Hidden Messages (Quest)"
+            ],
+            "type": "Quest"
+        }
     },
     "Nekros": {
         "id": "1022",
-        "source": "Orokin Derelict Assassination"
+        "source": {
+            "Components": "Lephantis (Orokin Derelict Assassination)",
+            "type": "Boss"
+        }
     },
     "Nekros Prime": {
         "id": "1023",
         "source": {
             "Blueprint\n": [
                 "Axi N3 Rare*",
+                "Lith N3 Rare",
                 "Meso N3 Rare"
             ],
             "Chassis\n": [
                 "Axi G1 Common",
                 "Lith N1 Common*",
+                "Lith V4 Common",
                 "Meso S3 Common"
             ],
             "Neuroptics\n": [
@@ -186,29 +252,37 @@
             ],
             "Systems\n": [
                 "Lith N2 Rare",
-                "Neo N3 Rare*"
-            ]
+                "Neo N3 Rare*",
+                "Neo N7 Rare"
+            ],
+            "type": "Void Relic"
         }
     },
     "Nezha": {
         "id": "1024",
-        "source": "Tenno Lab"
+        "source": {
+            "Blueprint": "Tenno Lab",
+            "type": "Lab"
+        }
     },
     "Nidus": {
         "id": "1025",
-        "source":
-        {
-          "Blueprint": [
-              "The Glast Gambit (Quest)"
-          ],
-          "Components": [
-              "Infested Salvage (Eris) - Rotation C"
-          ]
+        "source": {
+            "Blueprint": [
+                "The Glast Gambit (Quest)"
+            ],
+            "Components": [
+                "Infested Salvage (Eris) - Rotation C"
+            ],
+            "type": "Quest"
         }
     },
     "Nova": {
         "id": "1026",
-        "source": "Raptors (Europa)"
+        "source": {
+            "Components": "Raptors (Europa)",
+            "type": "Boss"
+        }
     },
     "Nova Prime": {
         "id": "1027",
@@ -228,12 +302,16 @@
                 "Lith C1 Common*",
                 "Meso S1 Common*",
                 "Neo S2 Common*"
-            ]
+            ],
+            "type": "Void Relic"
         }
     },
     "Nyx": {
         "id": "1028",
-        "source": "Phorid (Infested Invasion)"
+        "source": {
+            "Components": "Phorid (Infested Invasion)",
+            "type": "Boss"
+        }
     },
     "Nyx Prime": {
         "id": "1029",
@@ -250,7 +328,8 @@
             ],
             "Systems\n": [
                 "Neo S2 Uncommon*"
-            ]
+            ],
+            "type": "Void Relic"
         }
     },
     "Oberon": {
@@ -271,7 +350,8 @@
             ],
             "Systems\n": [
                 "Axi O1 Rare"
-            ]
+            ],
+            "type": "Void Relic"
         }
     },
     "Octavia": {
@@ -288,12 +368,16 @@
             ],
             "Systems\n": [
                 "Crossfire Exterminate Caches (Lua)"
-            ]
+            ],
+            "type": "Quest"
         }
     },
     "Rhino": {
         "id": "1032",
-        "source": "Jackal (Venus)"
+        "source": {
+            "Components": "Jackal (Venus)",
+            "type": "Boss"
+        }
     },
     "Rhino Prime": {
         "id": "1033",
@@ -301,7 +385,10 @@
     },
     "Saryn": {
         "id": "1034",
-        "source": "Kela De Thaym (Sedna)"
+        "source": {
+            "Components": "Kela De Thaym (Sedna)",
+            "type": "Boss"
+        }
     },
     "Saryn Prime": {
         "id": "1035",
@@ -317,6 +404,7 @@
             ],
             "Neuroptics\n": [
                 "Lith A1 Uncommon*",
+                "Meso S5 Uncommon",
                 "Neo V4 Uncommon"
             ],
             "Systems\n": [
@@ -324,17 +412,27 @@
                 "Axi T1 Common*",
                 "Meso C1 Common*",
                 "Meso F1 Common",
+                "Meso N4 Common",
                 "Neo N5 Common"
-            ]
+            ],
+            "type": "Void Relic"
         }
     },
     "Titania": {
         "id": "1036",
-        "source": "The Silver Grove (Quest)"
+        "source": {
+            "Components": [
+                "The Silver Grove (Quest)"
+            ],
+            "type": "Quest"
+        }
     },
     "Trinity": {
         "id": "1037",
-        "source": "Captain Vor and Lieutenant Lech Kril (Ceres)"
+        "source": {
+            "Components": "Captain Vor and Lieutenant Lech Kril (Ceres)",
+            "type": "Boss"
+        }
     },
     "Trinity Prime": {
         "id": "1038",
@@ -342,48 +440,63 @@
             "Blueprint\n": [
                 "Axi S1 Uncommon*",
                 "Lith K1 Uncommon*",
-                "Meso S4 Uncommon"
+                "Meso S4 Uncommon",
+                "Neo N6 Uncommon"
             ],
             "Chassis\n": [
                 "Axi H1 Uncommon",
+                "Axi H2 Uncommon",
                 "Lith S4 Uncommon",
                 "Neo S1 Uncommon*"
             ],
             "Neuroptics\n": [
                 "Axi C1 Common",
                 "Axi V3 Common*",
-                "Neo D1 Uncommon*"
+                "Neo D1 Uncommon*",
+                "Neo N7 Common",
+                "Neo S6 Common"
             ],
             "Systems\n": [
                 "Axi A1 Common",
+                "Axi C2 Common",
                 "Axi V2 Common*",
                 "Axi V3 Common*",
                 "Axi V4 Common*",
                 "Neo B1 Common"
-            ]
+            ],
+            "type": "Void Relic"
         }
     },
     "Valkyr": {
         "id": "1039",
-        "source": "Alad V (Jupiter)"
+        "source": {
+            "Components": "Alad V (Jupiter)",
+            "type": "Boss"
+        }
     },
     "Valkyr Prime": {
         "id": "1040",
         "source": {
             "Blueprint\n": [
-                "Meso S3 Common"
+                "Lith A2 Common",
+                "Lith N3 Common",
+                "Meso S3 Common*",
+                "Meso S6 Common"
             ],
             "Chassis\n": [
                 "Axi V5 Rare"
             ],
             "Neuroptics\n": [
+                "Lith S6 Uncommon",
                 "Meso C2 Uncommon*",
-                "Meso V4 Uncommon"
+                "Meso V4 Uncommon*",
+                "Neo N7 Uncommon"
             ],
             "Systems\n": [
                 "Lith V3 Rare",
                 "Meso V3 Rare*"
-            ]
+            ],
+            "type": "Void Relic"
         }
     },
     "Vauban": {
@@ -399,21 +512,27 @@
             ],
             "Chassis\n": [
                 "Axi V1 Rare*",
+                "Lith V4 Rare",
                 "Meso V4 Rare"
             ],
             "Neuroptics\n": [
                 "Meso N2 Rare*",
-                "Neo V3 Rare"
+                "Neo V3 Rare",
+                "Neo V5 Rare"
             ],
             "Systems\n": [
                 "Lith V2 Rare",
                 "Neo N2 Rare*"
-            ]
+            ],
+            "type": "Void Relic"
         }
     },
     "Volt": {
         "id": "1043",
-        "source": "Tenno Lab"
+        "source": {
+            "Components": "Tenno Lab",
+            "type": "Lab"
+        }
     },
     "Volt Prime": {
         "id": "1044",
@@ -431,15 +550,22 @@
             ],
             "Systems\n": [
                 "Lith V1 Uncommon*"
-            ]
+            ],
+            "type": "Void Relic"
         }
     },
     "Wukong": {
         "id": "1045",
-        "source": "Tenno Lab"
+        "source": {
+            "Components": "Tenno Lab",
+            "type": "Lab"
+        }
     },
     "Zephyr": {
         "id": "1046",
-        "source": "Tenno Lab"
+        "source": {
+            "Components": "Tenno Lab",
+            "type": "Lab"
+        }
     }
 }

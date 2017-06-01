@@ -5,16 +5,21 @@
         "source": {
             "Blade": "New Loka",
             "Guard": "Steel Meridian",
-            "Handle": "Red Veil"
+            "Handle": "Red Veil",
+            "type": "Syndicate"
         }
     },
     "Centaur": {
         "id": "4011",
         "slot": "Arch-Melee",
         "source": {
+            "Aegis": "Arbiters of Hexis",
+            "Blade": "The Perrin Sequence",
             "Blueprint": [
                 "Market"
-            ]
+            ],
+            "Handle": "New Loka",
+            "type": "Syndicate"
         }
     },
     "Corvas": {
@@ -24,7 +29,8 @@
             "Barrel": "Arbiters of Hexis",
             "Blueprint": "Market",
             "Receiver": "Cephalon Suda",
-            "Stock": "Steel Meridian"
+            "Stock": "Steel Meridian",
+            "type": "Syndicate"
         },
         "type": "Shotgun"
     },
@@ -34,7 +40,8 @@
         "source": {
             "Barrel": "Arbiters of Hexis",
             "Receiver": "Cephalon Suda",
-            "Stock": "The Perrin Sequence"
+            "Stock": "The Perrin Sequence",
+            "type": "Syndicate"
         }
     },
     "Dual Decurion": {
@@ -43,22 +50,33 @@
         "source": {
             "Barrel": "Arbiters of Hexis",
             "Blueprint": "Market",
-            "Receiver": "Cephalon Suda"
+            "Receiver": "Cephalon Suda",
+            "type": "Syndicate"
         }
     },
     "Fluctus": {
         "id": "4004",
         "slot": "Arch-Gun",
-        "source": "Tenno Lab"
+        "source": {
+            "Blueprint": "Tenno Lab",
+            "type": "Lab"
+        }
     },
     "Grattler": {
         "id": "4005",
         "slot": "Arch-Gun",
-        "source": "Chem Lab"
+        "source": {
+            "Blueprint": "Chem Lab",
+            "type": "Lab"
+        }
     },
     "Imperator": {
         "id": "4006",
-        "slot": "Arch-Gun"
+        "slot": "Arch-Gun",
+        "source": {
+            "Built": "The Archwing (Quest)",
+            "type": "Quest"
+        }
     },
     "Imperator Vandal": {
         "id": "4007",
@@ -66,44 +84,62 @@
         "source": {
             "Barrel": "Fomorian Sabotage",
             "Blueprint": "Fomorian Sabotage",
-            "Receiver": "Fomorian Sabotage"
+            "Receiver": "Fomorian Sabotage",
+            "type": "Syndicate"
         }
     },
     "Kaszas": {
         "id": "4012",
         "slot": "Arch-Melee",
         "source": {
+            "Blade": "Red Veil",
             "Blueprint": [
                 "Market"
-            ]
+            ],
+            "Handle": "Steel Meridian",
+            "type": "Syndicate"
         }
     },
     "Knux": {
         "id": "4013",
         "slot": "Arch-Melee",
-        "source": "Chem Lab"
+        "source": {
+            "Blueprint": "Chem Lab",
+            "type": "Lab"
+        }
     },
     "Onorix": {
         "id": "4014",
         "slot": "Arch-Melee",
         "source": {
+            "Blade": "New Loka",
             "Blueprint": [
                 "Market"
-            ]
+            ],
+            "Handle": "The Perrin Sequence",
+            "type": "Syndicate"
         }
     },
     "Phaedra": {
         "id": "4008",
         "slot": "Arch-Gun",
         "source": {
+            "Barrel": "Arbiters of Hexis",
             "Blueprint": [
                 "Market"
-            ]
+            ],
+            "Receiver": "Mars",
+            "Stock": "New Loka",
+            "type": "Syndicate"
         }
     },
     "Prisma Veritux": {
         "id": "4017",
-        "slot": "Arch-Melee"
+        "slot": "Arch-Melee",
+        "source": {
+            "Built": "Baro Ki'Teer",
+            "type": "Baro"
+        }
     },
     "Rathbone": {
         "id": "4015",
@@ -111,16 +147,26 @@
         "source": {
             "Blueprint": [
                 "Market"
-            ]
+            ],
+            "Handle": "Red Veil",
+            "Head": "New Loka",
+            "type": "Syndicate"
         }
     },
     "Velocitus": {
         "id": "4009",
         "slot": "Arch-Gun",
-        "source": "Tenno Lab"
+        "source": {
+            "Blueprint": "Tenno Lab",
+            "type": "Lab"
+        }
     },
     "Veritux": {
         "id": "4016",
-        "slot": "Arch-Melee"
+        "slot": "Arch-Melee",
+        "source": {
+            "Built": "The Archwing (Quest)",
+            "type": "Quest"
+        }
     }
 }

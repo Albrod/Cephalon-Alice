@@ -20,30 +20,31 @@
         "id": "5009",
         "source": {
             "Blueprint": [
-                "Meso V1 Common",
+                "Meso V1 Common*",
                 "Meso V3 Common*",
-                "Meso V4 Common",
+                "Meso V4 Common*",
                 "Neo S3 Common*"
             ],
             "Carapace": [
-                "Axi N2 Common",
-                "Lith S5 Common",
+                "Axi N2 Common*",
+                "Lith S5 Common*",
                 "Neo S1 Common*"
             ],
             "Cerebrum": [
                 "Lith C1 Rare*",
                 "Meso C1 Rare*",
                 "Meso C2 Rare*",
-                "Meso N3 Uncommon"
+                "Meso N3 Uncommon*"
             ],
             "Systems": [
                 "Axi V1 Common*",
-                "Lith N2 Common",
+                "Lith N2 Common*",
                 "Lith S2 Common*",
                 "Lith S3 Common*",
-                "Neo A1 Common",
-                "Neo V3 Common"
-            ]
+                "Neo A1 Common*",
+                "Neo V3 Common*"
+            ],
+            "type": "Void Relic"
         }
     },
     "Chesa Kubrow": {
@@ -74,27 +75,38 @@
     },
     "Djinn": {
         "id": "5004",
-        "source": "Bio Lab"
+        "source": {
+            "Blueprint": "Bio Lab",
+            "type": "Lab"
+        }
     },
     "Helios": {
         "id": "5005",
-        "source": "Energy Lab"
+        "source": {
+            "Blueprint": "Energy Lab",
+            "type": "Lab"
+        }
     },
     "Helios Prime": {
         "id": "5010",
         "source": {
             "Blueprint": [
-                "Lith N2 Uncommon"
+                "Lith N2 Uncommon*",
+                "Lith V4 Uncommon"
             ],
             "Carapace": [
-                "Neo N5 Common"
+                "Meso S6 Common",
+                "Neo N5 Common*",
+                "Neo V5 Common"
             ],
             "Cerebrum": [
-                "Axi H1 Rare"
+                "Axi H1 Rare*",
+                "Axi H2 Rare"
             ],
             "Systems": [
                 "Lith V3 Uncommon"
-            ]
+            ],
+            "type": "Void Relic"
         }
     },
     "Helminth Charger": {
