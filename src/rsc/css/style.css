@@ -83,6 +83,7 @@ body .modal-open {
 
 /*Library pane*/
 .library-pane {
+  right: 0;
   top: 100px;
 
   transition: all .5s;
@@ -132,17 +133,17 @@ a.anchor {
   pointer-events: all;
 }
 
-.library-sidebar {
+.library-catbar {
   position: fixed;
   top:15%;
   left: -20%;
 
   transition: left .5s;
 }
-.library-sidebar.active {
+.library-catbar.active {
   left: 0;
 }
-.library-sidebar img {
+.library-catbar img {
   width: 40px;
 
   border-radius: 50%;
@@ -152,11 +153,11 @@ a.anchor {
 
   transition: all .25s;
 }
-.library-sidebar img.active {
+.library-catbar img.active {
   filter: invert(100%);
 }
 @media(min-width:576px){
-  .library-sidebar img {
+  .library-catbar img {
     width: 51px;
     border-radius: 50%;
     margin: 5px 0;
@@ -164,6 +165,74 @@ a.anchor {
     background-color: black;
     border: 1px solid white;
   }
+}
+
+.library-filter-bar {
+  position: fixed;
+  top:15%;
+  right: -20%;
+
+  transition: right .5s;
+}
+.library-filter-bar.active {
+  right: 0;
+}
+.library-filter-bar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: black;
+  float: right;
+
+  transition: all .25s;
+}
+.library-filter-bar img.active {
+  filter: invert(100%);
+}
+@media(min-width:576px){
+  .library-filter-bar img {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: black;
+    border: 1px solid white;
+  }
+}
+.filter-row {
+  right: 0;
+  position: relative;
+  transition: right .5s;
+}
+.filter-row.active {
+  right: 250px;
+}
+.filter-div {
+  position: absolute;
+  top: 0;
+  padding: 20px 0 20px 10px;
+  background: black;
+  right: -300px;
+  width: 300px;
+  border-radius: 20%;
+  display: inline-flex;
+
+  z-index: 20;
+  transition: all .5s;
+}
+.filter-div span {
+  color: white;
+  float: right;
+  margin-left: auto;
+  margin-right: 75px;
+}
+.library-filter-bar.opened ~ .library-pane {
+  right: 100px;
+  opacity: 0;
+  pointer-events: none;
 }
 
 #helpModal, #addModal, #detailsModal {

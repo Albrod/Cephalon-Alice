@@ -88,7 +88,41 @@
 </div>
 
 <!-- Library pane -->
-<div class="col-1 library-sidebar">
+<div class="col-1 library-filter-bar container">
+  <div class="row filter-row">
+    <img class="nav-icon" src="rsc/img/icons/warframes-icon.png"/>
+    <div class="filter-div filter-div-slot">
+      <select class="filter-sel" id="filter-slot">
+        <option value="None" selected>None</option>
+        <option value="Primary">Primary</option>
+        <option value="Secondary">Secondary</option>
+        <option value="Arch-Melee">Arch-Melee</option>
+        <option value="Arch-Gun">Arch-Gun</option>
+        <option value="Sentinel">Sentinel</option>
+      </select>
+      <span aria-hidden="true">&times;</span>
+    </div>
+  </div>
+  <div class="row filter-row">
+    <img class="nav-icon" src="rsc/img/icons/archwings-icon.png"/>
+    <div class="filter-div">
+      <select class="filter-sel" id="filter-type">
+        <option value="none" selected>None</option>
+      </select>
+      <span aria-hidden="true">&times;</span>
+    </div>
+  </div>
+  <div class="row filter-row">
+    <img class="nav-icon" src="rsc/img/icons/companions-icon.png"/>
+    <div class="filter-div">
+      <select class="filter-sel" id="filter-source">
+        <option value="none" selected>None</option>
+      </select>
+      <span aria-hidden="true">&times;</span>
+    </div>
+  </div>
+</div>
+<div class="col-1 library-catbar">
   <div><img class="nav-icon active" data-anchor="warframes" src="rsc/img/icons/warframes-icon.png"/></div>
   <div><img class="nav-icon" data-anchor="archwings" src="rsc/img/icons/archwings-icon.png"/></div>
   <div><img class="nav-icon" data-anchor="weapons" src="rsc/img/icons/weapons-icon.png"/></div>

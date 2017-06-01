@@ -176,11 +176,17 @@ function loadCodex() {
       loadLibraryPanel();
     }
   });
-  $(".nav-icon").click(function(event) {
+  $(".library-catbar .nav-icon").click(function(event) {
     var anchor = $(this).data("anchor");
     $('html, body').animate({
       scrollTop: $(".anchor#" + anchor).offset().top
     }, 500);
+  });
+  $(".library-filter-bar .nav-icon").click(function(event) {
+    openCodexFilter($(this));
+  });
+  $(".filter-div span").click(function(event) {
+    closeCodexFilter($(this));
   });
   $(document).on('contextmenu', '.gilded-img', function(e) {
     e.preventDefault();
@@ -237,6 +243,7 @@ function preloadLibrary() {
     renderLibrary(categories[i]);
   }
   updateTotals();
+  updateFilters();
 }
 
 function loadSearchPanel() {
@@ -246,9 +253,11 @@ function loadSearchPanel() {
   $(".library-pane").removeClass("active");
 
   $(".panel-nav li.active").removeClass("active");
-  $(".library-sidebar").removeClass("active");
+  $(".library-catbar").removeClass("active");
+  $(".library-filter-bar").removeClass("active");
+  $(".filter-row.active").removeClass("active");
+  $(".library-filter-bar").removeClass('opened');
   $("#searchTab").parent().addClass("active");
-
   fadeShow($(".search-pane"));
   $(".search-pane").addClass("active");
 }
@@ -303,7 +312,8 @@ function loadLibraryPanel() {
   }
 
   $(".panel-nav li.active").removeClass("active");
-  $(".library-sidebar").addClass("active");
+  $(".library-catbar").addClass("active");
+  $(".library-filter-bar").addClass("active");
   $("#libraryTab").parent().addClass("active");
 
   fadeShow($(".library-pane"));
@@ -409,14 +419,20 @@ function renderLibrary(cat) {
     var source = obj2["source"];
     if (source) {
       if (typeof source === "string") {
-        console.log(source);
+        if (source === "Market") {
+          entryDiv.attr("data-source", source);
+          filters["source"].add(source);
+        }
       }
       else {
-        console.log(source);
+        if (source.type === "Lab") {
+          entryDiv.attr("data-source", source.Components);
+          filters["source"].add(source.Components);
+        } else {
+          entryDiv.attr("data-source", source.type);
+          filters["source"].add(source.type);
+        }
       }
-
-      entryDiv.attr("data-source", source);
-      filters["source"].add(source);
     }
 
     count++;
@@ -434,6 +450,26 @@ function renderImages() {
   $(".gilded-img").each(function() {
     $(this).attr("src", "rsc/img/gold_logo.png");
   });
+}
+
+function openCodexFilter(icon) {
+  $(".filter-row.active").removeClass('active');
+
+  var div = icon.next().parent();
+  $(".library-filter-bar").addClass('opened');
+  div.addClass('active');
+}
+function closeCodexFilter(span) {
+  var div = span.parent().parent();
+  $(".library-filter-bar").removeClass('opened');
+  div.removeClass('active');
+}
+function updateFilters() {
+  var type = $("#filter-type");
+  filters['type'].forEach(function(entry) {
+    $('<option>').val(entry).text(entry).appendTo(type);
+  });
+  var source = $("#filter-source");
 }
 
 // Apply gilded style and dirty bit to entryDiv
@@ -932,10 +968,10 @@ function retrieveNameByID(id) {
 
 function onScroll(event){
   var scrollPos = $(document).scrollTop() + 50;
-  $('.library-sidebar img').each(function () {
+  $('.library-catbar img').each(function () {
     var refElement = $("#" + $(this).data("anchor") + "Div");
     if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-      $('.library-sidebar img').removeClass("active");
+      $('.library-catbar img').removeClass("active");
       $(this).addClass("active");
     }
     else{

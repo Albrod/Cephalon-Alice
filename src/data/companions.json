@@ -131,7 +131,11 @@
         "type": "Pistol"
     },
     "Prisma Shade": {
-        "id": "5011"
+        "id": "5011",
+        "source": {
+            "Built": "Baro Ki'Teer",
+            "type": "Baro"
+        }
     },
     "Raksa Kubrow": {
         "id": "5015"

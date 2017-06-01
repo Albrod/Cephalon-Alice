@@ -1720,32 +1720,56 @@
     "Prisma Dual Cleavers": {
         "id": "3261",
         "slot": "Melee",
-        "type": "Dual Swords"
+        "type": "Dual Swords",
+        "source": {
+            "Built": "Baro Ki'Teer",
+            "type": "Baro"
+        }
     },
     "Prisma Gorgon": {
         "id": "3057",
         "slot": "Primary",
-        "type": "Assault Rifle"
+        "type": "Assault Rifle",
+        "source": {
+            "Built": "Baro Ki'Teer",
+            "type": "Baro"
+        }
     },
     "Prisma Grakata": {
         "id": "3058",
         "slot": "Primary",
-        "type": "Assault Rifle"
+        "type": "Assault Rifle",
+        "source": {
+            "Built": "Baro Ki'Teer",
+            "type": "Baro"
+        }
     },
     "Prisma Obex": {
         "id": "3262",
         "slot": "Melee",
-        "type": "Sparring"
+        "type": "Sparring",
+        "source": {
+            "Built": "Baro Ki'Teer",
+            "type": "Baro"
+        }
     },
     "Prisma Skana": {
         "id": "3263",
         "slot": "Melee",
-        "type": "Sword"
+        "type": "Sword",
+        "source": {
+            "Built": "Baro Ki'Teer",
+            "type": "Baro"
+        }
     },
     "Prisma Tetra": {
         "id": "3059",
         "slot": "Primary",
-        "type": "Assault Rifle"
+        "type": "Assault Rifle",
+        "source": {
+            "Built": "Baro Ki'Teer",
+            "type": "Baro"
+        }
     },
     "Prova": {
         "id": "3264",
