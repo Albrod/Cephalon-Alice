@@ -48,13 +48,14 @@ for cat in categories:
                                 # Get drop locations
                                 res_part_drops = ele.contents[2].contents
 
-                                if (res_part_drops[0].name == "a" and res_part_drops[2].name == None):
+                                if (res_part_drops[0].name == "a" and res_part_drops[1].name == None):
                                     print ("        Found syndicate!")
                                     dropData["type"] = "Syndicate"
                                     dropData[part_name] = res_part_drops[0].string
                                 elif (res_part_drops[0].name == None):
-                                    print ("        Found relics!")
-                                    dropData["type"] = "Void Relic"
+                                    if ("Market" not in res_part_drops[0]):
+                                        print ("        Found relics!")
+                                        dropData["type"] = "Void Relic"
                                     res_part_drops[:] = [x for x in res_part_drops if x.name != 'br']
                                     res_part_drops = list(map(str.strip, res_part_drops))
                                     dropData[part_name] = res_part_drops

@@ -41,7 +41,7 @@
     "Banshee": {
         "id": "1004",
         "source": {
-            "Blueprint": "Tenno Lab",
+            "Components": "Tenno Lab",
             "type": "Lab"
         }
     },
@@ -261,7 +261,7 @@
     "Nezha": {
         "id": "1024",
         "source": {
-            "Blueprint": "Tenno Lab",
+            "Components": "Tenno Lab",
             "type": "Lab"
         }
     },

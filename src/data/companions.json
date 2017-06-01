@@ -76,14 +76,14 @@
     "Djinn": {
         "id": "5004",
         "source": {
-            "Blueprint": "Bio Lab",
+            "Components": "Bio Lab",
             "type": "Lab"
         }
     },
     "Helios": {
         "id": "5005",
         "source": {
-            "Blueprint": "Energy Lab",
+            "Components": "Energy Lab",
             "type": "Lab"
         }
     },

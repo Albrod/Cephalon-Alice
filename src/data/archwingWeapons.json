@@ -58,7 +58,7 @@
         "id": "4004",
         "slot": "Arch-Gun",
         "source": {
-            "Blueprint": "Tenno Lab",
+            "Components": "Tenno Lab",
             "type": "Lab"
         }
     },
@@ -66,7 +66,7 @@
         "id": "4005",
         "slot": "Arch-Gun",
         "source": {
-            "Blueprint": "Chem Lab",
+            "Components": "Chem Lab",
             "type": "Lab"
         }
     },
@@ -104,7 +104,7 @@
         "id": "4013",
         "slot": "Arch-Melee",
         "source": {
-            "Blueprint": "Chem Lab",
+            "Components": "Chem Lab",
             "type": "Lab"
         }
     },
@@ -157,7 +157,7 @@
         "id": "4009",
         "slot": "Arch-Gun",
         "source": {
-            "Blueprint": "Tenno Lab",
+            "Components": "Tenno Lab",
             "type": "Lab"
         }
     },

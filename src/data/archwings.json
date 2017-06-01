@@ -2,21 +2,21 @@
     "Amesha": {
         "id": "2001",
         "source": {
-            "Blueprint": "Tenno Lab",
+            "Components": "Tenno Lab",
             "type": "Lab"
         }
     },
     "Elytron": {
         "id": "2002",
         "source": {
-            "Blueprint": "Tenno Lab",
+            "Components": "Tenno Lab",
             "type": "Lab"
         }
     },
     "Itzal": {
         "id": "2003",
         "source": {
-            "Blueprint": "Tenno Lab",
+            "Components": "Tenno Lab",
             "type": "Lab"
         }
     },
