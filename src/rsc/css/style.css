@@ -202,6 +202,9 @@ a.anchor {
     border: 1px solid white;
   }
 }
+.filtered {
+  display: none;
+}
 .filter-row {
   right: 0;
   position: relative;

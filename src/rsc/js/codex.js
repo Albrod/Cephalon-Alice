@@ -183,11 +183,29 @@ function loadCodex() {
     }, 500);
   });
   $(".library-filter-bar .nav-icon").click(function(event) {
-    openCodexFilter($(this));
+    toggleCodexFilter($(this));
   });
   $(".filter-div span").click(function(event) {
     closeCodexFilter($(this));
   });
+
+  $(".filter-sel").change(function(event) {
+    if ($(this).val() === "None") {
+      $(".codex-entry").removeClass("filtered");
+    } else {
+      var val = $(this).val();
+      var filter = $(this).attr("id").substring(7);
+
+      var arr = $('.codex-entry').filter(function() {
+        return $(this).data(filter) !== val;
+      });
+
+      arr.addClass("filtered");
+    }
+
+    $(this).next().click();
+  });
+
   $(document).on('contextmenu', '.gilded-img', function(e) {
     e.preventDefault();
     var id = $(this).parent().attr("id");
@@ -452,7 +470,8 @@ function renderImages() {
   });
 }
 
-function openCodexFilter(icon) {
+function toggleCodexFilter(icon) {
+  
   $(".filter-row.active").removeClass('active');
 
   var div = icon.next().parent();
